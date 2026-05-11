@@ -18,6 +18,7 @@ background = noone;
 background_dissolving = 0;
 background_dissolving_final = 0;
 
+titles = {};
 characters = {};
 names = {};
 
@@ -25,6 +26,7 @@ padding = 20;
 textbox_x = room_width / 2 - sprite_get_width(spr_dialoguebox) / 2;
 textbox_y = room_height - sprite_get_height(spr_dialoguebox) - padding*2;
 
+// Main centered "starwars" text
 
 function next_line() {
 	if display != display_final {
@@ -104,6 +106,47 @@ function next_line() {
 			var name = string_copy(lines[current_line], string_length(command)+1+string_length(arg1)+2, 100);
 			//var arg2 = arguments[2];
 			names[$ arg1] = name;
+			
+			next_line();
+		} else if command == "new_title" {
+			var arg = arguments[1];
+			var text = string_copy(lines[current_line], string_length(command)+1+string_length(arg)+2, 255);
+			
+			var new_title = instance_create_depth(0, 0, 1, Obj_TitleText);
+			new_title.text = text;
+			show_debug_message("Created new title with text: " + text);
+			titles[$ arg] = new_title;
+			
+			next_line();
+		} else if command == "title_setpos" {
+			var arg = arguments[1];
+			var pos_x = real(arguments[2]);
+			var pos_y = real(arguments[3]);
+			
+			titles[$ arg].set_position(pos_x, pos_y);
+			
+			next_line();
+		} else if command == "title_setscale" {
+			var arg = arguments[1];
+			var scale = real(arguments[2]);
+			
+			titles[$ arg].scale = scale;
+			
+			next_line();
+		} else if command == "title_fadein" {
+			var arg = arguments[1];
+			var fade_time = real(arguments[2]);
+			
+			titles[$ arg].fade_time = fade_time;
+			titles[$ arg].fade_in();
+			
+			next_line();
+		} else if command == "title_fadeout" {
+			var arg = arguments[1];
+			var fade_time = real(arguments[2]);
+			
+			titles[$ arg].fade_time = fade_time;
+			titles[$ arg].fade_out();
 			
 			next_line();
 		} else if command == "play_sound" {

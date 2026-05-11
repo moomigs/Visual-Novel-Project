@@ -40,8 +40,9 @@
     {"id":{"name":"Obj_Character","path":"objects/Obj_Character/Obj_Character.yy",},},
     {"id":{"name":"Obj_DialogueMaster","path":"objects/Obj_DialogueMaster/Obj_DialogueMaster.yy",},},
     {"id":{"name":"Obj_MenuSettings","path":"objects/Obj_MenuSettings/Obj_MenuSettings.yy",},},
+    {"id":{"name":"Obj_TitleText","path":"objects/Obj_TitleText/Obj_TitleText.yy",},},
     {"id":{"name":"Room_Dialogue","path":"rooms/Room_Dialogue/Room_Dialogue.yy",},},
-    {"id":{"name":"Room_Gametest","path":"rooms/Room_Gametest/Room_Gametest.yy",},},
+    {"id":{"name":"Room_RPGTest","path":"rooms/Room_RPGTest/Room_RPGTest.yy",},},
     {"id":{"name":"snd_Ding","path":"sounds/snd_Ding/snd_Ding.yy",},},
     {"id":{"name":"spr_bg_eddie","path":"sprites/spr_bg_eddie/spr_bg_eddie.yy",},},
     {"id":{"name":"spr_bg_space","path":"sprites/spr_bg_space/spr_bg_space.yy",},},
@@ -56,7 +57,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room_Dialogue","path":"rooms/Room_Dialogue/Room_Dialogue.yy",},},
-    {"roomId":{"name":"Room_Gametest","path":"rooms/Room_Gametest/Room_Gametest.yy",},},
+    {"roomId":{"name":"Room_RPGTest","path":"rooms/Room_RPGTest/Room_RPGTest.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

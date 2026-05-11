@@ -1,12 +1,18 @@
-Visual novel engine commands
+Visual novel engine commands:
 
 name <id> <Full Name>
 
-background <sprite>
-dissolve <sprite> <seconds>
+background <bg_sprite>
+dissolve <bg_sprite> <seconds>
 textbox <true/false>
-text_speed <int>
+text_speed <frames per letter>
 autoskip <seconds>
+
+new_title <id> <text>
+title_setpos <id> <x> <y>
+title_setscale <id> <scale>
+title_fadein <id> <seconds>
+title_fadeout <id> <seconds>
 
 play_sound <sound>
 loop_sound <sound>
@@ -29,4 +35,5 @@ goto_room <room>
 node <int>
 skipto <int>
 
+<id> <dialogue>
 # comment

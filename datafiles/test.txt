@@ -9,7 +9,26 @@ textbox false
 
 dissolve spr_bg_space 2
 
-? Welcome to my special little video game. I made this special little video game just for you. Please enjoy.
+new_title title1 Welcome to my special little video game.
+new_title title2 I made this special little video game just for you.
+new_title title3 Please enjoy.
+
+title_setpos title1 0 0.2
+title_setpos title2 0 0.1
+title_setpos title3 0 -0.05
+
+title_setscale title3 2.5
+
+title_fadein title1 2
+pause 3
+title_fadein title2 2
+pause 3
+title_fadein title3 3
+pause 4
+title_fadeout title1 2
+title_fadeout title2 2
+title_fadeout title3 2
+pause 4
 
 new_character Collins
 set_alpha Collins 100 0.1
@@ -50,17 +69,25 @@ node 1
 textbox true
 
 g I am Gordon.
-c We are the Gooble brothers.
+g We are the Gooble brothers.
 
 set_alpha Gordon 0 0.1
 slide Collins 0 0
 
 pause 1.5
 
+set_face Collins spr_collins_face_1
 c I'm so sick of that guy.
 
-pause 0.5
+slide Collins 0 0.1
+c My mom always makes me hang out with him.
+c I was the original Gooble brother before he was here.
+slide Collins 0 0
+set_face Collins default
+c Anyway, let me show you around.
+
+pause 0.25
 set_alpha Collins 0 0.1
 pause 1
 
-goto_room Room_Gametest
+goto_room Room_RPGTest
