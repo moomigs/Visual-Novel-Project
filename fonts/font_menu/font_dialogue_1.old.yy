@@ -239,8 +239,8 @@
   "maintainGms1Font":false,
   "name":"font_dialogue",
   "parent":{
-    "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "name":"BLANK GAME",
+    "path":"BLANK GAME.yyp",
   },
   "pointRounding":0,
   "ranges":[
@@ -250,7 +250,7 @@
   "regenerateBitmap":false,
   "resourceType":"GMFont",
   "resourceVersion":"2.0",
-  "sampleText":"abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)\r\n→→",
+  "sampleText":"abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)",
   "sdfSpread":8,
   "size":28.0,
   "styleName":"Regular",

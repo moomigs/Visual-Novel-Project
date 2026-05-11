@@ -2,9 +2,14 @@ name c Collins
 name g Gordon
 name ? ???
 
+# skipto 1
+
+autoskip 2
+textbox false
+
 dissolve spr_bg_space 2
 
-? Welcome to my special little video game
+? Welcome to my special little video game. I made this special little video game just for you. Please enjoy.
 
 new_character Collins
 set_alpha Collins 100 0.1
@@ -15,10 +20,21 @@ pause 1.5
 
 slide Collins 0 0.1
 set_face Collins spr_collins_face_1
+set_sound_pitch snd_Ding 0.25
+play_sound snd_Ding
+text_speed 12
+textbox true
+
 c Behold.
+
+text_speed 1
 slide Collins 0 0
 set_face Collins default
+autoskip -1
+
 c I am Collins.
+
+textbox false
 
 new_character Gordon
 set_alpha Gordon 100 0.1
@@ -28,6 +44,10 @@ set_position Gordon -0.5 0
 slide Collins 0.5 0
 
 pause 1.5
+
+node 1
+
+textbox true
 
 g I am Gordon.
 c We are the Gooble brothers.

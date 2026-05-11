@@ -4,7 +4,7 @@ name p Phoebe
 name r Rey
 name ri Richard
 name f Fiber
-name Man man
+name man man
 name woman Woman
 name bar Bartender
 name child Child
@@ -19,23 +19,23 @@ name ? ???
 
 
 
-In the Third Epoch there roamed the galaxy men and women of renown in search of treasure and glory.
+? In the Third Epoch there roamed the galaxy men and women of renown in search of treasure and glory.
 
-They heeded the call of the stars and set their hearts on infamy at any cost.
+? They heeded the call of the stars and set their hearts on infamy at any cost.
 
-Admired. Feared. Resented. They were larger than life and lower than dirt.
+? Admired. Feared. Resented. They were larger than life and lower than dirt.
 
-These adventurers were known as:
+? These adventurers were known as:
 
-STAR RUNNERS
-
-
-*Show an Earth-like planet, half dark with the lighting of many cities*
-
-*In the outer edges of the Western Republic
+? STAR RUNNERS
 
 
-*Show a dingy bar, a young man is sweeping next to some older men at a table*
+# Show an Earth-like planet, half dark with the lighting of many cities*
+
+# In the outer edges of the Western Republic
+
+
+# Show a dingy bar, a young man is sweeping next to some older men at a table*
 
 man "There I was on Thaxthia."
 *The young man perks up.*
