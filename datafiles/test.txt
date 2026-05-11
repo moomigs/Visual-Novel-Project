@@ -1,0 +1,43 @@
+name c Collins
+name g Gordon
+name ? ???
+
+dissolve spr_bg_space 2
+
+? Welcome to my special little video game.
+
+new_character Collins
+set_alpha Collins 100 0.1
+set_sprite Collins spr_collins_1
+set_position Collins 0 0
+
+pause 1.5
+
+slide Collins 0 0.1
+set_face Collins spr_collins_face_1
+c Behold.
+slide Collins 0 0
+set_face Collins default
+c I am Collins.
+
+new_character Gordon
+set_alpha Gordon 100 0.1
+set_sprite Gordon spr_gordon_1
+set_position Gordon -0.5 0
+
+slide Collins 0.5 0
+
+pause 1.5
+
+g I am Gordon.
+c We are the Gooble brothers.
+
+set_alpha Gordon 0 0.1
+slide Collins 0 0
+
+pause 1.5
+
+c I'm so sick of that guy.
+
+pause 1
+set_alpha Collins 0 0.01
