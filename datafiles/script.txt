@@ -1,0 +1,1120 @@
+name c Collins
+name g Gordon
+name p Phoebe
+name r Rey
+name ri Richard
+name f Fiber
+name Man man
+name woman Woman
+name bar Bartender
+name child Child
+name villager Villager
+name m Mayor
+name a Artensa
+name n Navigator
+name Man1 Man 1
+name Man2 Man 2
+name Man3 Man 3
+name ? ???
+
+
+
+In the Third Epoch there roamed the galaxy men and women of renown in search of treasure and glory.
+
+They heeded the call of the stars and set their hearts on infamy at any cost.
+
+Admired. Feared. Resented. They were larger than life and lower than dirt.
+
+These adventurers were known as:
+
+STAR RUNNERS
+
+
+*Show an Earth-like planet, half dark with the lighting of many cities*
+
+*In the outer edges of the Western Republic
+
+
+*Show a dingy bar, a young man is sweeping next to some older men at a table*
+
+man "There I was on Thaxthia."
+*The young man perks up.*
+man "Facing five robos--"
+c "Thaxthia? You've been off-world??"
+*The man looks disgruntled.*
+c "What was it like? Thaxthia? Have you been to other worlds? What about the robos--"
+*The man tosses his beer in Collins' face and the table erupts in laughter.*
+man "Yeah. And?"
+c "N-Nothing, I just..."
+man "Got something to say?"
+*The man pulls back his cloak to reveal his sword.*
+*Collins bows his head and keeps sweeping.*
+*The man grins in triumph.*
+*Something catches his attention. A beautiful girl at the bar.*
+*He grins and saunters over.*
+man "Hey beautiful."
+woman "Leave me alone."
+man "Come on. I'll buy you a drink."
+*He places a hand on her arm. The woman slaps him in the face.*
+woman "Don't touch me."
+man "..."
+man "Is that how it is?"
+*He slaps her back and the bar falls silent.*
+bar "Hey! What are you doing??"
+bar "She's a regular!"
+man "Shut it, bartender. You gonna stop me?"
+man "I don't see a sword on your hip, and the boy certainly isn't going to save her."
+man "Isn't that right, boy?"
+*Collins hangs his head and walks away through an employee door*
+man "Ha! Hahaha!"
+*He turns to the woman who is holding her face in shock.*
+man "No one's coming. They never do."
+woman "You... You bastard!"
+man "That's better."
+*He raises his hand.*
+c "Hey!"
+*Show Collins wearing a robe with a sword and pistol on his belt. BOOM sfx*
+c "Let her go."
+bartender: "Collins!"
+man "..."
+man "Collins, eh?"
+man "So now you come out, still wet, wearing fighter robes?"
+*He draws his sword and activates it.*
+man "Collins, on some backwater planet no one's ever heard of."
+man "You want this fight?"
+*Collins draws his sword.*
+c "I didn't come out here to talk."
+bar "No pistols! Keep your duel between yourselves!"
+*Show man grinning, sword ready*
+*Inner monologue, fight scene throughout. Collins fights competently*
+
+
+*Show Collins closeup with his sword poised. His face is controlled but deeply angry.*
+I hate God.
+Because in this galaxy, the strong prey on the weak.
+And the innocent live in fear.
+Blood.
+Blood that cries out from the rocks.
+But He does not answer.
+He isn't there for us.
+He wasn't there for me.
+I...
+I still remember his smile.
+*Show blue cat eyes and smile*
+I can still smell the blood.
+But there is one thing I am grateful for.
+Hell.
+It is said the unrighteous burn in fire.
+So I will send them there. 
+And once I've met my end...
+I will surely join them.
+
+*Collins slashes the man across the chest, drawing blood and wounding him*
+*The man collapses.*
+*Collins stares at him with gentle shock for a moment. His hand trembles.*
+
+bar "Collins... don't look at him like that."
+bar "You scare me when you get quiet."
+*Collins snaps out of it and looks shocked*
+
+bar "You two! Since you like listening to his stories so much, take him to a hospital!"
+
+*Collins stares at the blood on the ground in disbelief*
+*The bartender throws a mop into his hands*
+
+bar "Put your weapons away and clean this mess."
+*The woman puts a hand on his shoulder.*
+woman "Thank you."
+woman "I thought he was right."
+
+*Cut to Collins mopping*
+*Phoebe and Gordon walk in*
+
+p "Are you sure this is the place to ask around?"
+p "Pretty dingy."
+g "That's the point, Phoebe. Besides, not a bad place to grab a beer."
+p "Absolutely not."
+*They walk up next to Collins.*
+*Gordon looks at him, then looks down at the blood.*
+*He grins*
+g "Told you."
+g "Oi, bartender!"
+bartender "What?"
+g "Listen, we're not from around here."
+bartender "Hmph."
+g "We were interested in some sightseeing."
+g "Are there any ancient ruins in the area?"
+g "You know, like a great stone building with a big locked door?"
+bartender: "Get lost, star runners."
+g "Okay, okay."
+g "How about a drink?"
+p "*No*."
+bartender: "We don't do business with your kind."
+g "What kind is that?"
+bartender: "The pillaging kind."
+g "Pillaging? Ehh???"
+g "Where did you get that idea?"
+p "Let's go, Gordon."
+p "This room wants us gone."
+g "Come on, just one drink!"
+p "*Let's go.*"
+*They walk by Collins*
+c "Um...!"
+g "Hm?"
+c "Are you really star runners?"
+g "That's right."
+*Gordon and Phoebe look at each other.*
+g "You know any ruins?"
+c "I..."
+*Collins looks over to see the entire bar glaring at him*
+c "No..."
+g "Tch. Figures."
+*The star runners walk out while Collins stares at the door.*
+bar "You're going to get yourself killed, Collins."
+c "Maybe..."
+
+*Cut to a back alley behind the bar as Collins walks out*
+c "I'm taking my break!"
+c "..."
+*A group of children are in the alley, an older one out front with a sword and pistol.*
+child "I see you are a dreadful pirate!"
+child "I! Protector of this alley! Will cut you down!"
+c "Hmm..."
+c "Protector of the alley, eh?"
+*Collins picks up his sword against the wall and activates it*
+c "You're a fool if you think you can stand against my blade!"
+
+*The child grins and it transitions to RPG graphics for a battle tutorial. Weapons are on training mode.*
+*Collins teaches the child moves as a tutorial for the player, teaching how to play*
+
+child "Gahh! You've bested me! Curse you!"
+child "..."
+child "Man, can't you go easy on me, Collins?"
+c "I was going easy on you."
+g "So, that mess was you?"
+*Show Gordon leaning against the wall with a cocky expression.*
+c "You--!"
+c "You're the star runner from yesterday..."
+child "Ehh??? Star runner?!"
+*The children crowd around Gordon*
+*Gordon grins and flexes his muscles.*
+g "Ha! That's right!"
+g "I travel the galaxy in search of treasure, crossing swords with pirates and miscreants alike!"
+g "But you..."
+*Gordon approaches Collins*
+g "You teach well. You must be a decent fighter."
+g "That's a valuable skill in this galaxy."
+*draws his sword*
+g "One round."
+c "..."
+c "You're on."
+
+*Second tutorial fight, this time an actual duel. Training wheels off. Collins beats Gordon.*
+
+c "I..."
+c "I won..."
+g "Yeah. You did."
+g "You know something about those ruins."
+c "..."
+c "Maybe."
+g "We've got a key. We’re heading there."
+g "Ten percent."
+c "Take me with you."
+g "..."
+g "Kid..."
+g "You know people die in ruins like that, right?"
+c "I know."
+g "..."
+g "Still ten percent."
+c "Deal."
+g "Excellent."
+g "Link with me. I'll send you the coordinates to our ship."
+g "When you get off work, swing by."
+g "Don't keep us waiting."
+
+*Cut to night. Collins is in his fighter robes. Phoebe and Gordon are talking outside the ship. Gordon is smoking a cigarette.*
+
+g "You showed up!"
+p "Hmph. Why is he wearing that ridiculous thing?"
+g "Hey."
+g "Those are fighter's robes."
+g "Harder to fight in. Which is the point."
+g "Shows you have skill."
+p "What's important is that he has information."
+p "Don't you?"
+c "I know where the ruins are. Everyone around here does."
+c "I'm just the only one who's going to tell you."
+g "Don't mind her. Phoebe takes a long time to warm up to people."
+g "But we get along fine, don't we Phoebe?"
+p "Don't think I forgot you offered him ten percent."
+g "Come on, it's a power gem!"
+g "We can afford ten percent."
+c "A power gem??"
+p "That's right. We got a lead there's one in your local ruins."
+p "Even at ten percent, you'll make a killing."
+g "Assuming we find it."
+p "Let's stop wasting time."
+p "If he's lying, we turn around."
+
+*Cut to cockpit, Gordon takes a seat*
+
+g "Welcome aboard!"
+g "Here's where all the magic happens--"
+*A laser bolt hits a spot next to Gordon*
+g "What the--?!"
+g "Are you trying to stun me, woman??"
+*Show Phoebe with her pistol out and Collins slightly shocked*
+p "Which seat are you in right now?"
+g "Uhh, the pilot's seat...?"
+p "The *captain's* seat. I'm the captain. That's my seat."
+*Gordon gets up*
+g "Sheesh, alright, alright. Whatever you say."
+*Gordon stands next to Collins*
+g "You ever been in a spaceship before?"
+c "Not since I was a little kid."
+g "She's a beauty, ain't she?"
+g "Plenty of room for Phoebe and I. We got a couple guestrooms if you want to relax a little."
+p "He stays up here. We need directions."
+p "Kid. What's your name?"
+c "Collins."
+p "Collins. Just Collins?"
+c "Collins is fine."
+p "Whatever."
+p "Where we going, Collins?"
+c "Head due west. It's a ways away."
+p "You got it."
+*The ship takes off*
+g "You grew up on this planet?"
+c "Mostly. I came here when I was seven."
+g "Really? Why'd your parents do that?"
+c "I don't have parents."
+*pause*
+p "..."
+g "Oh..."
+p "Nice one, Gordon."
+g "At least I'm trying to make conversation!"
+p "Keep trying."
+g "Alright..."
+g "..."
+g "They dead?"
+p "Gordon!!"
+g "What??"
+p "Are you the dumbest man alive??"
+p "You don't just ask something like that!"
+g "I'm trying to get to know the kid!"
+c "Ahahaha!"
+*Gordon and Phoebe look at Collins.*
+c "You two are funny."
+*They look at each other.*
+g "Well, why'd you get into fighting, then?"
+c "I fight to hunt a pirate."
+*pause.*
+g "You don't want to run into pirates in this galaxy."
+c "There's one I do."
+g "Yeah?"
+*pause*
+c "He'll be smiling."
+g "..."
+c "We're close. I can give you the coordinates."
+ 
+*Show a wide shot of the ruins. It looks like a giant stone fortress.*
+*Standing before a big door*
+
+g "This looks right."
+p "How do we use this key?"
+g "Stand back."
+*Gordon steps up to the door and the key starts to glow.*
+*The door opens.*
+g "Ha! Easy!"
+*Several robos come out of the woods.*
+robo "Aha! You fools!"
+g "Ehh??"
+p "Great."
+c "Are we about to fight...?"
+robo "Our patience has been rewarded!"
+g "How long have you been waiting...?"
+robo "158.35 years."
+g "..."
+robo "We have the superior night vision!"
+robo "Onward, comrades! For the queen!"
+*The robos rush inside.*
+g "Robos..."
+p "Collins."
+p "Your lace lets you see in the dark right?"
+c "Doesn't everyone's?"
+p "Not a hundred-fifty years ago apparently."
+p "Let's go."
+g "Good thing you can fight, eh kid?"
+*They go inside*
+
+*A zelda style dungeon with traps and maybe puzzles, collectible treasure. The robos are enemies throughout. Here are some of their lines.* These will be spread out so not bunched together and not interrupt gameplay.
+robo "For the queen!"
+g "For who?"
+robo "The queen remembers."
+p "Remembers what?"
+g "They're talking nonsense."
+robo "Statement: I am definitely a robot."
+c "What?"
+p "They're messing with you."
+p "Manipulative little buggers."
+robo "Come at me, fleshies!"
+p "Wow. Can they really say that word?"
+g "You clanky!"
+p "Don't antagonize them."
+g "They started it."
+p "They're programmed. What's your excuse?"
+
+*Whatever the ruins contain, it will eventually lead to a chamber with a gem on a pedestal.*
+
+g "Is this it?"
+p "There's gotta be traps. This looks too easy."
+g "Hey kid?"
+c "Huh?"
+g "This is your first time seeing a power gem, right?"
+g "Would you like to do the honors?"
+c "Really?"
+g "Yeah, just go grab it. We'll be right here."
+p "Time to earn your ten percent."
+*Collins approaches the gem.*
+c "It's..."
+c "Beautiful."
+*He reaches out*
+? "Collins."
+*Collins freezes*
+p "What's wrong?"
+*light flickers*
+c "..."
+g "Just grab it already."
+*pause*
+? "It is yours."
+*Collins hesitantly takes the gem, which bursts into light until it vanishes.*
+*Collins looks down at his hands. They are covered in blood for a second.*
+c "Mine..."
+"The walls whisper."
+"The chamber is alive."
+"It is watching."
+*He turns around*
+*Phoebe and Gordon glare at him.*
+*Phoebe walks up and gently grabs Collins face.*
+p "Look up."
+c "Uh... okay."
+p "Can you hear and see okay?"
+c "Everything was fuzzy for a second, but I'm fine now."
+p "Okay."
+*She returns to Gordon*
+p "Great. He absorbed it."
+p "Well done, Gordon."
+g "How was I supposed to know??"
+p "You could have picked anyone else in the city!"
+p "Do you know how much that thing was worth??"
+c "Hey, I feel kinda funny..."
+both "Shut up!"
+p "If you think you're still getting eight percent--!"
+g "Yeah you can forget about getting five percent!"
+*Door opens*
+*pause*
+robo "Finally."
+*A large number of robos enter the chamber*
+robo "Halt! In the name of the queen!"
+p "Perfect."
+p "Alright buddy, get out front. You're the one with powers."
+c "Powers?? I don't know how to use them!"
+g "Now's a great time to learn!"
+
+*They fight their way out of the ruins, giving the player a chance to learn and test out their new abilities.*
+*Gordon and Phoebe quietly sit down.*
+
+c "Um... Guys?"
+p "How much did we get?"
+g "Not much."
+g "Two runs, maybe."
+*They glance at each other*
+p "What do you think?"
+g "I don't think we have a choice."
+p "I agree."
+c "Look, I don't care about getting a cut, just..."
+*They turn to sternly face Collins*
+p "Yes?"
+c "I'm sorry. I didn't-- it just... happened."
+g "You want a job?"
+c "Huh?"
+p "You're a gem holder now."
+p "Which means we want you on our crew."
+g "You're already a good fighter."
+g "Wouldn't make sense to leave you behind now."
+p "Equal cut."
+g "What do you say?"
+c "..."
+c "I..."
+g "Dude, he's gonna cry."
+c "Me?"
+p "Yes."
+c "To go on adventures?"
+g "That's what a star runner is."
+c "I-I..."
+c "I have to ask my boss..."
+p "*What?*"
+g "Ahahaha!"
+g "I like this kid."
+p "Fine. But we leave tomorrow. So figure it out."
+
+*The next day Collins enters the bar.*
+bar "Collins. You're not scheduled yet."
+c "Hey, I..."
+bar "..."
+bar "You're leaving."
+c "I have to go. I'm not coming back."
+bar "Those star runners got to you."
+c "Are you mad?"
+bar "Mad? No."
+bar "Listen, Collins."
+bar "The galaxy is a big place."
+bar "Promise me something."
+bar "Never forget who you are."
+bar "I've seen good kids like you become monsters."
+c "..."
+c "I promise."
+bar "Something tells me the galaxy will be hearing about you one day."
+c "I'll do my best."
+c "Thank you."
+c "For everything."
+bar "Farewell, Collins."
+
+*Cut to ship*
+
+g "Well, look who's back!"
+p "Your boss let you go, huh?"
+c "Yeah."
+c "He's a good man."
+p "Good. I was worried about losing that gem for good."
+g "You've got potential, kid. You shouldn't waste it here."
+p "Potential, and a power gem."
+g "That too."
+? "Excuse me."
+*They turn to face a blond man in a suit in his thirties*
+? "Collins?"
+g "Who are you?"
+p "How did you find us?"
+? "Apologies."
+f "My name is Fiber. I am the president of the West Republic."
+g "Hah!"
+g "We don't have time for jokes."
+f "No jokes. I'll link my credentials."
+p "..."
+p "Those are... impressive credentials."
+f "I am an artificial super-intelligence."
+f "This is one of my shells."
+g "Oh..."
+g "I'll never get used to these things looking human."
+f "I have reason to believe you have a lead on a power gem?"
+p "You're too late."
+g "Yeah. Collins absorbed it."
+f "Oh?"
+f "..."
+f "I have a proposition."
+p "..."
+g "You think we want to be government dogs?"
+p "What are you offering?"
+f "Leads. Full price for any gem you find."
+*Phoebe and Gordon share a glance*
+p "Why are you after power gems?"
+*Fiber looks surprised for a moment, then his face darkens*
+f "The galaxy is a dark place."
+f "Murder. Exploitation. Slavery."
+f "Very few places are truly safe."
+c "!"
+f "The West Republic, though imperfect, is one of those places."
+c "That's true."
+g "..."
+c "I grew up here. I've never feared pirates once."
+f "I wish to make the people of this nation-state, and the galaxy, feel safe."
+f "This is one avenue I'm pursuing."
+p "I feel like there's a catch."
+f "Only one catch."
+*A cheery blue haired girl approaches.*
+f "This is Rey."
+p "You want us to take a robo with us."
+f "Rey is my interface with your crew."
+f "With her aboard, you get leads."
+g "It. With *it* aboard."
+f "I feel the personality makes her more hospitable."
+g "Hmph."
+p "Why not just send us a link?"
+f "Rey processes information for me in real time - and can act on my behalf."
+f "You may not always be able to contact me."
+f "Rey ensures I can still reach you."
+p "..."
+p "How good are these leads?"
+*Fiber smiles.*
+f "I have great confidence in you."
+f "Finding a power gem is quite rare."
+f "Much rarer..."
+f "Is absorbing one."
+p "We'll give it a try."
+g "Oi, Phoebe..."
+f "That's all I ask."
+f "If you change your mind, simply drop Rey off on any inhabited planet."
+f "Best of luck."
+f "..."
+f "Collins."
+f "Use your power wisely."
+*He walks off*
+g "Phoebe! You're not letting a robo onto the ship, are you??"
+p "In fact I am."
+p "This may be the greatest opportunity we've ever gotten."
+g "You don't really trust that AI creep?"
+p "Hey, Rey."
+r "Yes!! Rey here!"
+p "Let's go. On the ship."
+g "Ugh!"
+*As Rey passes Collins*
+r "You're Collins?"
+r "Cooollins?"
+c "Er, yes?"
+r "What an unusual name! That's so cool!"
+c "It's my last name."
+r "Ohhh!"
+r "I don't have a last name!"
+c "Okay?"
+*On the ship, in the living quarters, the shared living space*
+g "Now listen here, robo."
+r "Listening!"
+g "You go here. No bedroom."
+r "Aye-aye! I go here!"
+*She squats on the floor*
+g "Whatever."
+c "Hey, don't you have any other personalities?"
+c "This one's a little..."
+*She pops up*
+r "Of course!"
+r "I am programmed with a full range of emotions!"
+r "Here's angry."
+*Pouty face*
+c "Um. Wow. That's great."
+g "Don't patronize the thing, Collins."
+p "If you're done playing with your new toy, we need to figure out where we're going to go."
+r "Right!"
+r "The first lead is in the Mumbrux system!"
+*Gordon and Phoebe both have an uh-oh face*
+g "The, uh, Mumbrux system?"
+r "That's right!"
+p "That's all we've got?"
+r "That's the current mission!"
+c "Is something wrong with Mumbrux?"
+p "Nope!"
+g "Perfectly good system! Great people, once you get to know them!"
+c "So we're going to go?"
+g "We're kind of committed now, aren't we Phoebe?"
+p "Shut up."
+g "..."
+g "Let me show you to your room, kid."
+
+*Let the player walk around the ship before deciding to talk to Gordon outside Collins room.*
+
+*When interacting with Rey or Phoebe:*
+r "Crew member Collins spotted!"
+
+p "I'm busy."
+
+g "This is it."
+g "Nothing fancy, but the wall goes transparent. Great view."
+g "You seem the type to like that kind of thing."
+c "Thanks."
+g "..."
+g "First time on a crew?"
+g "I'll add you to the crew group. Sync your neuro-lace."
+g "You can see our holos. And we can see yours."
+g "I'd be lying if I wasn't curious how you decorate your room."
+g "Says a lot about a man."
+c "Added. I'll show you."
+*A single, modest picture of Collins' parents appears on the wall.*
+g "..."
+*Gordon smiles.* 
+g "Very good."
+g "I can tell they were good people. They raised a good kid."
+c "They..."
+c "Thanks, Gordon."
+g "I'll let you settle in. Now that we're in orbit, should be a couple hours to Mumbrux."
+g "You'll have access to the ship's travel time. All that information."
+c "Got it."
+*Gordon leaves.*
+*Collins looks around. Smiles. Sits down on the bed and makes the wall transparent. A progress bar of the journey appears.*
+
+*Indiana Jones style progression showing the progress of the journey. Splice in Rey crouched down*
+
+*in RPG style they exit the ship into a wild west style town.*
+*Phoebe looks at Rey*
+
+p "Nuh-uh. You stay on the ship."
+r "Okey-dokey!"
+r "..."
+r "Um... I'm locked out."
+p "I'll give you limited access."
+g "*Very* limited."
+p "You'll be able to unlock the door and turn on the kettle."
+r "Yayy~"
+r "Tea time??"
+p "I've revoked your kettle access."
+r "Oh..."
+*Rey enters the ship*
+p "Blend in. Ask questions."
+p "Don't be too pushy. People get strange around gems."
+g "Right. I'll check the bar."
+p "Gordon..."
+p "You just want to drink."
+g "Cost of doing business."
+g "You know as well as I do bars are where people are most likely to talk."
+p "I know and I hate it."
+*Gordon walks off screen*
+c "What do you want me to do?"
+p "Practice your people skills."
+p "Link us if you find out anything."
+p "Good luck."
+*Phoebe walks off screen.*
+
+*Player can now walk around town and talk to locals. It's a small town with a limited amount of NPCs.*
+*Player can now link Phoebe, Rey and Gordon. This opens remote dialogue with them:*
+r "Heyy!!"
+r "Collins, right?"
+r "It must be hot out there. I wouldn't know."
+r "My temperature readings aren't connected to my emotions!"
+r "Say, we're gonna be crew-mates."
+r "Why don't you stop by the ship and we'll get to know each other!"
+Phoebe:
+p "Any luck?"
+p "No?"
+p "Just wanted to chat?"
+p "How about you chat with the locals instead."
+p "I'm busy."
+Gordon:
+g "Hey buddy!"
+g "Man, this town is great!"
+g "You wouldn't believe the price of beer here."
+g "Have I found anything?"
+g "Come on, these things take finesse. You can't rush it."
+g "Swing by the bar once you're done out there. I'll treat you."
+
+
+*Key NPC dialogue*
+1: (woman)
+"Hey sweetie."
+"Welcome to Mumbrux."
+"It's not often we see off-worlders."
+"I'd offer you a meal, but..."
+"We barely have enough for ourselves."
+"Sorry. Come back again when things are better."
+"Power gem?"
+"Wh-Why would you ask something like that?"
+"Ask someone else! I don't want to bring those monsters here!"
+2: (man)
+"Ha! Look at you."
+"You've even got the robes."
+"Once, I wanted to be like you."
+"I dreamed of traveling to different worlds, crossing swords with pirates."
+"Got a wife and kid now."
+"Different kind of adventure."
+"What? You're asking about a power gem?"
+"..."
+"You're a star runner."
+"I was just starting to like you."
+"Don't go bringing those things here."
+"I should have known. Outsiders only bring trouble."
+3: (woman)
+"Oh, hello."
+"Did you just arrive?"
+"Funny place to pick for a pit-stop. We don't see off-worlders too often."
+"Make yourself at home. Mumbrux prides itself on its hospitality."
+"Huh? You want to know about a power gem?"
+"...Yeah. There's one around."
+"Not on Mumbrux though. Elsewhere in the sector."
+"It's known as the Red Stone."
+"For good reasons, if you ask me."
+"You're better off forgetting about it."
+"That thing is bad news, you hear?"
+"It's... well guarded."
+
+*There are a few NPC's who say shorter, non-gem related lines.*
+
+*If the player returns to the ship:*
+
+*Rey is staring intensely at the kettle.*
+c "Er... Am I interrupting something?"
+r "'I've revoked your kettle access.'"
+c "What?"
+r "This kettle does not seem to have voice recognition!"
+c "It does."
+c "You just sounded nothing like her."
+r "That was all my programming allows..."
+c "Why do you want to use the kettle so bad?"
+r "Seems fun."
+c "...Can you fight?"
+r "Android combat capabilities are quite advanced."
+r "I can hold my own in most fights."
+r "However, neuro-lace enhancements put the skills of a competent human fighter at or above my own."
+r "Let's have a duel some time! It should provide for adequate practice!"
+c "A duel. That sounds nice."
+r "I take it you are as new to this crew as I am?"
+c "Yeah. This is my first time off-world."
+r "Mine too!!"
+r "Isn't it exciting?!"
+c "Yeah. It kind of is."
+r "You're like a proper star runner now!"
+c "Heh. If you say so."
+
+
+*The player ends exploration by going to the bar and talking to Gordon*
+g "You done out there?"
+no:
+g "Keep looking. I'll be here when you're finished."
+*if player hasn't talked to at least one valuable npc then automatic no*
+yes:
+g "Good. Let me buy you a drink."
+c "Gordon, I'm not of age."
+g "Of age?"
+g "You think anyone cares about that?"
+g "There's no such thing in this galaxy."
+c "My home world cared."
+g "This isn't your home world."
+g "How old are you, sixteen?"
+c "..."
+c "I'm eighteen."
+g "Right. Gotcha."
+g "Bartender! This kid is eighteen. Can he drink here?"
+bar "What do I care?"
+g "See? Have a beer. If you're eighteen you're a man."
+c "I, uh..."
+bar "Same thing you're drinking?"
+g "Yessir!"
+bar "Right away."
+*hands him a beer*
+*Collins takes a sip.*
+c "Gross."
+g "Right?? Isn't it great?"
+c "Have you found out anything about the power gem?"
+g "Power gem? What power gem?"
+c "..."
+g "Just pulling your leg."
+g "Bartender! You know any rumors about a power gem around here?"
+bar "No rumors."
+g "Come on. We're friends, aren't we?"
+bar "The Blood Gem is a fact."
+g "..."
+bar "I can tell you're star runners. Let me give you some friendly advice."
+bar "Go chase some other treasure. You don't want to mess with the Blood Gem."
+c "What's so dangerous about this thing?"
+g "Yeah. With such a welcoming name, too."
+bar "I'm just trying to save your lives."
+bar "Trust me. Give up."
+*A burly man sat next to Gordon speaks up. Switch to anime art*
+? "You want the Blood Gem?"
+? "I can tell you where it is."
+bar "Richard--!"
+g "You'll do that? Now we're talking."
+g "Come on, let me buy you a drink."
+ri "You're star runners, are you?"
+g "That's right. We just got a big find, too."
+g "Whatever this Blood Gem is, we can handle it."
+ri "Impressive. Not many can handle the Blood Gem."
+g "You don't seem local. You an adventurer as well?"
+ri "Something like that."
+ri "Bounty hunter."
+*Comical shot of Gordon's sweating face. Richard leans in.*
+ri "I find... unsavory characters and bring them to justice."
+ri "Some bounties want 'em alive."
+ri "Others don't care."
+ri "What did that kid call you? Gordon?"
+ri "Would that be... Gordon Titan?"
+g "Welp!!"
+g "Thanks for the drinks, bartender, I think it's time I settle my tab!!"
+*Richard grabs Gordon by the collar*
+ri "I believe you were about to buy me a drink."
+g "Some other time, maybe. Gotta get going, you know?"
+c "Gordon, do you have a bounty??"
+g "Look, we ran into some trouble, things went south..."
+g "You know how it goes!"
+c "Did you kill anyone?!"
+g "What?? No!"
+g "Just stole some goods."
+g "Er... Allegedly."
+ri "I'll make you a deal, Gordon Titan."
+ri "Let's take this outside."
+ri "Beat me in a duel. You win, I tell you what I know about the Blood Gem."
+ri "I win..."
+g "H-Hey, I..."
+*Looks at Collins... gets a sly expression*
+g "Is it still galaxy standard to offer a substitute?"
+c "Gordon?"
+ri "You want the kid to fight for you?"
+g "He's stronger than he looks."
+g "If you win, I'll come quietly. Promise."
+ri "Hmm..."
+*He lets Gordon go*
+c "What are you doing?"
+*quietly*
+g "It's not a problem. He doesn't know you're a gem holder."
+g "You'll wipe the floor with this guy, trust me."
+g "You're good at wiping floors, aren't you?"
+c "I've only fought practice duels!"
+c "This is for real!"
+*Gordon looks at Richard*
+g "On stun, right?"
+ri "Of course. He doesn't have a bounty."
+ri "That I'm aware of..."
+g "Trust me, he doesn't."
+g "..."
+g "Right?"
+c "I don't have a bounty!"
+g "Of course you don't."
+g "Don't worry about it. No pressure. Whatever happens, happens."
+g "But..."
+g "Don't lose. Lot at stake here."
+
+*Cut to town street, crowd surrounding them, Richard and Collins facing of*
+
+p "What's going on?"
+g "Shh! Get out of here!"
+p "What?"
+g "Bounty. Hunter. Get out of here!"
+p "Why is Collins fighting him, then?!"
+g "Trust me. It's better this way."
+ri "Stun only. Three clean hits end it."
+ri "Unless, of course, you face a larger opponent..."
+ri "Those are the rules. Agreed?"
+c "A-Agreed."
+*flashback:
+g "He won't see your powers coming.
+g "Save them for the right moment..."*
+ri "Ready?"
+*Player duels. Losing restarts the duel. When player wins:*
+g "Now!!"
+*Collins uses his powers to pull Richards sword from his hand. Show Richard's shock. Richard shoots at Collins as Collins charges, which is blocked, and Collins delivers a final blow.*
+*Richard falls to his knees.*
+g "Yes!!"
+c "I--"
+c "I won!"
+g "And I had complete faith in you!"
+p "Sure you did."
+c "I-I can't believe..."
+c "I actually--!"
+ri "Hey."
+*Richard is standing again, holding his pistol to Collins head.*
+ri "Bang."
+c "Huh...?"
+ri "Well fought. You're skilled."
+ri "Even without your gem powers."
+c "Thanks..."
+villager "Black Rose pirates!"
+p "Black Rose? Who's that?"
+ri "Robo pirates."
+g "Those things again?!"
+p "Do you think they followed us?"
+ri "The Black Rose pirates don't have a cause to take a town this small."
+ri "If you've had a run-in with them recently, they're probably here for you."
+c "Why would they be after us?"
+ri "Their hunger for crystals is insatiable."
+ri "We're far outside their territory."
+ri "My guess is..."
+ri "They're after that power gem you absorbed."
+ri "You ready to put those powers to use, boy?"
+
+*Cut to fighting multiple robos while Richard guides on how to use the powers.*
+ri "Your body knows what to do."
+ri "Command it."
+ri "The gem obeys certainty."
+ri "Your abilities are telekinetic. So think of what you can do with that."
+ri "Push. Pull. Move objects to your advantage."
+ri "Good."
+
+*Robos defeated. Collins and Richard stand together.*
+ri "You're good."
+c "Thanks..."
+ri "God is with you."
+c "..."
+c "If He is, He's late."
+ri "..."
+ri "You've seen things, haven't you?"
+c "I don't want to talk about it."
+g "Did you see that??"
+p "That was a heavy wave. But I think the three of us handled it."
+r "The four of us!!"
+p "Rey... I thought I told you to stay on the ship."
+r "Imminent danger overrode previous instructions."
+r "I came out to help!"
+g "Heh. Robo on robo."
+g "You sure you weren't pulling your punches?"
+r "Twelve androids confirmed down."
+r "Structural damage, zero."
+p "Twelve?"
+g "Th-That's nothing. I must've taken out at least that many!"
+p "Yeah, well..."
+p "I didn't."
+p "Good job, Rey. You might be kind of handy."
+r "Happy to be of service to my loyal crew!!"
+? "Excuse me."
+g "What's up? Who are you?"
+m "I am the mayor of this humble town."
+m "You've done us a great service."
+c "Not really. We're the ones--"
+p "Shut up."
+p "We just did what any passerby would do."
+m "A bit more than that I'd say."
+m "We have little left, but what we have is yours."
+m "But please stay the night with us. We'd like to hold a party in your honor and provide a modest meal."
+g "Modest meal, you say?"
+g "Will there be modest booze?"
+m "That is up to our local barkeep."
+m "But I'm sure he'd be happy to provide a couple drinks."
+g "Now we're talking."
+
+*Cut to night. Party in the streets. Collins stands alone.*
+*He notices a blond woman wearing robes staring at him.*
+*She steps into an alley. Collins follows her.*
+*Elle faces Collins and draws her weapons.*
+*Richard is behind Collins.*
+
+ri "Careful, son."
+*Show Elle brushing her hair back, her lips parted to show fangs.*
+ri "She's a vampire."
+ri "She traded her humanity for eternal life."
+? "You seek the Blood Gem."
+? "If you cannot defeat me..."
+? "You have no hope of claiming it."
+ri "What will you do, Collins?"
+c "I will bring her to justice."
+*Collins draws his weapons.*
+c "I will be the one to cut you down, vampire."
+ri "..."
+? "Enough talk."
+
+*Fight starts. First hit on the player:
+c "What? She's using stun?"
+Next hit
+c "Fight seriously!"
+Player scripted loss. Collins falls back.*
+c "She cut me..."
+c "I'm bleeding."
+*Closeup of Elle's face, disgusted*
+e "I won't drink."
+c "..."
+*Richard steps between them.*
+
+ri "Enough. "
+c "What are you doing?!"
+ri "You were about to lose."
+c "I would have had her..."
+? "So you have absorbed a gem."
+? "Take this as a warning."
+? "Forget the Blood Gem."
+*She runs off*
+ri "Curious..."
+ri "A merciful vampire."
+ri "This galaxy holds many mysteries."
+c "..."
+ri "This power of yours..."
+ri "You've been given a gift."
+ri "You need discipline."
+ri "Train it like your blade."
+c "..."
+ri "Come. It is time I tell you about the Blood Gem."
+
+*transition to the crew in the street.*
+g "Hey, where'd you go, Collins?"
+g "This town is great!"
+g "Good people. Solid people."
+g "The best people!"
+p "I find it's best to just ignore him when he drinks."
+c "I'm gathering that."
+r "I like it!"
+r "He seems much nicer to me like this."
+g "You know, I think I was wrong about this thing."
+g "Not too bad! Not too bad!"
+ri "It's time for me to hold my end of the deal."
+ri "The Blood Gem."
+*Music changes.*
+g "..."
+g "Alright."
+ri "There is a race known as the vampire."
+ri "Created by the Blood Gem, they are its keepers."
+p "Wait, vampires?"
+g "Are these guys pirates?"
+ri "I don't think you could call them pirates. But they're just as dangerous."
+ri "Their treasure is blood. They plunder humans like pirates plunder crystals."
+r "This is scary..."
+c "They... plunder humans?"
+ri "This is a bloody sector, Collins."
+g "I don't know about this..."
+p "I agree. I was expecting to hit some ruins and call it a day."
+g "Yeah. Maybe this juice isn't worth the squeeze."
+r "Um!"
+r "I have an estimate for the reward for the Blood Gem."
+r "I'll link it."
+g and p "..."
+p "So where do we find these vampires?"
+g "Yeah, what are we worried about?"
+g "We've got a gem holder on the crew!"
+ri "Don't go in blind."
+ri "Capture one. Get information."
+ri "I'll help you secure a bounty."
+c "You'll be coming with us?"
+ri "I'll follow in my ship."
+ri "I want to see the Blood Gem restored."
+ri "You'd be doing a service to the galaxy."
+*music reverts*
+g "Alright, but you're not one of the crew, got it?"
+g "We've got enough additional members as it is."
+r "Yeah! I'm a crew member now, too!"
+g "Well..."
+g "We just got Collins at least."
+ri "Enjoy your party. We leave in the morning."
+*Faces Collins*
+ri "Develop your powers. You'll need them."
+c "I..."
+c "I know what I have to do."
+ri "Hm."
+*Walks off.*
+c "I need sleep."
+g "Alright, alright."
+p "Goodnight, Collins."
+r "Night!!"
+
+*In his room*
+c "Mom... Dad..."
+c "I think I made some friends."
+c "You would've liked them."
+c "..."
+c "I'm a star runner now."
+c "That's what I've always wanted."
+c "..."
+c "So much evil... and He stays silent."
+c "There are people who deserve Hell."
+c "If God won't send them there..."
+c "I will."
+*looks at picture*
+c "..."
+c "I hope you'd still be proud of me."
+
+*Three men restrained and kneeling. A robed figure in front of them. Show his gun in hand. Show his smile with blue cat eyes.*
+
+? "Your world has hidden itself well."
+Man1 "We'd rather die." 
+*Artensa shoots him.* 
+? "One of you will give me the coordinates."
+Man2 "One day."
+Man2 "One day you will die."
+Man2 "And you will go to Hell."
+*Show smile*
+? "I know."
+*Shoots him. He approaches man 3, who is visibly shaken*
+? "What kind of man are you?" 
+Man3 "I-I'll give you what you want." 
+*Artensa's smile flickers*
+? "Good."
+Man3 "1.38--"
+*He shoots him, smiling.*
+*He looks at the body for a moment.*
+? "Navigator."
+n "Yes, captain Artensa?"
+*Closeup of face, pupils are dilated*
+a "Set course for coordinates 1.38(full coordinates)."
+
+*credits*
