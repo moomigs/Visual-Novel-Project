@@ -292,7 +292,7 @@ function next_line() {
 					next_line();	
 				}
 			} else {
-				show_error("Unable to interpret... "+lines[current_line], true);
+				show_error(" \n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\tUnable to interpret... \n\t"+lines[current_line]+"\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n ", true);
 			}
 		}
 	}

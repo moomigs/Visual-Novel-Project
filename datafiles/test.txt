@@ -35,7 +35,7 @@ set_alpha Collins 100 0.1
 set_sprite Collins spr_collins_1
 set_position Collins 0 0
 
-pause 1.5
+pause 1
 
 slide Collins 0 0.1
 set_face Collins spr_collins_face_1
@@ -88,6 +88,7 @@ c Anyway, let me show you around.
 
 pause 0.25
 set_alpha Collins 0 0.1
+textbox false
 pause 1
 
 goto_room Room_RPGTest

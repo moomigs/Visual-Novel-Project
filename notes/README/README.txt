@@ -7,6 +7,7 @@ dissolve <bg_sprite> <seconds>
 textbox <true/false>
 text_speed <frames per letter>
 autoskip <seconds>
+pause (seconds)
 
 new_title <id> <text>
 title_setpos <id> <x> <y>
@@ -29,7 +30,6 @@ set_face <character_name> <sprite>
 set_alpha <character_name> <alpha 0-1> <interp>
 slide <character_name> <x> <y>
 
-pause <seconds>
 goto_room <room>
 
 node <int>
