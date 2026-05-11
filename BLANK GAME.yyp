@@ -21,7 +21,6 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"lines.txt","CopyToMask":-1,"filePath":"datafiles","name":"lines.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"test.txt","CopyToMask":-1,"filePath":"datafiles","name":"test.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
@@ -34,7 +33,8 @@
     {"id":{"name":"font_dialogue","path":"fonts/font_dialogue/font_dialogue.yy",},},
     {"id":{"name":"Obj_Character","path":"objects/Obj_Character/Obj_Character.yy",},},
     {"id":{"name":"Obj_DialogueMaster","path":"objects/Obj_DialogueMaster/Obj_DialogueMaster.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room_Dialogue","path":"rooms/Room_Dialogue/Room_Dialogue.yy",},},
+    {"id":{"name":"Room_Gametest","path":"rooms/Room_Gametest/Room_Gametest.yy",},},
     {"id":{"name":"spr_bg_eddie","path":"sprites/spr_bg_eddie/spr_bg_eddie.yy",},},
     {"id":{"name":"spr_bg_space","path":"sprites/spr_bg_space/spr_bg_space.yy",},},
     {"id":{"name":"spr_collins_1","path":"sprites/spr_collins_1/spr_collins_1.yy",},},
@@ -45,7 +45,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room_Dialogue","path":"rooms/Room_Dialogue/Room_Dialogue.yy",},},
+    {"roomId":{"name":"Room_Gametest","path":"rooms/Room_Gametest/Room_Gametest.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

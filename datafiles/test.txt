@@ -4,7 +4,7 @@ name ? ???
 
 dissolve spr_bg_space 2
 
-? Welcome to my special little video game.
+? Welcome to my special little video game
 
 new_character Collins
 set_alpha Collins 100 0.1
@@ -39,5 +39,8 @@ pause 1.5
 
 c I'm so sick of that guy.
 
+pause 0.5
+set_alpha Collins 0 0.1
 pause 1
-set_alpha Collins 0 0.01
+
+goto_room Room_Gametest

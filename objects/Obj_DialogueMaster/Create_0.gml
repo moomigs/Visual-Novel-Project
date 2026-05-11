@@ -3,6 +3,7 @@ display_final = "";
 display = "";
 display_name = "";
 
+working = false;
 paused = false;
 
 background = noone;
@@ -36,6 +37,7 @@ function next_line() {
 		display = display_final;
 		return;
 	}
+	working = false;
 	current_line ++;
 	show_debug_message(current_line);
 	if array_length(lines) <= current_line {
@@ -47,6 +49,7 @@ function next_line() {
 		display_name = "";
 		var arguments = string_split(lines[current_line], " ")
 		var command = arguments[0]
+		working = true;
 		if lines[current_line] == "" {
 			//blank line
 			next_line();
@@ -89,8 +92,9 @@ function next_line() {
 			next_line();
 		} else if command == "name" {
 			var arg1 = arguments[1];
-			var arg2 = arguments[2];
-			names[$ arg1] = arg2;
+			var name = string_copy(lines[current_line], string_length(command)+1+string_length(arg1)+2, 100);
+			//var arg2 = arguments[2];
+			names[$ arg1] = name;
 			
 			next_line();
 		} else if command == "new_character" {
@@ -149,22 +153,27 @@ function next_line() {
 			
 			next_line();
 		} else if command == "pause" {
-			if array_length(arguments)>1 and real(arguments[1]) {
+			if array_length(arguments)>1 and real(arguments[1]) != 0 {
 				paused = true;
 				alarm_set(0, real(arguments[1])*fps);
 			}
+		} else if command == "goto_room" {
+			room_goto(asset_get_index(arguments[1]));
 		} else if command == "#" {
 			//nothing
 			next_line();
 		} else {
+			working = false;
 			if is_string(names[$ command]) {
 				//only display these lines
 				display_name = names[$ command];
-				cmd_length = string_length(command)+2;
-				display_final = string_copy(lines[current_line], cmd_length, string_length(lines[current_line])-cmd_length);
+				cmd_length = string_length(command)+1;
+				display_final = string_copy(lines[current_line], cmd_length+1, string_length(lines[current_line])-cmd_length);
 			} else {
 				show_error("Unable to interpret... "+lines[current_line], true);
 			}
 		}
 	}
 }
+
+alarm_set(0, 60);
