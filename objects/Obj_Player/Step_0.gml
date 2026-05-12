@@ -48,4 +48,10 @@ if velocity_x == 0 and velocity_y == 0 {
 	}
 }
 
+var real_speed = point_distance(0, 0, velocity_x, velocity_y);
+if real_speed > move_speed {
+	velocity_x *= 1;//(move_speed/real_speed);
+	velocity_y *= 1;//(move_speed/real_speed);
+}
+
 move_and_collide(velocity_x, velocity_y, Obj_Solid);

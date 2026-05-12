@@ -2,7 +2,7 @@ name c Collins
 name g Gordon
 name ? ???
 
-# skipto 1
+skipto 1
 
 autoskip 2
 textbox false
@@ -64,8 +64,6 @@ slide Collins 0.5 0
 
 pause 1.5
 
-node 1
-
 textbox true
 
 g I am Gordon.
@@ -84,6 +82,8 @@ c My mom always makes me hang out with him.
 c I was the original Gooble brother before he was here.
 slide Collins 0 0
 set_face Collins default
+
+node 1
 c Anyway, let me show you around.
 
 pause 0.25
