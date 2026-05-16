@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Solid",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obj_ClownNose",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_Solid",
+  "name":"Obj_ClownNose",
   "overriddenProperties":[],
   "parent":{
-    "name":"RPG",
-    "path":"folders/Objects/RPG.yy",
+    "name":"Misc",
+    "path":"folders/Objects/RPG/Misc.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_Solid",
+    "path":"objects/Obj_Solid/Obj_Solid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +29,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":null,
+  "solid":false,
+  "spriteId":{
+    "name":"spr_clownnose",
+    "path":"sprites/spr_clownnose/spr_clownnose.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

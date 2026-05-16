@@ -19,3 +19,5 @@ if file_name != "" {
 instance_create_depth(room_width/2, textbox_y + sprite_get_height(spr_dialoguebox) + padding/3, 1, Obj_MenuSettings);
 
 alarm_set(0, 1);
+
+active = true;

@@ -5,11 +5,17 @@ display = "";
 display_name = "";
 textbox_visible = false;
 
+default_width = 1280;
+default_height = 720;
+active_camera = camera_get_active();
+//used for scaling character sprites appropriately, when camera views change size
+
 auto_skip = -1;
 
 frame_count = 0;
 text_speed = 1;
 
+active = false;
 working = false;
 paused = false;
 skippingto = -1;
@@ -39,6 +45,7 @@ function next_line() {
 		show_debug_message("EOF");
 		instance_destroy();
 	} else {
+		lines[current_line] = string_trim_start(lines[current_line]);
 		show_debug_message(string(current_line) + " " + lines[current_line]);
 		display_final = "";
 		display = "";
@@ -71,7 +78,6 @@ function next_line() {
 			var back_top = layer_background_get_id(lay_top);
 			var back_bottom = layer_background_get_id(lay_bottom);
 			
-			show_debug_message(layer_background_get_sprite(back_top) == -1);
 			if layer_background_get_sprite(back_top) != -1 {
 				layer_background_alpha(back_bottom, 1);
 				layer_background_blend(back_bottom, c_white);
@@ -82,7 +88,7 @@ function next_line() {
 			layer_background_blend(back_top, c_white);
 			layer_background_sprite(back_top, bg);
 			
-			background_dissolving_final = arg_time*fps;
+			background_dissolving_final = arg_time*game_get_speed(gamespeed_fps);
 			background_dissolving = 0;
 		
 			next_line();
@@ -114,7 +120,6 @@ function next_line() {
 			
 			var new_title = instance_create_depth(0, 0, 1, Obj_TitleText);
 			new_title.text = text;
-			show_debug_message("Created new title with text: " + text);
 			titles[$ arg] = new_title;
 			
 			next_line();
@@ -199,7 +204,7 @@ function next_line() {
 			next_line();
 		} else if command == "new_character" {
 			var arg = arguments[1];
-			var new_character = instance_create_depth(room_width/2, room_height/2, 0, Obj_Character);
+			var new_character = instance_create_depth(room_width/2, room_height/2, -1, Obj_Character);
 			characters[$ arg] = new_character;
 			
 			next_line();
@@ -209,15 +214,24 @@ function next_line() {
 			var character = characters[$ arg1];
 			character.sprite_index = asset_get_index(arg2);
 			
+			var camera = view_camera[0];
+			
+			character.image_xscale = camera_get_view_width(camera) / default_width;
+			character.image_yscale = camera_get_view_height(camera) / default_height;
+			
 			next_line();
 		} else if command == "set_position" {
 			var arg1 = arguments[1];
 			var arg_x = real(arguments[2]);
 			var arg_y = real(arguments[3]);
 			
+			var camera = view_camera[0];
+			var view_width = camera_get_view_width(camera);
+			var view_height = camera_get_view_height(camera);
+			
 			var character = characters[$ arg1];
-			character.x = room_width/2 + arg_x*room_width/2;
-			character.y = room_height/2 - arg_y*room_height/2;
+			character.x = camera_get_view_x(camera) + (view_width/2 + arg_x*view_width/2);
+			character.y = camera_get_view_y(camera) + (view_height/2 - arg_y*view_height/2);
 			character.slide_x = character.x;
 			character.slide_y = character.y;
 			
@@ -248,8 +262,13 @@ function next_line() {
 			var arg_x = real(arguments[2]);
 			var arg_y = real(arguments[3]);
 			var character = characters[$ arg1];
-			character.slide_x = room_width/2 + arg_x*room_width/2;
-			character.slide_y = room_height/2 - arg_y*room_height/2;
+			
+			var camera = view_camera[0];
+			var view_width = camera_get_view_width(camera);
+			var view_height = camera_get_view_height(camera);
+			
+			character.slide_x = camera_get_view_x(camera) + (view_width/2 + arg_x*view_width/2);
+			character.slide_y = camera_get_view_y(camera) + (view_height/2 - arg_y*view_height/2);
 			
 			next_line();
 		} else if command == "pause" {
@@ -258,7 +277,7 @@ function next_line() {
 			} else {
 				if array_length(arguments)>1 and real(arguments[1]) != 0 {
 					paused = true;
-					alarm_set(0, real(arguments[1])*fps);
+					alarm_set(0, real(arguments[1])*game_get_speed(gamespeed_fps));
 				}
 			}
 		} else if command == "goto_room" {
@@ -280,12 +299,21 @@ function next_line() {
 		} else if command == "#" or string_copy(command,0,1)=="#" {
 			//nothing
 			next_line();
+		} else if command == "call" {
+			//function
+			var arg = arguments[1];
+			variable_global_get(arg)();
+			next_line();
 		} else {
 			working = false;
-			if is_string(names[$ command]) {
+			if is_string(names[$ command]) or command == "say" {
 				if skippingto == -1 {
 					//only display these lines
-					display_name = names[$ command];
+					if command == "say" {
+						display_name = "";
+					} else {
+						display_name = names[$ command];
+					}
 					cmd_length = string_length(command)+1;
 					display_final = string_copy(lines[current_line], cmd_length+1, string_length(lines[current_line])-cmd_length);
 				} else {
@@ -295,13 +323,20 @@ function next_line() {
 				show_error(" \n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\tUnable to interpret... \n\t"+lines[current_line]+"\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n ", true);
 			}
 		}
-	}
+
++	}
 }
 
 function input() {
-	if !paused and !working {
+	if active and !paused and !working {
 		next_line();
 	}
 }
 
-alarm_set(1, 60);
+function go() {
+	if instance_exists(Obj_Player) {
+		Obj_Player.freeze = true;
+	}
+	alarm_set(1, 10);
+	alarm_set(2, 60);
+}

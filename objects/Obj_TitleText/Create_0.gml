@@ -14,5 +14,5 @@ function fade_in() {
 }
 function fade_out() {
 	fade = -1;
-	alarm_set(0, fade_time*fps +1);
+	alarm_set(0, fade_time*game_get_speed(gamespeed_fps) +1);
 }

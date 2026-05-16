@@ -8,7 +8,7 @@ if current_line != -1 {
 			if line == display {
 				if auto_skip != -1 {
 					paused = true;
-					alarm_set(0, auto_skip*fps);
+					alarm_set(0, auto_skip*game_get_speed(gamespeed_fps));
 				}
 			}
 		}

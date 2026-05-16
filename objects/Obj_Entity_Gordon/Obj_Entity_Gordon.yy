@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Solid",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obj_Entity_Gordon",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_Solid",
+  "name":"Obj_Entity_Gordon",
   "overriddenProperties":[],
   "parent":{
     "name":"RPG",
     "path":"folders/Objects/RPG.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_Solid",
+    "path":"objects/Obj_Solid/Obj_Solid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +29,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":null,
+  "solid":false,
+  "spriteId":{
+    "name":"spr_entity_Gordon",
+    "path":"sprites/spr_entity_Gordon/spr_entity_Gordon.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
