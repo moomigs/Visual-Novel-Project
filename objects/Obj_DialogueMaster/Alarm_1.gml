@@ -16,7 +16,24 @@ if file_name != "" {
 	lines = string_split_ext(dialogue_code, _delimiters);
 }
 
-instance_create_depth(room_width/2, textbox_y + sprite_get_height(spr_dialoguebox) + padding/3, 1, Obj_MenuSettings);
+view_width = display_get_gui_width();
+view_height = display_get_gui_height();
+
+array_push(buttons,
+	instance_create_depth(
+		view_width/2,
+		view_height - sprite_get_height(spr_menubutton) - 3,
+		1, Obj_MenuButton));
+array_push(buttons,
+	instance_create_depth(
+	view_width/2 - sprite_get_width(spr_menubutton) - padding/3,
+	view_height - sprite_get_height(spr_menubutton) - 3,
+	1, Obj_HistoryButton));
+array_push(buttons,
+	instance_create_depth(
+	view_width/2 + sprite_get_width(spr_menubutton) + padding/3,
+	view_height - sprite_get_height(spr_menubutton) - 3,
+	1, Obj_SkipButton));
 
 alarm_set(0, 1);
 

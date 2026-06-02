@@ -5,8 +5,8 @@
 fade = 0;
 
 function set_position(_x, _y) {
-	x = room_width/2 + _x*room_width/2;
-	y = room_height/2 - _y*room_height/2;
+	x = display_get_gui_width()/2 + _x*display_get_gui_width()/2;
+	y = display_get_gui_height()/2 - _y*display_get_gui_height()/2;
 }
 
 function fade_in() {

@@ -8,7 +8,9 @@ struct_foreach(characters, function (name, character) {
 } );
 
 if variable_instance_exists(self, "ended") {
-	self.ended();	
+	self.ended();
 }
 
-instance_destroy(Obj_MenuSettings);
+instance_destroy(Obj_MenuButton);
+instance_destroy(Obj_HistoryButton);
+instance_destroy(Obj_SkipButton);

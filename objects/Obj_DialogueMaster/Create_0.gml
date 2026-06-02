@@ -4,11 +4,17 @@ display_final = "";
 display = "";
 display_name = "";
 textbox_visible = false;
+history = [];
 
-default_width = 1280;
-default_height = 720;
-active_camera = camera_get_active();
-//used for scaling character sprites appropriately, when camera views change size
+// italics
+// name colors
+
+// choice selection
+// text box input
+// variables/ global variables
+// run script
+
+// menu function?
 
 auto_skip = -1;
 
@@ -27,12 +33,9 @@ background_dissolving_final = 0;
 titles = {};
 characters = {};
 names = {};
+buttons = [];
 
 padding = 20;
-textbox_x = room_width / 2 - sprite_get_width(spr_dialoguebox) / 2;
-textbox_y = room_height - sprite_get_height(spr_dialoguebox) - padding*2;
-
-// Main centered "starwars" text
 
 function next_line() {
 	if display != display_final {
@@ -157,13 +160,27 @@ function next_line() {
 		} else if command == "play_sound" {
 			var arg = arguments[1];
 			var sound = asset_get_index(arg);
+			var fade = 0;
+			if array_length(arguments)>2 {
+				fade = real(arguments[2]);
+			}
+			var gain = audio_sound_get_gain(sound);
+			audio_sound_gain(sound, 0);
 			audio_play_sound(sound, 1, false);
+			audio_sound_gain(sound, gain, fade*1000);
 			
 			next_line();
 		} else if command == "loop_sound" {
 			var arg = arguments[1];
 			var sound = asset_get_index(arg);
+			var fade = 0;
+			if array_length(arguments)>2 {
+				fade = real(arguments[2]);
+			}
+			var gain = audio_sound_get_gain(sound);
+			audio_sound_gain(sound, 0);
 			audio_play_sound(sound, 1, true);
+			audio_sound_gain(sound, gain, fade*1000);
 			
 			next_line();
 		} else if command == "set_sound_loop" {
@@ -199,12 +216,15 @@ function next_line() {
 		} else if command == "stop_sound" {
 			var arg = arguments[1];
 			var sound = asset_get_index(arg);
-			audio_stop_sound(sound);
+			var fade = real(arguments[2]);
+			audio_sound_gain(sound, 0, fade*1000);
+			sound_stop = sound;
+			alarm_set(2, fade*game_get_speed(gamespeed_fps)+2)
 			
 			next_line();
 		} else if command == "new_character" {
 			var arg = arguments[1];
-			var new_character = instance_create_depth(room_width/2, room_height/2, -1, Obj_Character);
+			var new_character = instance_create_depth(display_get_gui_width()/2, display_get_gui_height()/2, -1, Obj_Character);
 			characters[$ arg] = new_character;
 			
 			next_line();
@@ -214,26 +234,17 @@ function next_line() {
 			var character = characters[$ arg1];
 			character.sprite_index = asset_get_index(arg2);
 			
-			var camera = view_camera[0];
-			
-			character.image_xscale = camera_get_view_width(camera) / default_width;
-			character.image_yscale = camera_get_view_height(camera) / default_height;
-			
 			next_line();
 		} else if command == "set_position" {
 			var arg1 = arguments[1];
 			var arg_x = real(arguments[2]);
 			var arg_y = real(arguments[3]);
 			
-			var camera = view_camera[0];
-			var view_width = camera_get_view_width(camera);
-			var view_height = camera_get_view_height(camera);
-			
 			var character = characters[$ arg1];
-			character.x = camera_get_view_x(camera) + (view_width/2 + arg_x*view_width/2);
-			character.y = camera_get_view_y(camera) + (view_height/2 - arg_y*view_height/2);
-			character.slide_x = character.x;
-			character.slide_y = character.y;
+			character.x = display_get_gui_width()/2 + arg_x*display_get_gui_width()/2;
+			character.y = display_get_gui_height()/2 - arg_y*display_get_gui_height()/2;
+			character.slide_x = arg_x;
+			character.slide_y = arg_y;
 			
 			next_line();
 		} else if command == "set_face" {
@@ -263,12 +274,8 @@ function next_line() {
 			var arg_y = real(arguments[3]);
 			var character = characters[$ arg1];
 			
-			var camera = view_camera[0];
-			var view_width = camera_get_view_width(camera);
-			var view_height = camera_get_view_height(camera);
-			
-			character.slide_x = camera_get_view_x(camera) + (view_width/2 + arg_x*view_width/2);
-			character.slide_y = camera_get_view_y(camera) + (view_height/2 - arg_y*view_height/2);
+			character.slide_x = arg_x;
+			character.slide_y = arg_y;
 			
 			next_line();
 		} else if command == "pause" {
@@ -303,19 +310,22 @@ function next_line() {
 			//function
 			var arg = arguments[1];
 			variable_global_get(arg)();
+			
 			next_line();
 		} else {
 			working = false;
 			if is_string(names[$ command]) or command == "say" {
 				if skippingto == -1 {
 					//only display these lines
-					if command == "say" {
-						display_name = "";
-					} else {
-						display_name = names[$ command];
-					}
 					cmd_length = string_length(command)+1;
 					display_final = string_copy(lines[current_line], cmd_length+1, string_length(lines[current_line])-cmd_length);
+					if command == "say" {
+						display_name = "";
+						array_push(history, display_final);
+					} else {
+						display_name = names[$ command];
+						array_push(history, display_name + ": " + display_final);
+					}
 				} else {
 					next_line();	
 				}
@@ -324,7 +334,7 @@ function next_line() {
 			}
 		}
 
-+	}
+	}
 }
 
 function input() {
@@ -338,5 +348,4 @@ function go() {
 		Obj_Player.freeze = true;
 	}
 	alarm_set(1, 10);
-	alarm_set(2, 60);
 }

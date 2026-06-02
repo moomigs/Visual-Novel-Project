@@ -30,6 +30,8 @@ title_fadeout title2 2
 title_fadeout title3 2
 pause 4
 
+node 1
+
 new_character Collins
 set_alpha Collins 100 0.1
 set_sprite Collins spr_collins_1
@@ -54,6 +56,8 @@ autoskip -1
 c I am Collins.
 
 textbox false
+
+
 
 new_character Gordon
 set_alpha Gordon 100 0.1
@@ -83,7 +87,6 @@ c I was the original Gooble brother before he was here.
 slide Collins 0 0
 set_face Collins default
 
-node 1
 c Anyway, let me show you around.
 
 pause 0.25

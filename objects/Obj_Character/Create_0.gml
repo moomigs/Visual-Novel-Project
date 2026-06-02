@@ -1,5 +1,5 @@
-slide_x = x;
-slide_y = y;
+slide_x = 0;
+slide_y = 0;
 
 face = -1;
 //eyes

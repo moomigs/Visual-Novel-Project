@@ -1,0 +1,1 @@
+scroll_y -= font_get_size(font_dialogue)*2;

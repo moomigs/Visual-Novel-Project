@@ -1,3 +1,4 @@
+
 if current_line != -1 {
 	var line = display_final;
 	if (line != noone and display != line) {
@@ -6,7 +7,10 @@ if current_line != -1 {
 			var next_display = string_copy(line, 1, next_length);
 			display = next_display;
 			if line == display {
-				if auto_skip != -1 {
+				if global.dialogueSkipping == true {
+					paused = true;
+					alarm_set(0, 1);
+				} else if auto_skip != -1 {
 					paused = true;
 					alarm_set(0, auto_skip*game_get_speed(gamespeed_fps));
 				}

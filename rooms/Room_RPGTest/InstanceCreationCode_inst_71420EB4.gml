@@ -30,6 +30,7 @@ function interact() {
 			new_character Gordon
 			set_alpha Gordon 100 1
 			set_sprite Gordon spr_gordon_1
+			set_face Gordon spr_gordon_clown_1
 			set_position Gordon 0 0
 
 			textbox true

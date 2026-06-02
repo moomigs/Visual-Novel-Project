@@ -5,7 +5,7 @@
   "applyKerning":0,
   "ascender":35,
   "ascenderOffset":0,
-  "bold":true,
+  "bold":false,
   "canGenerateBitmap":true,
   "charset":0,
   "first":0,
@@ -112,7 +112,7 @@
   "hinting":0,
   "includeTTF":false,
   "interpreter":0,
-  "italic":false,
+  "italic":true,
   "kerningPairs":[
     {"amount":-2,"first":32,"second":65,},
     {"amount":-1,"first":32,"second":84,},
