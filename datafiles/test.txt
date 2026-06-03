@@ -1,4 +1,4 @@
-name c Collins
+name c [#F1F547]Collins[/]
 name g Gordon
 name ? ???
 
@@ -53,7 +53,7 @@ slide Collins 0 0
 set_face Collins default
 autoskip -1
 
-c I am Collins.
+c I am [#F1F547][font_italic]Collins[/].
 
 textbox false
 

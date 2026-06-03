@@ -1,12 +1,19 @@
 lines = [];
 current_line = -1;
+
 display_final = "";
 display = "";
 display_name = "";
+
+name_scribble = scribble("");
+display_scribble = scribble("");
+typist = scribble_typist();
+typist.in(1, 0);
+
 textbox_visible = false;
 history = [];
 
-// italics
+// tidy up scribble implementation
 // name colors
 
 // choice selection
@@ -319,6 +326,7 @@ function next_line() {
 					//only display these lines
 					cmd_length = string_length(command)+1;
 					display_final = string_copy(lines[current_line], cmd_length+1, string_length(lines[current_line])-cmd_length);
+					display_scribble = scribble(display_final);
 					if command == "say" {
 						display_name = "";
 						array_push(history, display_final);
@@ -326,6 +334,7 @@ function next_line() {
 						display_name = names[$ command];
 						array_push(history, display_name + ": " + display_final);
 					}
+					name_scribble = scribble(display_name);
 				} else {
 					next_line();	
 				}

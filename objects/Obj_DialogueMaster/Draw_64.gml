@@ -14,11 +14,21 @@ if textbox_visible {
 
 //Draw name
 draw_set_colour(make_colour_rgb(180,180,255));
-draw_text(gui_textbox_x + padding, gui_textbox_y + padding/2, display_name);
+//draw_text(gui_textbox_x + padding, gui_textbox_y + padding/2, display_name);
+if textbox_visible and string_length(display_name)>0 {
+	name_scribble.starting_format("font_dialogue", c_white);
+	name_scribble.draw(gui_textbox_x + padding, gui_textbox_y + padding/2);
+}
 
 //Draw dialogue
 draw_set_colour(make_colour_rgb(255,255,255));
-draw_text_ext(gui_textbox_x + padding, gui_textbox_y + padding*1.5 + font_get_size(font_dialogue), display, 14+font_get_size(font_dialogue), sprite_get_width(spr_dialoguebox)-padding*2);
+//draw_text_ext(gui_textbox_x + padding, gui_textbox_y + padding*1.5 + font_get_size(font_dialogue), display, 14+font_get_size(font_dialogue), sprite_get_width(spr_dialoguebox)-padding*2);
+
+if textbox_visible and string_length(display)>0 {
+	display_scribble.starting_format("font_dialogue", c_white);
+	display_scribble.wrap(sprite_get_width(spr_dialoguebox)-padding*2);
+	display_scribble.draw(gui_textbox_x + padding, gui_textbox_y + padding*1.5 + font_get_size(font_dialogue), typist);
+}
 
 //Draw next arrow sprite
 if display_final != "" and display == display_final and auto_skip == -1 {
