@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"m_royal_mischief",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":198.98529,
+  "exportDir":"",
+  "name":"m_royal_mischief",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"m_royal_mischief.ogg",
+  "volume":1.0,
+}

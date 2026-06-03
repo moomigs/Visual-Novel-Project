@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"m_the_old_tower_inn",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":49.95138,
+  "exportDir":"",
+  "name":"m_the_old_tower_inn",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"m_the_old_tower_inn.ogg",
+  "volume":1.0,
+}
