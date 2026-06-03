@@ -86,7 +86,6 @@
     {"id":{"name":"Room_Dialogue","path":"rooms/Room_Dialogue/Room_Dialogue.yy",},},
     {"id":{"name":"Room_RPGTest","path":"rooms/Room_RPGTest/Room_RPGTest.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
-<<<<<<< Updated upstream
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},},
     {"id":{"name":"__scribble_class_event","path":"scripts/__scribble_class_event/__scribble_class_event.yy",},},
     {"id":{"name":"__scribble_class_font","path":"scripts/__scribble_class_font/__scribble_class_font.yy",},},
@@ -222,7 +221,6 @@
     {"id":{"name":"__shd_scribble_bake_outline_8dir","path":"shaders/__shd_scribble_bake_outline_8dir/__shd_scribble_bake_outline_8dir.yy",},},
     {"id":{"name":"__shd_scribble_bake_shadow","path":"shaders/__shd_scribble_bake_shadow/__shd_scribble_bake_shadow.yy",},},
     {"id":{"name":"__shd_scribble","path":"shaders/__shd_scribble/__shd_scribble.yy",},},
-=======
     {"id":{"name":"m_alien_artifact","path":"sounds/m_alien_artifact/m_alien_artifact.yy",},},
     {"id":{"name":"m_ambient_4","path":"sounds/m_ambient_4/m_ambient_4.yy",},},
     {"id":{"name":"m_awakening_station","path":"sounds/m_awakening_station/m_awakening_station.yy",},},
@@ -249,7 +247,6 @@
     {"id":{"name":"m_shenanigans","path":"sounds/m_shenanigans/m_shenanigans.yy",},},
     {"id":{"name":"m_the_old_tower_inn","path":"sounds/m_the_old_tower_inn/m_the_old_tower_inn.yy",},},
     {"id":{"name":"m_winds_of_destiny","path":"sounds/m_winds_of_destiny/m_winds_of_destiny.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"snd_Ding","path":"sounds/snd_Ding/snd_Ding.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
     {"id":{"name":"spr_bg_eddie","path":"sprites/spr_bg_eddie/spr_bg_eddie.yy",},},
