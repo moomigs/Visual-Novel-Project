@@ -108,6 +108,9 @@ nar He turns to the woman who is holding her face in shock.
 man "No one's coming. They never do."
 woman "You... You bastard!"
 man "That's better."
+
+stop_sound m_putrescent_facsimile 2
+
 nar He raises his hand.
 c "Hey!"
 nar Show Collins wearing a robe with a sword and pistol on his belt. BOOM sfx
@@ -121,7 +124,6 @@ man "Collins, on some backwater planet no one's ever heard of."
 man "You want this fight?"
 nar Collins draws his sword.
 c "I didn't come out here to talk."
-stop_sound m_putrescent_facsimile
 bar "No pistols! Keep your duel between yourselves!"
 nar Show man grinning, sword ready
 nar Inner monologue, fight scene throughout. Collins fights competently
@@ -152,7 +154,7 @@ nar Collins slashes the man across the chest, drawing blood and wounding him
 nar The man collapses.
 nar Collins stares at him with gentle shock for a moment. His hand trembles.
 
-stop_sound m_leap_into_eternity
+stop_sound m_leap_into_eternity 5
 
 bar "Collins... don't look at him like that."
 bar "You scare me when you get quiet."
@@ -217,7 +219,7 @@ nar The star runners walk out while Collins stares at the door.
 bar "You're going to get yourself killed, Collins."
 c "Maybe..."
 
-stop_sound m_edge_of_the_galaxy
+stop_sound m_edge_of_the_galaxy 3
 
 # RPG section
 
@@ -241,7 +243,7 @@ nar Collins teaches the child moves as a tutorial for the player, teaching how t
 child "Gahh! You've bested me! Curse you!"
 child "..."
 
-stop_sound m_pleasant_creek
+stop_sound m_pleasant_creek 3
 
 child "Man, can't you go easy on me, Collins?"
 c "I was going easy on you."
@@ -268,8 +270,7 @@ c "You're on."
 
 nar Second tutorial fight, this time an actual duel. Training wheels off. Collins beats Gordon.
 
-stop_sound m_beyond_the_star_gate
-# slow fadeout
+stop_sound m_beyond_the_star_gate 5
 
 c "I..."
 c "I won..."
@@ -389,7 +390,7 @@ p "How do we use this key?"
 g "Stand back."
 nar Gordon steps up to the door and the key starts to glow.
 
-stop_sound entering_the_void
+stop_sound entering_the_void 2
 
 nar The door opens.
 g "Ha! Easy!"
@@ -416,7 +417,7 @@ p "Not a hundred-fifty years ago apparently."
 p "Let's go."
 g "Good thing you can fight, eh kid?"
 
-stop_sound m_royal_mischief
+stop_sound m_royal_mischief 3
 
 nar They go inside
 
@@ -440,7 +441,9 @@ p "Don't antagonize them."
 g "They started it."
 p "They're programmed. What's your excuse?"
 
-stop_sound m_neural_net_nightmare
+stop_sound m_neural_net_nightmare 5
+
+pause 5
 
 loop_sound m_alien_artifact
 
@@ -474,7 +477,7 @@ ct The walls whisper.
 ct The chamber is alive.
 ct It is watching.
 
-stop_sound m_alien_artifact
+stop_sound m_alien_artifact 5
 
 nar He turns around
 nar Phoebe and Gordon glare at him.
@@ -547,7 +550,7 @@ g "Ahahaha!"
 g "I like this kid."
 p "Fine. But we leave tomorrow. So figure it out."
 
-stop_sound m_piano_13
+stop_sound m_piano_13 3
 
 loop_sound m_winds_of_destiny
 
@@ -574,7 +577,7 @@ c "Thank you."
 c "For everything."
 bar "Farewell, Collins."
 
-stop_sound m_winds_of_destiny
+stop_sound m_winds_of_destiny 3
 
 nar Cut to ship
 
@@ -658,7 +661,7 @@ f "..."
 f "Collins."
 f "Use your power wisely."
 
-stop_sound m_awakening_station
+stop_sound m_awakening_station 3
 
 nar He walks off
 g "Phoebe! You're not letting a robo onto the ship, are you??"
@@ -698,7 +701,7 @@ nar Pouty face
 c "Um. Wow. That's great."
 g "Don't patronize the thing, Collins."
 
-stop_sound m_shenanigans
+stop_sound m_shenanigans 2
 
 p "If you're done playing with your new toy, we need to figure out where we're going to go."
 r "Right!"
@@ -726,7 +729,7 @@ r "Crew member Collins spotted!"
 
 p "I'm busy."
 
-stop_sound m_serenity_by_the_sea
+stop_sound m_serenity_by_the_sea 3
 
 g "This is it."
 g "Nothing fancy, but the wall goes transparent. Great view."
@@ -770,7 +773,7 @@ p "I've revoked your kettle access."
 r "Oh..."
 nar Rey enters the ship
 
-stop_sound m_shenanigans
+stop_sound m_shenanigans 2
 
 p "Blend in. Ask questions."
 p "Don't be too pushy. People get strange around gems."
@@ -885,7 +888,7 @@ nar no:
 g "Keep looking. I'll be here when you're finished."
 nar if player hasn't talked to at least one valuable npc then automatic no
 
-stop_sound m_harmony_of_the_forgotten
+stop_sound m_harmony_of_the_forgotten 3
 
 nar yes:
 g "Good. Let me buy you a drink."
@@ -992,7 +995,7 @@ g "Don't worry about it. No pressure. Whatever happens, happens."
 g "But..."
 g "Don't lose. Lot at stake here."
 
-stop_sound m_the_old_tower_inn
+stop_sound m_the_old_tower_inn 3
 
 nar Cut to town street, crowd surrounding them, Richard and Collins facing of
 
@@ -1016,10 +1019,10 @@ loop_sound m_blood_on_the_battlefield
 
 nar Player duels. Losing restarts the duel. When player wins:
 g "Now!!"
-narCollins uses his powers to pull Richards sword from his hand. Show Richard's shock. Richard shoots at Collins as Collins charges, which is blocked, and Collins delivers a final blow.
+nar Collins uses his powers to pull Richards sword from his hand. Show Richard's shock. Richard shoots at Collins as Collins charges, which is blocked, and Collins delivers a final blow.
 nar Richard falls to his knees.
 
-stop_sound m_blood_on_the_battlefield
+stop_sound m_blood_on_the_battlefield 3
 
 g "Yes!!"
 c "I--"
@@ -1052,7 +1055,7 @@ ri "My guess is..."
 ri "They're after that power gem you absorbed."
 ri "You ready to put those powers to use, boy?"
 
-stop_sound m_chilling_whispers
+stop_sound m_chilling_whispers 3
 
 loop_sound m_perpetual_tension
 
@@ -1064,7 +1067,7 @@ ri "Your abilities are telekinetic. So think of what you can do with that."
 ri "Push. Pull. Move objects to your advantage."
 ri "Good."
 
-stop_sound m_perpetual_tension
+stop_sound m_perpetual_tension 3
 
 nar Robos defeated. Collins and Richard stand together.
 ri "You're good."
@@ -1112,7 +1115,7 @@ g "Now we're talking."
 
 nar Cut to night. Party in the streets. Collins stands alone.
 
-stop_sound m_ambient_4
+stop_sound m_ambient_4 5
 
 nar He notices a blond woman wearing robes staring at him.
 nar She steps into an alley. Collins follows her.
@@ -1156,7 +1159,7 @@ c "I would have had her..."
 ? "Take this as a warning."
 ? "Forget the Blood Gem."
 
-stop_sound m_nova_nexus
+stop_sound m_nova_nexus 3
 
 nar She runs off
 ri "Curious..."
@@ -1230,7 +1233,7 @@ g "Alright, alright."
 p "Goodnight, Collins."
 r "Night!!"
 
-stop_sound m_orbital_scan
+stop_sound m_orbital_scan 3
 
 nar In his room
 
@@ -1251,7 +1254,7 @@ nar looks at picture
 c "..."
 c "I hope you'd still be proud of me."
 
-stop_sound m_piano_50
+stop_sound m_piano_50 5
 
 loop_sound m_no_more_magic
 
