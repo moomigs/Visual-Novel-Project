@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"m_nova_nexus",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":171.42854,
+  "exportDir":"",
+  "name":"m_nova_nexus",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"m_nova_nexus.ogg",
+  "volume":1.0,
+}

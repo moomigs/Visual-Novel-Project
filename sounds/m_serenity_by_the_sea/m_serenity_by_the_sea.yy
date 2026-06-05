@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"m_serenity_by_the_sea",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":63.999977,
+  "exportDir":"",
+  "name":"m_serenity_by_the_sea",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"m_serenity_by_the_sea.ogg",
+  "volume":1.0,
+}

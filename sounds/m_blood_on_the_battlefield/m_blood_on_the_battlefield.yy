@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"m_blood_on_the_battlefield",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":83.99998,
+  "exportDir":"",
+  "name":"m_blood_on_the_battlefield",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"m_blood_on_the_battlefield.ogg",
+  "volume":1.0,
+}

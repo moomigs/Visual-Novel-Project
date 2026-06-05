@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"m_edge_of_the_galaxy",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":118.66664,
+  "exportDir":"",
+  "name":"m_edge_of_the_galaxy",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"m_edge_of_the_galaxy.ogg",
+  "volume":1.0,
+}
