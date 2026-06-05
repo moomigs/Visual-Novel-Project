@@ -8,13 +8,13 @@ display_name = "";
 name_scribble = scribble("");
 display_scribble = scribble("");
 typist = scribble_typist();
-typist.in(1, 0);
+typist.in(.75, 1);
 
 textbox_visible = false;
 history = [];
 
 // tidy up scribble implementation
-// name colors
+// set default font in dialogue
 
 // choice selection
 // text box input
@@ -129,7 +129,7 @@ function next_line() {
 			var text = string_copy(lines[current_line], string_length(command)+1+string_length(arg)+2, 255);
 			
 			var new_title = instance_create_depth(0, 0, 1, Obj_TitleText);
-			new_title.text = text;
+			new_title.set_text(text);
 			titles[$ arg] = new_title;
 			
 			next_line();

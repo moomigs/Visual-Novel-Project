@@ -69,7 +69,6 @@
     {"id":{"name":"font_menu","path":"fonts/font_menu/font_menu.yy",},},
     {"id":{"name":"scribble_fallback_font","path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},},
     {"id":{"name":"README","path":"notes/README/README.yy",},},
-    {"id":{"name":"Obj_Button","path":"objects/Obj_Button/Obj_Button.yy",},},
     {"id":{"name":"Obj_Character","path":"objects/Obj_Character/Obj_Character.yy",},},
     {"id":{"name":"Obj_CloseButton","path":"objects/Obj_CloseButton/Obj_CloseButton.yy",},},
     {"id":{"name":"Obj_ClownNose","path":"objects/Obj_ClownNose/Obj_ClownNose.yy",},},

@@ -13,10 +13,7 @@
     "name":"Dialogue",
     "path":"folders/Objects/Dialogue.yy",
   },
-  "parentObjectId":{
-    "name":"Obj_Button",
-    "path":"objects/Obj_Button/Obj_Button.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

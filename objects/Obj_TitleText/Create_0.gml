@@ -8,6 +8,10 @@ function set_position(_x, _y) {
 	x = display_get_gui_width()/2 + _x*display_get_gui_width()/2;
 	y = display_get_gui_height()/2 - _y*display_get_gui_height()/2;
 }
+function set_text(_text) {
+	text = scribble(_text);
+	text.starting_format("font_dialogue", c_white);
+}
 
 function fade_in() {
 	fade = 1;
