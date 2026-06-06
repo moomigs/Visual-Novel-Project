@@ -1,5 +1,5 @@
 draw_set_alpha(255);
-draw_set_colour(make_colour_rgb(255,255,255));
+draw_set_colour(c_white);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left)
 draw_set_font(font_dialogue);
@@ -21,7 +21,7 @@ if textbox_visible and typist.get_state() > 0 {
 }
 
 //Draw dialogue
-draw_set_colour(make_colour_rgb(255,255,255));
+draw_set_colour(c_white);
 //draw_text_ext(gui_textbox_x + padding, gui_textbox_y + padding*1.5 + font_get_size(font_dialogue), display, 14+font_get_size(font_dialogue), sprite_get_width(spr_dialoguebox)-padding*2);
 
 if textbox_visible and current_line != -1 {
@@ -29,6 +29,28 @@ if textbox_visible and current_line != -1 {
 	display_scribble.scale(text_scale);
 	display_scribble.wrap(sprite_get_width(spr_dialoguebox)-padding*2);
 	display_scribble.draw(gui_textbox_x + padding, gui_textbox_y + padding*1.5 + font_get_size(font_dialogue), typist);
+}
+
+var view_width = display_get_gui_width();
+var view_height = display_get_gui_height();
+
+var number_of_choices = array_length(choices)
+if choices_visible and number_of_choices>0 {
+	var choice_width = global.default_width * 0.45;
+	var choice_height = choice_width / 10;
+	
+	for (var i = 0; i < number_of_choices; i++) {
+		var centered_index = (i - (number_of_choices - 1) * 0.5);
+		var choice_y = view_height/2 + (choice_height + padding)* centered_index;
+		var choice_x = view_width/2;
+		
+		draw_set_colour(c_black);
+		draw_rectangle(choice_x - choice_width/2, choice_y - choice_height/2, choice_x + choice_width/2, choice_y + choice_height/2, false);
+		draw_set_colour(c_white);
+		draw_rectangle(choice_x - choice_width/2, choice_y - choice_height/2, choice_x + choice_width/2, choice_y + choice_height/2, true);
+		var text = choices[i];
+		text.draw(choice_x, choice_y);
+	}
 }
 
 //Draw next arrow sprite

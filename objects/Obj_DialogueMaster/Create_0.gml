@@ -11,11 +11,6 @@ text_scale = 1;
 textbox_visible = false;
 history = [];
 
-// update readme
-
-// choice selection
-
-
 auto_skip = -1;
 
 frame_count = 0;
@@ -25,6 +20,11 @@ active = false;
 working = false;
 paused = false;
 skippingto = -1;
+
+goingto = -1;
+choice_case = -1;
+choices = [];
+choices_visible = false;
 
 background = noone;
 background_dissolving = 0;
@@ -38,7 +38,6 @@ buttons = [];
 padding = 20;
 
 function next_line() {
-	show_debug_message(typist.get_state());
 	if string_length(display_scribble.get_text())>0 and typist.get_state() < 1 {
 		typist.skip();
 		return;
@@ -52,6 +51,7 @@ function next_line() {
 		lines[current_line] = string_trim_start(lines[current_line]);
 		show_debug_message(string(current_line) + " " + lines[current_line]);
 		display_scribble = scribble("");
+		name_scribble = scribble("");
 		typist_finished = false;
 		var arguments = string_split(lines[current_line], " ")
 		var command = arguments[0]
@@ -218,7 +218,7 @@ function next_line() {
 			var sound = asset_get_index(arg);
 			var fade = real(arguments[2]);
 			audio_sound_gain(sound, 0, fade*1000);
-			if skippingto != -1 or fade == 0 {
+			if skippingto != -1 or goingto != -1 or fade == 0 {
 				audio_stop_sound(sound);
 			} else {
 				sound_stop = sound;
@@ -295,7 +295,7 @@ function next_line() {
 			
 			next_line();
 		} else if command == "pause" {
-			if skippingto {
+			if skippingto != -1 or goingto != -1 {
 				next_line();
 			} else {
 				if array_length(arguments)>1 and real(arguments[1]) != 0 {
@@ -307,15 +307,51 @@ function next_line() {
 			room_goto(asset_get_index(arguments[1]));
 		} else if command == "skipto" {
 			if skippingto == -1 {
-				var arg = real(arguments[1]);
+				var arg = arguments[1];
 				skippingto = arg;
 			}
 			
 			next_line();
+		} else if command == "choice" {
+			var text = string_copy(lines[current_line], string_length(command)+2, string_length(lines[current_line]));
+			
+			text = string_delete(text, 1, 1);
+			text = string_delete(text, string_length(text), 1);
+			
+			choices = string_split(text, "] [");
+			for (var i = 0; i < array_length(choices); i++) {
+				var t = scribble(choices[i]);
+				t.starting_format("font_dialogue", c_white);
+				t.align(fa_center, fa_middle);
+				choices[i] = t;
+			}
+			choices_visible = true;
+			choice_case = -1;
+			textbox_visible = false;
+		} else if command == "case" {
+			var arg1 = real(arguments[1]);
+			var arg2 = arguments[2];
+			if choice_case == arg1 {
+				if goingto == -1 {
+					var arg = arguments[1];
+					goingto = arg2;
+				}
+			}
+			next_line()
+		} else if command == "goto" {
+			if goingto == -1 {
+				var arg = arguments[1];
+				goingto = arg;
+			}
+			
+			next_line();
 		} else if command == "node" {
-			var arg = real(arguments[1]);
+			var arg = arguments[1];
 			if arg == skippingto {
 				skippingto = -1;
+			}
+			if arg == goingto {
+				goingto = -1;
 			}
 			
 			next_line();
@@ -337,7 +373,7 @@ function next_line() {
 		} else {
 			working = false;
 			if is_string(names[$ command]) or command == "say" {
-				if skippingto == -1 {
+				if skippingto == -1 and goingto == -1 {
 					//only display these lines
 					cmd_length = string_length(command)+1;
 					var display_final = string_copy(lines[current_line], cmd_length+1, string_length(lines[current_line])-cmd_length);
@@ -351,6 +387,7 @@ function next_line() {
 						name_scribble = scribble(display_name);
 						array_push(history, name_scribble.get_text() + ": " + display_scribble.get_text());
 					}
+					textbox_visible = true;
 				} else {
 					next_line();	
 				}
@@ -363,7 +400,6 @@ function next_line() {
 }
 
 function input() {
-	//show_debug_message(string(active) + string(!paused) + string(!working));
 	if active and !paused and !working {
 		next_line();
 	}

@@ -1,4 +1,10 @@
-Visual novel engine commands:
+
+Arguments in <brackets> are mandatory. Arguments in (parentheses) are optional
+
+Scribble text formatting:
+https://www.jujuadams.com/Scribble/#/latest/text-formatting
+
+	COMMANDS:
 
 name <id> <full name>
 	ex: 'name j John'
@@ -51,6 +57,20 @@ set_sound_volume <sound> <volume>
 set_sound_pitch <sound> <pitch>
 stop_sound <sound> (fade time)
 
+choice [choice1] [choice2]
+	Initiate a choice selection. Must use brackets around choices
+	ex: 'choice [Yes] [No]'
+case <number> <node id>
+	Designate a node to a selection.
+	ex: 'case 0 yes'
+goto <node id>
+	Go to node. Use for choice selection node jumping.
+	
+node <id>
+	Node ID can be number or string
+skipto <id>
+	Skip to node. Do not use for choice selection node jumping.
+
 goto_room <room>
 
 call <function>
@@ -58,10 +78,4 @@ call <function>
 script <script>
 	Execute script
 
-node <number>
-skipto <number>
-
 # comment
-
-Scribble text formatting:
-https://www.jujuadams.com/Scribble/#/latest/text-formatting

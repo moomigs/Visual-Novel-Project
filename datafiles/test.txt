@@ -43,10 +43,10 @@ slide Collins 0 0.1
 set_face Collins spr_collins_face_1
 set_sound_pitch snd_Ding 0.25
 play_sound snd_Ding
-text_speed 0.2
+text_speed 0.05
 textbox true
 
-c Behold.
+c [speed,0.2]Behold.[/speed]
 
 text_speed 1
 slide Collins 0 0
@@ -87,7 +87,25 @@ c I was the original Gooble brother before he was here.
 slide Collins 0 0
 set_face Collins default
 
-c Anyway, let me show you around.
+c Anyway, want to be friends?
+
+choice [Yes] [No] [Maybe]
+	case 0 yes
+	case 1 no
+	case 2 end
+	
+	node yes
+	c Yipee!
+	goto end
+	
+	node no
+	set_face Collins spr_collins_face_1
+	c Bah, humbug...
+	goto end
+node end
+
+set_face Collins default
+c Well, see ya around!
 
 pause 0.25
 set_alpha Collins 0 0.1
