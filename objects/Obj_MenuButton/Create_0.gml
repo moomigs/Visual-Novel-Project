@@ -3,10 +3,9 @@ menuVisible = false;
 if !variable_global_exists("dialogue_settings") {
 	global.dialogue_settings = {
 		sliders: {
-			"Text speed": 1,
-			"Font size": 0.35,
-			"Music volume": 0.5,
-			"SFX volume": 0.5
+			"Text speed": 0.5,
+			"Font size": 1,
+			"Volume": 0.5
 		},
 		booleans: {
 			"Fullscreen": false

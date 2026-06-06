@@ -4,6 +4,7 @@ function click() {
 	global.dialogueSkipping = !global.dialogueSkipping;
 	if global.dialogueSkipping {
 		Obj_DialogueMaster.input();
+		Obj_DialogueMaster.alarm[3] = 1;
 	}
 }
 

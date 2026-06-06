@@ -1,27 +1,22 @@
 lines = [];
 current_line = -1;
 
-display_final = "";
-display = "";
-display_name = "";
-
 name_scribble = scribble("");
 display_scribble = scribble("");
 typist = scribble_typist();
 typist.in(.75, 1);
+typist_finished = false;
+text_scale = 1;
 
 textbox_visible = false;
 history = [];
 
-// tidy up scribble implementation
-// set default font in dialogue
-
 // choice selection
-// text box input
+// text input
+
 // variables/ global variables
 // run script
 
-// menu function?
 
 auto_skip = -1;
 
@@ -45,8 +40,9 @@ buttons = [];
 padding = 20;
 
 function next_line() {
-	if display != display_final {
-		display = display_final;
+	show_debug_message(typist.get_state());
+	if string_length(display_scribble.get_text())>0 and typist.get_state() < 1 {
+		typist.skip();
 		return;
 	}
 	working = false;
@@ -57,9 +53,8 @@ function next_line() {
 	} else {
 		lines[current_line] = string_trim_start(lines[current_line]);
 		show_debug_message(string(current_line) + " " + lines[current_line]);
-		display_final = "";
-		display = "";
-		display_name = "";
+		display_scribble = scribble("");
+		typist_finished = false;
 		var arguments = string_split(lines[current_line], " ")
 		var command = arguments[0]
 		working = true;
@@ -225,8 +220,12 @@ function next_line() {
 			var sound = asset_get_index(arg);
 			var fade = real(arguments[2]);
 			audio_sound_gain(sound, 0, fade*1000);
-			sound_stop = sound;
-			alarm_set(2, fade*game_get_speed(gamespeed_fps)+2)
+			if skippingto != -1 or fade == 0 {
+				audio_stop_sound(sound);
+			} else {
+				sound_stop = sound;
+				alarm_set(2, fade*game_get_speed(gamespeed_fps)+2)
+			}
 			
 			next_line();
 		} else if command == "new_character" {
@@ -319,22 +318,29 @@ function next_line() {
 			variable_global_get(arg)();
 			
 			next_line();
+		} else if command == "script" {
+			//function
+			var arg = arguments[1];
+			script_execute(asset_get_index(arg));
+			
+			next_line();
 		} else {
 			working = false;
 			if is_string(names[$ command]) or command == "say" {
 				if skippingto == -1 {
 					//only display these lines
 					cmd_length = string_length(command)+1;
-					display_final = string_copy(lines[current_line], cmd_length+1, string_length(lines[current_line])-cmd_length);
+					var display_final = string_copy(lines[current_line], cmd_length+1, string_length(lines[current_line])-cmd_length);
 					display_scribble = scribble(display_final);
+					//display_scribble.allow_text_getter();
 					if command == "say" {
-						display_name = "";
-						array_push(history, display_final);
+						name_scribble = scribble("");
+						array_push(history, display_scribble.get_text());
 					} else {
-						display_name = names[$ command];
-						array_push(history, display_name + ": " + display_final);
+						var display_name = names[$ command];
+						name_scribble = scribble(display_name);
+						array_push(history, name_scribble.get_text() + ": " + display_scribble.get_text());
 					}
-					name_scribble = scribble(display_name);
 				} else {
 					next_line();	
 				}
@@ -347,6 +353,7 @@ function next_line() {
 }
 
 function input() {
+	//show_debug_message(string(active) + string(!paused) + string(!working));
 	if active and !paused and !working {
 		next_line();
 	}
