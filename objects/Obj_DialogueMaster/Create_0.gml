@@ -11,11 +11,9 @@ text_scale = 1;
 textbox_visible = false;
 history = [];
 
-// choice selection
-// text input
+// update readme
 
-// variables/ global variables
-// run script
+// choice selection
 
 
 auto_skip = -1;
@@ -208,7 +206,7 @@ function next_line() {
 			audio_sound_pitch(sound, pitch);
 			
 			next_line();
-		} else if command == "sound_time" {
+		} else if command == "set_sound_time" {
 			var arg = arguments[1];
 			var start = real(arguments[2]);
 			var sound = asset_get_index(arg);
@@ -267,11 +265,23 @@ function next_line() {
 		} else if command == "set_alpha" {
 			var arg1 = arguments[1];
 			var arg_alpha = real(arguments[2]);
-			var arg_time = real(arguments[3]);
+			var arg_time = 1;
+			if array_length(arguments)>3 {
+				arg_time = real(arguments[3]);
+			}
 			
 			var character = characters[$ arg1];
 			character.desired_alpha = arg_alpha;
 			character.alpha_slide = arg_time;
+			
+			next_line();
+		} else if command == "set_scale" {
+			var arg1 = arguments[1];
+			var arg_scale = real(arguments[2]);
+			
+			var character = characters[$ arg1];
+			character.image_xscale = arg_scale;
+			character.image_yscale = arg_scale;
 			
 			next_line();
 		} else if command == "slide" {

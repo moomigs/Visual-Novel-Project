@@ -43,7 +43,7 @@ slide Collins 0 0.1
 set_face Collins spr_collins_face_1
 set_sound_pitch snd_Ding 0.25
 play_sound snd_Ding
-text_speed 12
+text_speed 0.2
 textbox true
 
 c Behold.

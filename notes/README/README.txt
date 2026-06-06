@@ -1,39 +1,67 @@
 Visual novel engine commands:
 
-name <id> <Full Name>
+name <id> <full name>
+	ex: 'name j John'
+<name id> <dialogue>
+	ex: 'j Hello world'
+say <text>
+	Display dialogue with no name
 
 background <bg_sprite>
+	Set background
 dissolve <bg_sprite> <seconds>
+	Fade to background
 textbox <true/false>
-text_speed <frames per letter>
+	Set textbox visibility
+text_speed <speed>
+	Set text speed 0 to 1 or higher
 autoskip <seconds>
+	Start progressing dialogue automatically. Set to -1 to stop
 pause (seconds)
 
+new_character <id>
+set_sprite <id> <sprite>
+set_alpha <id> <alpha> (interpolation)
+	Set alpha of a character. Interpolation 0 to 1 per frame, default 1
+set_position <id> <x> <y>
+	(0, 0) = Center, (-1, -1) = Top left
+set_scale <id> <scale>
+set_face <id> <sprite>
+	Set sprite overlay of a character
+slide <id> <x> <y>
+	Slide character position
+
 new_title <id> <text>
+	Create title object
 title_setpos <id> <x> <y>
+	(0, 0) = Center, (-1, -1) = Top left
 title_setscale <id> <scale>
 title_fadein <id> <seconds>
 title_fadeout <id> <seconds>
 
-play_sound <sound>
-loop_sound <sound>
+play_sound <sound> (fade time)
+	Play sound once
+loop_sound <sound> (fade time)
+	Start looping sound
 set_sound_loop <sound> <start> <end>
+	Set loop region of a sound
+set_sound_time <sound> <time>
+	Set track time position of a sound
 set_sound_volume <sound> <volume>
 set_sound_pitch <sound> <pitch>
-sound_time <sound> <time>
-stop_sound <sound>
-
-new_character <character_name>
-set_sprite <character_name> <sprite>
-set_position <character_name> <x> <y>
-set_face <character_name> <sprite>
-set_alpha <character_name> <alpha 0-1> <interp>
-slide <character_name> <x> <y>
+stop_sound <sound> (fade time)
 
 goto_room <room>
 
-node <int>
-skipto <int>
+call <function>
+	Execute global function
+script <script>
+	Execute script
 
-<id> <dialogue>
+node <number>
+skipto <number>
+
 # comment
+
+Scribble text formatting:
+https://www.jujuadams.com/Scribble/#/latest/text-formatting
