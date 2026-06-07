@@ -20,6 +20,7 @@ active = false;
 working = false;
 paused = false;
 skippingto = -1;
+skip = false;
 
 goingto = -1;
 choice_case = -1;
@@ -39,7 +40,7 @@ padding = 20;
 
 function next_line() {
 	if string_length(display_scribble.get_text())>0 and typist.get_state() < 1 {
-		typist.skip();
+		skip = true;
 		return;
 	}
 	working = false;
@@ -317,6 +318,8 @@ function next_line() {
 			
 			text = string_delete(text, 1, 1);
 			text = string_delete(text, string_length(text), 1);
+			
+			global.dialogueSkipping = false
 			
 			choices = string_split(text, "] [");
 			for (var i = 0; i < array_length(choices); i++) {

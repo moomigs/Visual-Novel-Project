@@ -28,6 +28,10 @@ if textbox_visible and current_line != -1 {
 	display_scribble.starting_format("font_dialogue", c_white);
 	display_scribble.scale(text_scale);
 	display_scribble.wrap(sprite_get_width(spr_dialoguebox)-padding*2);
+	if skip {
+		skip = false;
+		typist.skip();
+	}
 	display_scribble.draw(gui_textbox_x + padding, gui_textbox_y + padding*1.5 + font_get_size(font_dialogue), typist);
 }
 
