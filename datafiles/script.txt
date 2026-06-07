@@ -88,9 +88,9 @@ nar Show a dingy bar, a young man is sweeping next to some older men at a table
 man "There I was on Thaxthia."
 man "Facing five robos--"
 c "Thaxthia? You've been off-world??"
-nar The man looks disgruntled.
+man "..."
 c "What was it like? Thaxthia? Have you been to other worlds? What about the robos--"
-nar The man tosses his beer in Collins' face and the table erupts in laughter.
+nar The man tosses his beer in Collins' face.
 man "Yeah. And?"
 c "N-Nothing, I just..."
 man "Got something to say?"
@@ -172,7 +172,7 @@ nar Collins snaps out of it and looks shocked
 
 bar "You two! Since you like listening to his stories so much, take him to a hospital!"
 
-nar Collins stares at the blood on the ground in disbelief
+ct I look at the blood on the floor, my mind blank.
 nar The bartender throws a mop into his hands
 
 bar "Put your weapons away and clean this mess."
@@ -222,7 +222,7 @@ g "That's right."
 nar Gordon and Phoebe look at each other.
 g "You know any ruins?"
 c "I..."
-nar Collins looks over to see the entire bar glaring at him
+ct "The whole bar stares daggers at me, daring me to speak up."
 c "No..."
 g "Tch. Figures."
 nar The star runners walk out while Collins stares at the door.
@@ -233,7 +233,7 @@ stop_sound m_edge_of_the_galaxy 3
 
 node 1
 
-#goto_room Room_Alley
+goto_room Room_RPG_1
 
 # RPG section
 
@@ -307,9 +307,9 @@ g "Link with me. I'll send you the coordinates to our ship."
 g "When you get off work, swing by."
 g "Don't keep us waiting."
 
-# VN scene
+# Room_VN_2
 
-nar Cut to night. Collins is in his fighter robes. Phoebe and Gordon are talking outside the ship. Gordon is smoking a cigarette.
+nar Cut to night. Collins is in his fighter robes. Phoebe and Gordon are talking outside the ship.
 
 g "You showed up!"
 p "Hmph. Why is he wearing that ridiculous thing?"
@@ -397,6 +397,9 @@ g "..."
 c "We're close. I can give you the coordinates."
  
 nar Show a wide shot of the ruins. It looks like a giant stone fortress.
+
+goto_room Room_RPG_2
+
 nar Standing before a big door
 
 g "This looks right."
@@ -461,6 +464,8 @@ pause 5
 
 loop_sound m_alien_artifact
 
+# Room_VN_3
+
 nar Whatever the ruins contain, it will eventually lead to a chamber with a gem on a pedestal.
 
 g "Is this it?"
@@ -479,7 +484,6 @@ nar He reaches out
 ? "Collins."
 nar Collins freezes
 p "What's wrong?"
-nar light flickers
 c "..."
 g "Just grab it already."
 nar pause
@@ -511,6 +515,9 @@ c "Hey, I feel kinda funny..."
 both "Shut up!"
 p "If you think you're still getting eight percent--!"
 g "Yeah you can forget about getting five percent!"
+
+goto_room Room_RPG_3
+
 nar Door opens
 nar pause
 robo "Finally."
@@ -527,6 +534,8 @@ g "Now's a great time to learn!"
 nar They fight their way out of the ruins, giving the player a chance to learn and test out their new abilities.
 
 stop_sound m_nano_nemesis 3
+
+# Room_VN_4
 
 nar Gordon and Phoebe quietly sit down.
 
@@ -567,6 +576,8 @@ g "I like this kid."
 p "Fine. But we leave tomorrow. So figure it out."
 
 stop_sound m_piano_13 3
+
+pause 3
 
 loop_sound m_winds_of_destiny
 
@@ -736,6 +747,8 @@ p "Shut up."
 g "..."
 g "Let me show you to your room, kid."
 
+goto_room Room_RPG_4
+
 loop_sound m_serenity_by_the_sea
 
 nar Let the player walk around the ship before deciding to talk to Gordon outside Collins room.
@@ -744,6 +757,8 @@ nar When interacting with Rey or Phoebe:
 r "Crew member Collins spotted!"
 
 p "I'm busy."
+
+# Room_VN_5
 
 g "This is it."
 g "Nothing fancy, but the wall goes transparent. Great view."
@@ -771,6 +786,9 @@ nar Collins looks around. Smiles. Sits down on the bed and makes the wall transp
 
 stop_sound m_serenity_by_the_sea 3
 pause 3
+
+goto_room Room_RPG_5
+
 loop_sound m_shenanigans
 
 nar in RPG style they exit the ship into a wild west style town.
@@ -945,6 +963,9 @@ c "What's so dangerous about this thing?"
 g "Yeah. With such a welcoming name, too."
 bar "I'm just trying to save your lives."
 bar "Trust me. Give up."
+
+# Room_VN_6
+
 nar A burly man sat next to Gordon speaks up. Switch to anime art
 ? "You want the Blood Gem?"
 ? "I can tell you where it is."
@@ -1010,6 +1031,8 @@ g "But..."
 g "Don't lose. Lot at stake here."
 
 stop_sound m_the_old_tower_inn 3
+
+goto_room Room_RPG_6
 
 nar Cut to town street, crowd surrounding them, Richard and Collins facing off
 
@@ -1127,6 +1150,8 @@ m "That is up to our local barkeep."
 m "But I'm sure he'd be happy to provide a couple drinks."
 g "Now we're talking."
 
+# Room_VN_7
+
 nar Cut to night. Party in the streets. Collins stands alone.
 
 stop_sound m_ambient_4 5
@@ -1140,7 +1165,7 @@ ri "Careful, son."
 
 play_sound snd_boom
 
-nar Show Elle brushing her hair back, her lips parted to show fangs.
+nar Show girl brushing her hair back, her lips parted to show fangs.
 
 ri "She's a vampire."
 ri "She traded her humanity for eternal life."
@@ -1157,6 +1182,8 @@ c "I will be the one to cut you down, vampire."
 ri "..."
 ? "Enough talk."
 
+goto_room Room_RPG_7
+
 nar Fight starts. First hit on the player:
 c "What? She's using stun?"
 nar Next hit
@@ -1164,7 +1191,7 @@ c "Fight seriously!"
 nar Player scripted loss. Collins falls back.
 c "She cut me..."
 c "I'm bleeding."
-nar Closeup of Elle's face, disgusted
+nar Closeup of her face, disgusted
 ? "I won't drink."
 c "..."
 nar Richard steps between them.
@@ -1217,6 +1244,10 @@ ri "Their treasure is blood. They plunder humans like pirates plunder crystals."
 r "This is scary..."
 c "They... plunder humans?"
 ri "This is a bloody sector, Collins."
+p "How many of these things are there?"
+ri "A few hundred."
+ri "But their power is enough to control dozens of systems."
+p "Dozens..."
 g "I don't know about this..."
 p "I agree. I was expecting to hit some ruins and call it a day."
 g "Yeah. Maybe this juice isn't worth the squeeze."
@@ -1253,6 +1284,10 @@ r "Night!!"
 
 stop_sound m_orbital_scan 3
 
+pause 3
+
+# Room_VN_8
+
 nar In his room
 
 loop_sound m_piano_50
@@ -1264,7 +1299,9 @@ c "..."
 c "I'm a star runner now."
 c "That's what I've always wanted."
 c "..."
-c "So much evil... and He stays silent."
+c "That pirate killed you."
+c "We had no money. Just sheep."
+c "..."
 c "There are people who deserve Hell."
 c "If God won't send them there..."
 c "I will."
@@ -1283,7 +1320,7 @@ nar Three men restrained and kneeling. A robed figure in front of them. Show his
 ? "Your world has hidden itself well."
 Man1 "We'd rather die."
 play_sound snd_blaster_art
-nar Artensa shoots him.
+nar He shoots him.
 ? "One of you will give me the coordinates."
 Man2 "One day."
 Man2 "One day you will die."
@@ -1294,7 +1331,7 @@ play_sound snd_blaster_art
 nar Shoots him. He approaches man 3, who is visibly shaken
 ? "What kind of man are you?" 
 Man3 "I-I'll give you what you want." 
-nar Artensa's smile flickers
+nar Show his smile fade
 ? "Good."
 Man3 "1.38--"
 play_sound snd_blaster_art
