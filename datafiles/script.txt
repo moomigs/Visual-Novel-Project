@@ -7,6 +7,7 @@ name f Fiber
 name man Man
 name woman Woman
 name bar Bartender
+name robo Robot
 name child Child
 name villager Villager
 name m Mayor
@@ -19,12 +20,17 @@ name ? ???
 name ct  
 name nar Narrator
 name both Both
+name loc Local
 
 textbox false
 
-dissolve spr_bg_space 2
+#skipto 1
 
 play_sound m_in_legends
+
+pause 2
+
+dissolve spr_bg_space 2
 
 pause 6
 
@@ -33,7 +39,7 @@ new_title title1_2 and women of renown in search of treasure and glory.
 new_title title2 They heeded the call of the stars and set their hearts on infamy at any cost.
 new_title title3 Admired. Feared. Resented. They were larger than life and lower than dirt.
 new_title title4 These adventurers were known as:
-new_title title5 STAR RUNNERS
+new_title title5 [font_title]STAR RUNNERS[/f]
 
 title_setpos title1 0 0.4
 title_setpos title1_2 0 0.3
@@ -55,26 +61,30 @@ title_fadeout title2 2
 title_fadeout title3 2
 pause 4
 title_fadein title4 2
-pause 4
+pause 6
 title_fadein title5 3
 pause 6
-title_fadeout title4 0
-title_fadeout title5 0
+title_fadeout title4 4
+title_fadeout title5 4
 
-dissolve spr_black 0
+pause 5
+
+dissolve spr_planet 3
 
 pause 5
 
 textbox true
 
-nar Show an Earth-like planet, half dark with the lighting of many cities
+pause 2
 
 nar In the outer edges of the Western Republic
+
+dissolve spr_black 1
+stop_sound m_in_legends 0
 
 loop_sound m_putrescent_facsimile
 
 nar Show a dingy bar, a young man is sweeping next to some older men at a table
-
 man "There I was on Thaxthia."
 man "Facing five robos--"
 c "Thaxthia? You've been off-world??"
@@ -113,7 +123,8 @@ stop_sound m_putrescent_facsimile 2
 
 nar He raises his hand.
 c "Hey!"
-nar Show Collins wearing a robe with a sword and pistol on his belt. BOOM sfx
+play_sound snd_boom
+nar Show Collins wearing robes with a sword and pistol on his belt.
 c "Let her go."
 bar "Collins!"
 man "..."
@@ -126,7 +137,6 @@ nar Collins draws his sword.
 c "I didn't come out here to talk."
 bar "No pistols! Keep your duel between yourselves!"
 nar Show man grinning, sword ready
-nar Inner monologue, fight scene throughout. Collins fights competently
 
 loop_sound m_leap_into_eternity
 
@@ -194,7 +204,7 @@ bar "Hmph."
 bar "Get lost, star runners."
 ? "Okay, okay."
 ? "How about a drink?"
-p "*No*."
+p "[font_italic]No.[/f]"
 bar "We don't do business with your kind."
 ? "What kind is that?"
 bar "The pillaging kind."
@@ -203,7 +213,7 @@ bar "The pillaging kind."
 p "Let's go, Gordon."
 p "This room wants us gone."
 g "Come on, just one drink!"
-p "*Let's go.*"
+p "[font_italic]Let's go.[/f]"
 nar They walk by Collins
 c "Um...!"
 g "Hm?"
@@ -220,6 +230,10 @@ bar "You're going to get yourself killed, Collins."
 c "Maybe..."
 
 stop_sound m_edge_of_the_galaxy 3
+
+node 1
+
+#goto_room Room_Alley
 
 # RPG section
 
@@ -278,7 +292,7 @@ g "Yeah. You did."
 g "You know something about those ruins."
 c "..."
 c "Maybe."
-g "We've got a key. We’re heading there."
+g "We've got a key. We're heading there."
 g "Ten percent."
 c "Take me with you."
 g "..."
@@ -331,7 +345,7 @@ g "Are you trying to stun me, woman??"
 nar Show Phoebe with her pistol out and Collins slightly shocked
 p "Which seat are you in right now?"
 g "Uhh, the pilot's seat...?"
-p "The *captain's* seat. I'm the captain. That's my seat."
+p "The [font_italic]captain's[/f] seat. I'm the captain. That's my seat."
 nar Gordon gets up
 g "Sheesh, alright, alright. Whatever you say."
 nar Gordon stands next to Collins
@@ -364,7 +378,7 @@ g "..."
 g "They dead?"
 p "Gordon!!"
 g "What??"
-p "Are you the dumbest man alive??"
+p "Are you the dumbest man alive?!"
 p "You don't just ask something like that!"
 g "I'm trying to get to know the kid!"
 c "Ahahaha!"
@@ -390,7 +404,7 @@ p "How do we use this key?"
 g "Stand back."
 nar Gordon steps up to the door and the key starts to glow.
 
-stop_sound entering_the_void 2
+stop_sound m_entering_the_void 2
 
 nar The door opens.
 g "Ha! Easy!"
@@ -458,7 +472,7 @@ g "Would you like to do the honors?"
 c "Really?"
 g "Yeah, just go grab it. We'll be right here."
 p "Time to earn your ten percent."
-*Collins approaches the gem.*
+nar Collins approaches the gem.
 c "It's..."
 c "Beautiful."
 nar He reaches out
@@ -512,6 +526,8 @@ g "Now's a great time to learn!"
 
 nar They fight their way out of the ruins, giving the player a chance to learn and test out their new abilities.
 
+stop_sound m_nano_nemesis 3
+
 nar Gordon and Phoebe quietly sit down.
 
 c "Um... Guys?"
@@ -545,7 +561,7 @@ c "To go on adventures?"
 g "That's what a star runner is."
 c "I-I..."
 c "I have to ask my boss..."
-p "*What?*"
+p "[font_italic]What?[/f]"
 g "Ahahaha!"
 g "I like this kid."
 p "Fine. But we leave tomorrow. So figure it out."
@@ -638,7 +654,7 @@ f "This is Rey."
 p "You want us to take a robo with us."
 f "Rey is my interface with your crew."
 f "With her aboard, you get leads."
-g "It. With *it* aboard."
+g "It. With [font_italic]it[/f] aboard."
 f "I feel the personality makes her more hospitable."
 g "Hmph."
 p "Why not just send us a link?"
@@ -706,7 +722,7 @@ stop_sound m_shenanigans 2
 p "If you're done playing with your new toy, we need to figure out where we're going to go."
 r "Right!"
 r "The first lead is in the Mumbrux system!"
-*Gordon and Phoebe both have an uh-oh face*
+nar Gordon and Phoebe both have an uh-oh face
 g "The, uh, Mumbrux system?"
 r "That's right!"
 p "That's all we've got?"
@@ -728,8 +744,6 @@ nar When interacting with Rey or Phoebe:
 r "Crew member Collins spotted!"
 
 p "I'm busy."
-
-stop_sound m_serenity_by_the_sea 3
 
 g "This is it."
 g "Nothing fancy, but the wall goes transparent. Great view."
@@ -753,9 +767,11 @@ g "I'll let you settle in. Now that we're in orbit, should be a couple hours to 
 g "You'll have access to the ship's travel time. All that information."
 c "Got it."
 nar Gordon leaves.
-nar Collins looks around. Smiles. Sits down on the bed and makes the wall transparent. A progress bar of the journey appears.
+nar Collins looks around. Smiles. Sits down on the bed and makes the wall transparent, looking off into space
 
-loop_music m_shenanigans
+stop_sound m_serenity_by_the_sea 3
+pause 3
+loop_sound m_shenanigans
 
 nar in RPG style they exit the ship into a wild west style town.
 nar Phoebe looks at Rey
@@ -765,7 +781,7 @@ r "Okey-dokey!"
 r "..."
 r "Um... I'm locked out."
 p "I'll give you limited access."
-g "*Very* limited."
+g "[font_italic]Very[/f] limited."
 p "You'll be able to unlock the door and turn on the kettle."
 r "Yayy~"
 r "Tea time??"
@@ -792,21 +808,19 @@ nar Phoebe walks off screen.
 
 loop_sound m_harmony_of_the_forgotten
 
-*Player can now walk around town and talk to locals. It's a small town with a limited amount of NPCs.*
-*Player can now link Phoebe, Rey and Gordon. This opens remote dialogue with them:*
+nar Player can now walk around town and talk to locals. It's a small town with a limited amount of NPCs.
+nar Player can now link Phoebe, Rey and Gordon. This opens remote dialogue with them:
 r "Heyy!!"
 r "Collins, right?"
 r "It must be hot out there. I wouldn't know."
 r "My temperature readings aren't connected to my emotions!"
 r "Say, we're gonna be crew-mates."
 r "Why don't you stop by the ship and we'll get to know each other!"
-Phoebe:
 p "Any luck?"
 p "No?"
 p "Just wanted to chat?"
 p "How about you chat with the locals instead."
 p "I'm busy."
-Gordon:
 g "Hey buddy!"
 g "Man, this town is great!"
 g "You wouldn't believe the price of beer here."
@@ -815,49 +829,49 @@ g "Come on, these things take finesse. You can't rush it."
 g "Swing by the bar once you're done out there. I'll treat you."
 
 
-*Key NPC dialogue*
-1: (woman)
-"Hey sweetie."
-"Welcome to Mumbrux."
-"It's not often we see off-worlders."
-"I'd offer you a meal, but..."
-"We barely have enough for ourselves."
-"Sorry. Come back again when things are better."
-"Power gem?"
-"Wh-Why would you ask something like that?"
-"Ask someone else! I don't want to bring those monsters here!"
-2: (man)
-"Ha! Look at you."
-"You've even got the robes."
-"Once, I wanted to be like you."
-"I dreamed of traveling to different worlds, crossing swords with pirates."
-"Got a wife and kid now."
-"Different kind of adventure."
-"What? You're asking about a power gem?"
-"..."
-"You're a star runner."
-"I was just starting to like you."
-"Don't go bringing those things here."
-"I should have known. Outsiders only bring trouble."
-3: (woman)
-"Oh, hello."
-"Did you just arrive?"
-"Funny place to pick for a pit-stop. We don't see off-worlders too often."
-"Make yourself at home. Mumbrux prides itself on its hospitality."
-"Huh? You want to know about a power gem?"
-"...Yeah. There's one around."
-"Not on Mumbrux though. Elsewhere in the sector."
-"It's known as the Red Stone."
-"For good reasons, if you ask me."
-"You're better off forgetting about it."
-"That thing is bad news, you hear?"
-"It's... well guarded."
+nar Key NPC dialogue
+nar 1: (woman)
+loc "Hey sweetie."
+loc "Welcome to Mumbrux."
+loc "It's not often we see off-worlders."
+loc "I'd offer you a meal, but..."
+loc "We barely have enough for ourselves."
+loc "Sorry. Come back again when things are better."
+loc "Power gem?"
+loc "Wh-Why would you ask something like that?"
+loc "Ask someone else! I don't want to bring those monsters here!"
+nar 2: (man)
+loc "Ha! Look at you."
+loc "You've even got the robes."
+loc "Once, I wanted to be like you."
+loc "I dreamed of traveling to different worlds, crossing swords with pirates."
+loc "Got a wife and kid now."
+loc "Different kind of adventure."
+loc "What? You're asking about a power gem?"
+loc "..."
+loc "You're a star runner."
+loc "I was just starting to like you."
+loc "Don't go bringing those things here."
+loc "I should have known. Outsiders only bring trouble."
+nar 3: (woman)
+loc "Oh, hello."
+loc "Did you just arrive?"
+loc "Funny place to pick for a pit-stop. We don't see off-worlders too often."
+loc "Make yourself at home. Mumbrux prides itself on its hospitality."
+loc "Huh? You want to know about a power gem?"
+loc "...Yeah. There's one around."
+loc "Not on Mumbrux though. Elsewhere in the sector."
+loc "It's known as the Red Stone."
+loc "For good reasons, if you ask me."
+loc "You're better off forgetting about it."
+loc "That thing is bad news, you hear?"
+loc "It's... well guarded."
 
-*There are a few NPC's who say shorter, non-gem related lines.*
+nar There are a few NPC's who say shorter, non-gem related lines.
 
-*If the player returns to the ship:*
+nar If the player returns to the ship:
 
-*Rey is staring intensely at the kettle.*
+nar Rey is staring intensely at the kettle.
 c "Er... Am I interrupting something?"
 r "'I've revoked your kettle access.'"
 c "What?"
@@ -997,7 +1011,7 @@ g "Don't lose. Lot at stake here."
 
 stop_sound m_the_old_tower_inn 3
 
-nar Cut to town street, crowd surrounding them, Richard and Collins facing of
+nar Cut to town street, crowd surrounding them, Richard and Collins facing off
 
 p "What's going on?"
 g "Shh! Get out of here!"
@@ -1123,12 +1137,16 @@ nar Elle faces Collins and draws her weapons.
 nar Richard is behind Collins.
 
 ri "Careful, son."
-nar Show Elle brushing her hair back, her lips parted to show fangs.
 
-loop_sound m_nova_nexus
+play_sound snd_boom
+
+nar Show Elle brushing her hair back, her lips parted to show fangs.
 
 ri "She's a vampire."
 ri "She traded her humanity for eternal life."
+
+loop_sound m_nova_nexus
+
 ? "You seek the Blood Gem."
 ? "If you cannot defeat me..."
 ? "You have no hope of claiming it."
@@ -1147,7 +1165,7 @@ nar Player scripted loss. Collins falls back.
 c "She cut me..."
 c "I'm bleeding."
 nar Closeup of Elle's face, disgusted
-e "I won't drink."
+? "I won't drink."
 c "..."
 nar Richard steps between them.
 
@@ -1205,7 +1223,7 @@ g "Yeah. Maybe this juice isn't worth the squeeze."
 r "Um!"
 r "I have an estimate for the reward for the Blood Gem."
 r "I'll link it."
-g and p "..."
+p "..."
 p "So where do we find these vampires?"
 g "Yeah, what are we worried about?"
 g "We've got a gem holder on the crew!"
@@ -1241,7 +1259,7 @@ loop_sound m_piano_50
 
 c "Mom... Dad..."
 c "I think I made some friends."
-c "You would've liked them."
+c "You would have liked them."
 c "..."
 c "I'm a star runner now."
 c "That's what I've always wanted."
@@ -1256,12 +1274,15 @@ c "I hope you'd still be proud of me."
 
 stop_sound m_piano_50 5
 
+pause 5
+
 loop_sound m_no_more_magic
 
 nar Three men restrained and kneeling. A robed figure in front of them. Show his gun in hand. Show his smile with blue cat eyes.
 
 ? "Your world has hidden itself well."
-Man1 "We'd rather die." 
+Man1 "We'd rather die."
+play_sound snd_blaster_art
 nar Artensa shoots him.
 ? "One of you will give me the coordinates."
 Man2 "One day."
@@ -1269,12 +1290,14 @@ Man2 "One day you will die."
 Man2 "And you will go to Hell."
 nar Show smile
 ? "I know."
+play_sound snd_blaster_art
 nar Shoots him. He approaches man 3, who is visibly shaken
 ? "What kind of man are you?" 
 Man3 "I-I'll give you what you want." 
 nar Artensa's smile flickers
 ? "Good."
 Man3 "1.38--"
+play_sound snd_blaster_art
 nar He shoots him, smiling.
 nar He looks at the body for a moment.
 ? "Navigator."
