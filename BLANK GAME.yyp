@@ -252,6 +252,8 @@
     {"id":{"name":"snd_blaster_art","path":"sounds/snd_blaster_art/snd_blaster_art.yy",},},
     {"id":{"name":"snd_boom","path":"sounds/snd_boom/snd_boom.yy",},},
     {"id":{"name":"snd_Ding","path":"sounds/snd_Ding/snd_Ding.yy",},},
+    {"id":{"name":"snd_footstep","path":"sounds/snd_footstep/snd_footstep.yy",},},
+    {"id":{"name":"snd_gordontalk","path":"sounds/snd_gordontalk/snd_gordontalk.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
     {"id":{"name":"spr_bg_eddie","path":"sprites/spr_bg_eddie/spr_bg_eddie.yy",},},
     {"id":{"name":"spr_bg_space","path":"sprites/spr_bg_space/spr_bg_space.yy",},},

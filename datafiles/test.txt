@@ -53,7 +53,7 @@ slide Collins 0 0
 set_face Collins default
 autoskip -1
 
-c I am [#F1F547][font_italic]Collins[/].
+c I am [delay,400][#F1F547][font_italic]Collins[/].
 
 textbox false
 
@@ -71,7 +71,7 @@ pause 1.5
 textbox true
 
 g I am Gordon.
-g We are the Gooble brothers.
+g We are [delay,500]the Gooble brothers.
 
 set_alpha Gordon 0 0.1
 slide Collins 0 0
@@ -87,7 +87,7 @@ c I was the original Gooble brother before he was here.
 slide Collins 0 0
 set_face Collins default
 
-c Anyway, want to be friends?
+c Anyway,[delay,400] want to be friends?
 
 choice [Yes] [No] [Maybe]
 	case 0 yes
