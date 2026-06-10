@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Entity_Gordon",
-  "eventList":[],
+  "%Name":"Obj_Door",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Obj_Entity_Gordon",
+  "name":"Obj_Door",
   "overriddenProperties":[],
   "parent":{
     "name":"RPG",
     "path":"folders/Objects/RPG.yy",
   },
   "parentObjectId":{
-    "name":"Obj_Entity",
-    "path":"objects/Obj_Entity/Obj_Entity.yy",
+    "name":"Obj_Solid",
+    "path":"objects/Obj_Solid/Obj_Solid.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -26,13 +28,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"goto_room","filters":[],"listItems":[],"multiselect":false,"name":"goto_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_entity_Gordon",
-    "path":"sprites/spr_entity_Gordon/spr_entity_Gordon.yy",
+    "name":"spr_door",
+    "path":"sprites/spr_door/spr_door.yy",
   },
   "spriteMaskId":null,
   "visible":true,

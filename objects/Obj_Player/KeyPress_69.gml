@@ -11,11 +11,9 @@ if !freeze {
 		check_y += 5;
 	}
 	var object = instance_place(check_x, check_y, Obj_Solid);
-	show_debug_message(object);
 	if object != noone {
-		show_debug_message(object.interact);
-		if object.interact != noone {
-			object.interact();	
+		if variable_instance_exists(object, "interact") {
+			object.interact();
 		}
 	}
 }

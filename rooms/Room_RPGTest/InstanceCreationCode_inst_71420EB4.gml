@@ -1,9 +1,9 @@
 
 saidThanks = false;
 
-audio_sound_gain(snd_gordontalk, 3);
-
 function interact() {
+	audio_sound_gain(snd_gordontalk, 3);
+	audio_sound_pitch(snd_gordontalk, 1.5);
 	dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 	
 	var clownNose = variable_global_exists("clownNose");
@@ -19,7 +19,7 @@ function interact() {
 			set_position Gordon 0 0
 
 			textbox true
-			g [typistSoundPerChar,snd_gordontalk,1,1]Aw, thanks bro.
+			g [typistSoundPerChar,snd_gordontalk,.9,1]Aw, thanks bro.
 			textbox false
 			";
 			dialoguemaster.ended = function() {
@@ -36,7 +36,7 @@ function interact() {
 			set_position Gordon 0 0
 
 			textbox true
-			g [typistSoundPerChar,snd_gordontalk,1,1]Alright you can go now.
+			g [typistSoundPerChar,snd_gordontalk,.9,1]Alright you can go now.
 			textbox false
 			";
 		}
@@ -50,15 +50,15 @@ function interact() {
 		set_position Gordon 0 0.1
 
 		textbox true
-		g [typistSoundPerChar,snd_gordontalk,1,1]Greetmigs.
+		g [typistSoundPerChar,snd_gordontalk,.9,1]Greetmigs.
 		slide Gordon 0 0
-		g [typistSoundPerChar,snd_gordontalk,1,1]This is my little world.
+		g [typistSoundPerChar,snd_gordontalk,.9,1]This is my little world.
 		pause 1
 		slide Gordon -0.1 0
-		g [typistSoundPerChar,snd_gordontalk,1,1]Say, have you seen my clown nose?
+		g [typistSoundPerChar,snd_gordontalk,.9,1]Say, have you seen my clown nose?
 		slide Gordon 0 0
-		g [typistSoundPerChar,snd_gordontalk,1,1]I lost it a while ago. Would you find it for me?
-		g [typistSoundPerChar,snd_gordontalk,1,1]Thanks twin.
+		g [typistSoundPerChar,snd_gordontalk,.9,1]I lost it a while ago. Would you find it for me?
+		g [typistSoundPerChar,snd_gordontalk,.9,1]Thanks twin.
 		textbox false
 		";
 	}

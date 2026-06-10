@@ -1,1 +1,3 @@
+InitializeRoom();
+
 audio_play_sound(m_ambient_4, 1, true, 0.25);
