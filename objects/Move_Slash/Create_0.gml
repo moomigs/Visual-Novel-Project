@@ -1,6 +1,6 @@
 event_inherited();
 
-KNOCKBACK = 6;
+KNOCKBACK = 8;
 STRENGTH = 20;
 TRAVEL = bbox_right - bbox_left;
 WIDTH = bbox_bottom - bbox_top;
@@ -13,6 +13,8 @@ start_x = x;
 start_y = y;
 
 function go() {
+	audio_play_sound(snd_swing, 1, false, 1.5, 0, 0.9+random(1)*0.2);
+	
 	var _hits = ds_list_create();
 	
 	var _x1 = start_x + x_velocity*forward_offset - abs(right_x)*WIDTH/2;
