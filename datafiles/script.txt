@@ -24,13 +24,13 @@ name loc Local
 
 textbox false
 
-#skipto 1
+skipto 1
 
 play_sound m_in_legends
 
 pause 2
 
-dissolve spr_bg_space 2
+dissolve spr_bg_galaxy 2
 
 pause 6
 
@@ -222,7 +222,7 @@ g "That's right."
 nar Gordon and Phoebe look at each other.
 g "You know any ruins?"
 c "I..."
-ct "The whole bar stares daggers at me, daring me to speak up."
+ct The whole bar stares daggers at me, daring me to speak up.
 c "No..."
 g "Tch. Figures."
 nar The star runners walk out while Collins stares at the door.
@@ -231,9 +231,7 @@ c "Maybe..."
 
 stop_sound m_edge_of_the_galaxy 3
 
-node 1
-
-goto_room Room_RPG_1
+#goto_room Room_RPG_1
 
 # RPG section
 
@@ -241,7 +239,7 @@ nar Cut to a back alley behind the bar as Collins walks out
 c "I'm taking my break!"
 c "..."
 
-loop_sound m_pleasant_creek
+loop_sound m_wake_up
 
 nar A group of children are in the alley, an older one out front with a sword and pistol.
 child "I see you are a dreadful pirate!"
@@ -257,7 +255,7 @@ nar Collins teaches the child moves as a tutorial for the player, teaching how t
 child "Gahh! You've bested me! Curse you!"
 child "..."
 
-stop_sound m_pleasant_creek 3
+stop_sound m_wake_up 3
 
 child "Man, can't you go easy on me, Collins?"
 c "I was going easy on you."
@@ -309,6 +307,8 @@ g "Don't keep us waiting."
 
 # Room_VN_2
 
+loop_sound m_entering_the_void
+
 nar Cut to night. Collins is in his fighter robes. Phoebe and Gordon are talking outside the ship.
 
 g "You showed up!"
@@ -332,8 +332,6 @@ p "Even at ten percent, you'll make a killing."
 g "Assuming we find it."
 p "Let's stop wasting time."
 p "If he's lying, we turn around."
-
-loop_sound m_entering_the_void
 
 nar Cut to cockpit, Gordon takes a seat
 
@@ -398,7 +396,7 @@ c "We're close. I can give you the coordinates."
  
 nar Show a wide shot of the ruins. It looks like a giant stone fortress.
 
-goto_room Room_RPG_2
+#goto_room Room_RPG_2
 
 nar Standing before a big door
 
@@ -489,13 +487,14 @@ g "Just grab it already."
 nar pause
 ? "It is yours."
 nar Collins hesitantly takes the gem, which bursts into light until it vanishes.
+
+stop_sound m_alien_artifact 2
+
 nar Collins looks down at his hands. They are covered in blood for a second.
 c "Mine..."
 ct The walls whisper.
 ct The chamber is alive.
 ct It is watching.
-
-stop_sound m_alien_artifact 5
 
 nar He turns around
 nar Phoebe and Gordon glare at him.
@@ -516,7 +515,7 @@ both "Shut up!"
 p "If you think you're still getting eight percent--!"
 g "Yeah you can forget about getting five percent!"
 
-goto_room Room_RPG_3
+#goto_room Room_RPG_3
 
 nar Door opens
 nar pause
@@ -574,6 +573,8 @@ p "[font_italic]What?[/f]"
 g "Ahahaha!"
 g "I like this kid."
 p "Fine. But we leave tomorrow. So figure it out."
+
+node 1
 
 stop_sound m_piano_13 3
 
@@ -747,7 +748,7 @@ p "Shut up."
 g "..."
 g "Let me show you to your room, kid."
 
-goto_room Room_RPG_4
+#goto_room Room_RPG_4
 
 loop_sound m_serenity_by_the_sea
 
@@ -787,7 +788,7 @@ nar Collins looks around. Smiles. Sits down on the bed and makes the wall transp
 stop_sound m_serenity_by_the_sea 3
 pause 3
 
-goto_room Room_RPG_5
+#goto_room Room_RPG_5
 
 loop_sound m_shenanigans
 
@@ -1032,7 +1033,7 @@ g "Don't lose. Lot at stake here."
 
 stop_sound m_the_old_tower_inn 3
 
-goto_room Room_RPG_6
+#goto_room Room_RPG_6
 
 nar Cut to town street, crowd surrounding them, Richard and Collins facing off
 
@@ -1182,7 +1183,7 @@ c "I will be the one to cut you down, vampire."
 ri "..."
 ? "Enough talk."
 
-goto_room Room_RPG_7
+#goto_room Room_RPG_7
 
 nar Fight starts. First hit on the player:
 c "What? She's using stun?"
