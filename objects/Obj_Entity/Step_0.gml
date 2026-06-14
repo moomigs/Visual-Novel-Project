@@ -18,15 +18,15 @@ if can_move {
 
 		image_xscale = 1;
 
-		if velocity_y > 0 {
-			direction = 270;
-		} else if velocity_y < 0 {
-			direction = 90;
-		} else if velocity_x > 0 {
+		if velocity_x > 0 {
 			direction = 0;
 		} else if velocity_x < 0 {
 			direction = 180;
-		}
+		} else if velocity_y > 0 {
+			direction = 270;
+		} else if velocity_y < 0 {
+			direction = 90;
+		} 
 
 		if velocity_x == 0 and velocity_y == 0 {
 			if direction == 0 {
@@ -67,9 +67,16 @@ if can_move {
 			velocity_x *= i;
 			velocity_y *= i;
 		}
+		if defending {
+			velocity_x *= 0.5;
+			velocity_y *= 0.5;
+		}
 
-		move_and_collide(velocity_x, velocity_y, Obj_Solid);
-	
+		move_and_collide(velocity_x + push_x, velocity_y + push_y, Obj_Solid);
+		
+		push_x *= push_friction;
+		push_y *= push_friction;
+		
 		if !walking and real_speed>0 {
 			walking = true;
 			alarm_set(0, footstep_interval);
@@ -78,4 +85,8 @@ if can_move {
 		}
 	}
 	update_depth();
+}
+
+if show_healthbar > 0 {
+	show_healthbar = max(0, show_healthbar - 1);	
 }
