@@ -63,7 +63,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"BLANK GAME",
   "resources":[
@@ -271,8 +271,8 @@
     {"id":{"name":"m_royal_mischief","path":"sounds/m_royal_mischief/m_royal_mischief.yy",},},
     {"id":{"name":"m_serenity_by_the_sea","path":"sounds/m_serenity_by_the_sea/m_serenity_by_the_sea.yy",},},
     {"id":{"name":"m_shenanigans","path":"sounds/m_shenanigans/m_shenanigans.yy",},},
+    {"id":{"name":"m_the_beast","path":"sounds/m_the_beast/m_the_beast.yy",},},
     {"id":{"name":"m_the_old_tower_inn","path":"sounds/m_the_old_tower_inn/m_the_old_tower_inn.yy",},},
-    {"id":{"name":"m_wake_up","path":"sounds/m_wake_up/m_wake_up.yy",},},
     {"id":{"name":"m_winds_of_destiny","path":"sounds/m_winds_of_destiny/m_winds_of_destiny.yy",},},
     {"id":{"name":"snd_blaster_art","path":"sounds/snd_blaster_art/snd_blaster_art.yy",},},
     {"id":{"name":"snd_boom","path":"sounds/snd_boom/snd_boom.yy",},},
