@@ -239,7 +239,7 @@ nar Cut to a back alley behind the bar as Collins walks out
 c "I'm taking my break!"
 c "..."
 
-loop_sound m_wake_up
+loop_sound m_the_beast
 
 nar A group of children are in the alley, an older one out front with a sword and pistol.
 child "I see you are a dreadful pirate!"
@@ -255,7 +255,7 @@ nar Collins teaches the child moves as a tutorial for the player, teaching how t
 child "Gahh! You've bested me! Curse you!"
 child "..."
 
-stop_sound m_wake_up 3
+stop_sound m_the_beast 3
 
 child "Man, can't you go easy on me, Collins?"
 c "I was going easy on you."
