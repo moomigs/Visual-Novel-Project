@@ -1,3 +1,3 @@
 InitializeRoom();
 
-audio_play_sound(m_ambient_4, 1, true, 0.25);
+audio_play_sound(m_entering_the_void, .5, true, 0.25);

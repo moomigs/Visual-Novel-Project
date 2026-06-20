@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":188.57141,
+  "duration":266.46973,
   "exportDir":"",
   "name":"m_winds_of_destiny",
   "parent":{

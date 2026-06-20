@@ -2,7 +2,7 @@ name c [#F1F547]Collins[/]
 name g Gordon
 name ? ???
 
-skipto 1
+skipto 2
 
 autoskip 2
 textbox false
@@ -108,6 +108,8 @@ set_face Collins default
 c Well, see ya around!
 
 pause 0.25
+node 2
+
 set_alpha Collins 0 0.1
 textbox false
 pause 1

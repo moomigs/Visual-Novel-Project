@@ -18,6 +18,7 @@ walking = false;
 attacking = false;
 defending = false;
 attack_cooldown = 0;
+attack_pending = noone;
 
 show_healthbar = 0;
 
@@ -29,15 +30,17 @@ function update_depth() {
 }
 
 function die() {
+	audio_play_sound(snd_die, 1, false, 4, 0, 1.5);
 	instance_destroy();
 }
 
 function damage(n) {
 	if passive { return; }
 	if hp == 0 { return; }
-	hp = max(0, hp - n);
-	show_healthbar = game_get_speed(gamespeed_fps);
 	audio_play_sound(snd_hurt, 1, false, 2.5, 0, 0.9 + random(1) * 0.2);
+	if defending { return; }
+	hp = max(0, hp - n);
+	show_healthbar = 2*game_get_speed(gamespeed_fps);
 	instance_create_depth(x, y, depth, Effect_entity_hurt).go(self);
 	if hp == 0 { die(); }
 }

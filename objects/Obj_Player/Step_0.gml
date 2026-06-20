@@ -12,3 +12,4 @@ if !attacking and !freeze {
 		}
 	}
 }
+

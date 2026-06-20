@@ -9,7 +9,7 @@ x = start_x + (x_velocity * TRAVEL) * sqrt((step/frames));
 y = start_y + (y_velocity * TRAVEL) * sqrt((step/frames));
 
 if step == frames {
-	instance_destroy();
+	//instance_destroy();
 }
 
 step ++;

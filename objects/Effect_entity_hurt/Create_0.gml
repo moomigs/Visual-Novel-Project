@@ -6,5 +6,10 @@ entity = noone;
 
 function go(_entity) {
 	entity = _entity;
+	initial_blend = entity.image_blend;
+	
+	if entity.passive { instance_destroy(); return; }
+	entity.passive = true;
+	
 	alarm_set(0, 1);
 }

@@ -11,6 +11,7 @@ if duration > 0 {
 	alarm_set(0, flash_frames);
 } else {
 	flash = false;
-	entity.image_blend = c_white;
+	entity.image_blend = initial_blend;
+	entity.passive = false;
 	instance_destroy();
 }
