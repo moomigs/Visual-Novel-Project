@@ -10,6 +10,8 @@ image_speed = 0;
 
 function set_direction(dir) {
 	direction = dir;
+	image_xscale = 1;
+	image_yscale = 1;
 	if dir == 0 {
 		x_velocity = 1;
 		right_y = 1;

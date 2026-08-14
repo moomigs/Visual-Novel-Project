@@ -1,6 +1,6 @@
 audio_play_sound(snd_swing, 1, false, 1.5, 0, 0.9+random(1)*0.2);
 
-direction = mover.direction;
+set_direction(mover.direction);
 image_alpha = 1;
 image_speed = 1;
 	

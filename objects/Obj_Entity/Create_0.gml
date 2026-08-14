@@ -3,9 +3,18 @@ event_inherited();
 velocity_x = 0;
 velocity_y = 0;
 
+movespeed_alpha = 1;
+
+pause = false;
+global_paused = false;
+
 push_x = 0;
 push_y = 0;
 push_friction = 0.9;
+
+moving_to = false
+goto_x = 0;
+goto_y = 0;
 
 up = false;
 down = false;
@@ -43,6 +52,19 @@ function damage(n) {
 	show_healthbar = 2*game_get_speed(gamespeed_fps);
 	instance_create_depth(x, y, depth, Effect_entity_hurt).go(self);
 	if hp == 0 { die(); }
+}
+
+function move_to(_x, _y) {
+	goto_x = _x;
+	goto_y = _y;
+	moving_to = true;
+}
+
+function face_direction(d) {
+	if d == "up" then direction = 90 facing = d;
+	if d == "down" then direction = 270 facing = d;
+	if d == "right" then direction = 0 facing = d;
+	if d == "left" then direction = 180 facing = d;
 }
 
 function push(_x, _y) {

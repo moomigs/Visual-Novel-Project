@@ -9,11 +9,11 @@
   "macroPageTiles":{
     "SerialiseHeight":12,
     "SerialiseWidth":18,
-    "TileCompressedData":[-216,0,],
+    "TileCompressedData":[3,3,4,5,-15,0,3,13,14,15,-15,0,3,23,24,25,-15,0,1,22,-161,0,],
     "TileDataFormat":1,
   },
   "name":"tile_floor1",
-  "out_columns":4,
+  "out_columns":10,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -33,11 +33,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":16,
+  "tileHeight":24,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":16,
+  "tileWidth":24,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":16,
+  "tile_count":100,
 }

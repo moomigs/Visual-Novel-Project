@@ -1,6 +1,8 @@
 lines = [];
 current_line = -1;
 
+scene = noone;
+
 name_scribble = scribble("");
 display_scribble = scribble("");
 typist = scribble_typist();
@@ -373,6 +375,35 @@ function next_line() {
 			script_execute(asset_get_index(arg));
 			
 			next_line();
+		} else if command = "trigger" {
+			var arg1 = real(arguments[1]);
+			if scene != noone {
+				scene.alarm_set(arg1, 1);
+			}
+			
+			next_line();
+		} else if command = "entity_speed" {
+			var arg1 = arguments[1];
+			var arg2 = real(arguments[2]);
+			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			entity.move_speed = arg2;
+			
+			next_line();
+		} else if command = "entity_walk" {
+			var arg1 = arguments[1];
+			var arg2 = real(arguments[2]);
+			var arg3 = real(arguments[3]);
+			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			entity.move_to(arg2, arg3);
+			
+			next_line();
+		} else if command = "entity_turn" {
+			var arg1 = arguments[1];
+			var arg2 = arguments[2];
+			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			entity.face_direction(arg2);
+			
+			next_line();
 		} else {
 			working = false;
 			if is_string(names[$ command]) or command == "say" {
@@ -408,9 +439,16 @@ function input() {
 	}
 }
 
-function go() {
+function set_scene(scene_instance) {
+	scene = scene_instance;
+}
+
+function go(dont_pause) {
 	if instance_exists(Obj_Player) {
 		Obj_Player.freeze = true;
+	}
+	if !dont_pause {
+		global.entity_pause = true;
 	}
 	alarm_set(1, 10);
 }

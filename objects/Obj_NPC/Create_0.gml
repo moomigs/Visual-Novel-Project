@@ -1,3 +1,5 @@
 event_inherited();
 
-alarm_set(1, 40);
+function start_wandering() {
+	alarm_set(1, 40);
+}

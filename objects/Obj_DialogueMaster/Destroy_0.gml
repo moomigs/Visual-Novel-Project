@@ -2,6 +2,7 @@
 if instance_exists(Obj_Player) {
 	Obj_Player.freeze = false;
 }
+global.entity_pause = false;
 
 struct_foreach(characters, function (name, character) {
 	instance_destroy(character);

@@ -9,7 +9,10 @@
     "name":"Solids",
     "path":"folders/Objects/RPG/Solids.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_Solid",
+    "path":"objects/Obj_Solid/Obj_Solid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tile_floor1",
-    "path":"sprites/spr_tile_floor1/spr_tile_floor1.yy",
+    "name":"spr_Wall",
+    "path":"sprites/spr_Wall/spr_Wall.yy",
   },
   "spriteMaskId":null,
   "visible":true,
