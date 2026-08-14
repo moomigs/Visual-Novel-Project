@@ -1,5 +1,4 @@
 collins = Obj_Entity_Collins;
-show_debug_message(collins);
 
 dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 dialoguemaster.set_scene(self);
@@ -24,4 +23,5 @@ dialoguemaster.dialogue_code = @"
 	pause 4
 ";
 dialoguemaster.ended = function() {room_goto_next();}
-dialoguemaster.go(true);
+dialoguemaster.go();
+dialoguemaster.unpause();

@@ -443,12 +443,14 @@ function set_scene(scene_instance) {
 	scene = scene_instance;
 }
 
-function go(dont_pause) {
+function go() {
 	if instance_exists(Obj_Player) {
 		Obj_Player.freeze = true;
 	}
-	if !dont_pause {
-		global.entity_pause = true;
-	}
+	global.entity_pause = true;
 	alarm_set(1, 10);
+}
+
+function unpause() {
+	global.entity_pause = false;
 }
