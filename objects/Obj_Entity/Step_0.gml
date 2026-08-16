@@ -43,64 +43,68 @@ if can_move {
 		direction = 90;
 	} 
 	
-	if (velocity_x == 0 and velocity_y == 0) or freeze {
-		if direction == 0 {
-			sprite_index = sprite_right;
-			facing = "right";
-		} else if direction == 45 {
-			sprite_index = sprite_upright;
-			facing = "upright";
-		} else if direction == 90 {
-			sprite_index = sprite_backward;
-			facing = "up";
-		} else if direction == 90+45 {
-			image_xscale = -1;
-			sprite_index = sprite_upright;
-			facing = "upleft";
-		} else if direction == 180 {
-			image_xscale = -1;
-			sprite_index = sprite_right;
-			facing = "left";
-		} else if direction == 180+45 {
-			image_xscale = -1;
-			sprite_index = sprite_downright;
-			facing = "downleft";
-		} else if direction == 270 {
-			sprite_index = sprite_forward;
-			facing = "down";
-		} else if direction == 270+45 {
-			image_xscale = -1;
-			sprite_index = sprite_downright;
-			facing = "downright";
-		}
+	if scene_setsprite != noone {
+		sprite_index = scene_setsprite;
 	} else {
-		if direction == 0 {
-			sprite_index = sprite_right_run;
-			facing = "right";
-		} else if direction == 45 {
-			sprite_index = sprite_upright_run;
-			facing = "upright";
-		} else if direction == 90 {
-			sprite_index = sprite_backward_run;
-			facing = "up";
-		} else if direction == 90+45 {
-			image_xscale = -1;
-			sprite_index = sprite_upright_run;
-			facing = "upleft";
-		} else if direction == 180 {
-			image_xscale = -1;
-			sprite_index = sprite_right_run;
-			facing = "left";
-		} else if direction == 180+45 {
-			image_xscale = -1;
-			sprite_index = sprite_downright_run;
-			facing = "downleft";
-		} else if direction == 270 {
-			sprite_index = sprite_forward_run;
-			facing = "down";
-		} else if direction == 270+45 {
-			sprite_index = sprite_downright_run;
-			facing = "downright";
+		if (velocity_x == 0 and velocity_y == 0) or freeze {
+			if direction == 0 {
+				sprite_index = sprite_right;
+				facing = "right";
+			} else if direction == 45 {
+				sprite_index = sprite_upright;
+				facing = "upright";
+			} else if direction == 90 {
+				sprite_index = sprite_backward;
+				facing = "up";
+			} else if direction == 90+45 {
+				image_xscale = -1;
+				sprite_index = sprite_upright;
+				facing = "upleft";
+			} else if direction == 180 {
+				image_xscale = -1;
+				sprite_index = sprite_right;
+				facing = "left";
+			} else if direction == 180+45 {
+				image_xscale = -1;
+				sprite_index = sprite_downright;
+				facing = "downleft";
+			} else if direction == 270 {
+				sprite_index = sprite_forward;
+				facing = "down";
+			} else if direction == 270+45 {
+				image_xscale = -1;
+				sprite_index = sprite_downright;
+				facing = "downright";
+			}
+		} else {
+			if direction == 0 {
+				sprite_index = sprite_right_run;
+				facing = "right";
+			} else if direction == 45 {
+				sprite_index = sprite_upright_run;
+				facing = "upright";
+			} else if direction == 90 {
+				sprite_index = sprite_backward_run;
+				facing = "up";
+			} else if direction == 90+45 {
+				image_xscale = -1;
+				sprite_index = sprite_upright_run;
+				facing = "upleft";
+			} else if direction == 180 {
+				image_xscale = -1;
+				sprite_index = sprite_right_run;
+				facing = "left";
+			} else if direction == 180+45 {
+				image_xscale = -1;
+				sprite_index = sprite_downright_run;
+				facing = "downleft";
+			} else if direction == 270 {
+				sprite_index = sprite_forward_run;
+				facing = "down";
+			} else if direction == 270+45 {
+				sprite_index = sprite_downright_run;
+				facing = "downright";
+			}
 		}
 	}
 	

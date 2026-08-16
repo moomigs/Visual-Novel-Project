@@ -2,6 +2,7 @@ lines = [];
 current_line = -1;
 
 scene = noone;
+entity_waitingfor = noone;
 
 name_scribble = scribble("");
 display_scribble = scribble("");
@@ -375,21 +376,21 @@ function next_line() {
 			script_execute(asset_get_index(arg));
 			
 			next_line();
-		} else if command = "trigger" {
+		} else if command == "trigger" {
 			var arg1 = real(arguments[1]);
 			if scene != noone {
 				scene.alarm_set(arg1, 1);
 			}
 			
 			next_line();
-		} else if command = "entity_speed" {
+		} else if command == "entity_speed" {
 			var arg1 = arguments[1];
 			var arg2 = real(arguments[2]);
 			var entity = instance_find(variable_instance_get(scene, arg1), 0);
 			entity.move_speed = arg2;
 			
 			next_line();
-		} else if command = "entity_walk" {
+		} else if command == "entity_walk" {
 			var arg1 = arguments[1];
 			var arg2 = real(arguments[2]);
 			var arg3 = real(arguments[3]);
@@ -397,11 +398,39 @@ function next_line() {
 			entity.move_to(arg2, arg3);
 			
 			next_line();
-		} else if command = "entity_turn" {
+		} else if command == "entity_turn" {
 			var arg1 = arguments[1];
 			var arg2 = arguments[2];
 			var entity = instance_find(variable_instance_get(scene, arg1), 0);
 			entity.face_direction(arg2);
+			
+			next_line();
+		} else if command == "entity_waitfor" {
+			var arg1 = arguments[1];
+			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			if entity.moving_to {
+				paused = true;
+				entity_waitingfor = entity;
+				alarm_set(4, 1);
+			}
+		} else if command == "entity_setsprite" {
+			var arg1 = arguments[1];
+			var arg2 = arguments[2];
+			var arg3 = 1;
+			if array_length(arguments) > 3 {
+				arg3 = real(arguments[3]);
+			}
+			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			var setsprite = asset_get_index(arg2);
+			entity.scene_setsprite = setsprite;
+			entity.sprite_index = setsprite;
+			entity.image_xscale = arg3;
+			
+			next_line();
+		} else if command = "entity_freesprite" {
+			var arg1 = arguments[1];
+			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			entity.scene_setsprite = noone;
 			
 			next_line();
 		} else {

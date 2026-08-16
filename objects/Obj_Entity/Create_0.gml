@@ -12,6 +12,7 @@ push_x = 0;
 push_y = 0;
 push_friction = 0.9;
 
+scene_setsprite = noone;
 moving_to = false
 goto_x = 0;
 goto_y = 0;
