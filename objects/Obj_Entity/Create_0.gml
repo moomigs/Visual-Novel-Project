@@ -60,6 +60,11 @@ function move_to(_x, _y) {
 	goto_y = _y;
 	moving_to = true;
 }
+function move_to_relative(_x, _y) {
+	goto_x = x+_x;
+	goto_y = y+_y;
+	moving_to = true;
+}
 
 function face_direction(d) {
 	if d == "up" then direction = 90 facing = d;

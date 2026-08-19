@@ -378,36 +378,48 @@ function next_line() {
 			next_line();
 		} else if command == "trigger" {
 			var arg1 = real(arguments[1]);
+			var arg2 = 1;
+			if array_length(arguments) > 2 {
+				arg2 = real(arguments[2]);
+			}
 			if scene != noone {
-				scene.alarm_set(arg1, 1);
+				scene.alarm[arg1] = arg2;
 			}
 			
 			next_line();
 		} else if command == "entity_speed" {
 			var arg1 = arguments[1];
 			var arg2 = real(arguments[2]);
-			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			var entity = variable_instance_get(scene, arg1);
 			entity.move_speed = arg2;
+			
+			next_line();
+		} else if command == "entity_walk_to" {
+			var arg1 = arguments[1];
+			var arg2 = real(arguments[2]);
+			var arg3 = real(arguments[3]);
+			var entity = variable_instance_get(scene, arg1);
+			entity.move_to(arg2, arg3);
 			
 			next_line();
 		} else if command == "entity_walk" {
 			var arg1 = arguments[1];
 			var arg2 = real(arguments[2]);
 			var arg3 = real(arguments[3]);
-			var entity = instance_find(variable_instance_get(scene, arg1), 0);
-			entity.move_to(arg2, arg3);
+			var entity = variable_instance_get(scene, arg1);
+			entity.move_to_relative(arg2, arg3);
 			
 			next_line();
 		} else if command == "entity_turn" {
 			var arg1 = arguments[1];
 			var arg2 = arguments[2];
-			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			var entity = variable_instance_get(scene, arg1);
 			entity.face_direction(arg2);
 			
 			next_line();
 		} else if command == "entity_waitfor" {
 			var arg1 = arguments[1];
-			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			var entity = variable_instance_get(scene, arg1);
 			if entity.moving_to {
 				paused = true;
 				entity_waitingfor = entity;
@@ -420,7 +432,7 @@ function next_line() {
 			if array_length(arguments) > 3 {
 				arg3 = real(arguments[3]);
 			}
-			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			var entity = variable_instance_get(scene, arg1);
 			var setsprite = asset_get_index(arg2);
 			entity.scene_setsprite = setsprite;
 			entity.sprite_index = setsprite;
@@ -429,7 +441,7 @@ function next_line() {
 			next_line();
 		} else if command = "entity_freesprite" {
 			var arg1 = arguments[1];
-			var entity = instance_find(variable_instance_get(scene, arg1), 0);
+			var entity = variable_instance_get(scene, arg1);
 			entity.scene_setsprite = noone;
 			
 			next_line();
