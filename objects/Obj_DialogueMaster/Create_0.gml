@@ -38,7 +38,6 @@ initial_viewport_subject = noone;
 
 titles = {};
 characters = {};
-names = {};
 buttons = [];
 
 padding = 20;
@@ -120,7 +119,8 @@ function next_line() {
 			var arg1 = arguments[1];
 			var name = string_copy(lines[current_line], string_length(command)+1+string_length(arg1)+2, 100);
 			//var arg2 = arguments[2];
-			names[$ arg1] = name;
+			if not variable_global_exists("names") {global.names = {};}
+			global.names[$ arg1] = name;
 			
 			next_line();
 		} else if command == "new_title" {
@@ -463,7 +463,7 @@ function next_line() {
 			next_line();
 		} else {
 			working = false;
-			if is_string(names[$ command]) or command == "say" {
+			if is_string(global.names[$ command]) or command == "say" {
 				if skippingto == -1 and goingto == -1 {
 					//only display these lines
 					cmd_length = string_length(command)+1;
@@ -474,7 +474,7 @@ function next_line() {
 						name_scribble = scribble("");
 						array_push(history, display_scribble.get_text());
 					} else {
-						var display_name = names[$ command];
+						var display_name = global.names[$ command];
 						name_scribble = scribble(display_name);
 						array_push(history, name_scribble.get_text() + ": " + display_scribble.get_text());
 					}

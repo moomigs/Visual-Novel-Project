@@ -14,8 +14,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"sprite_backward_run","path":"objects/Obj_Entity/Obj_Entity.yy",},"resource":{"name":"spr_Player_backward_running","path":"sprites/spr_Player_backward_running/spr_Player_backward_running.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_Player_backward_running",},
   ],
   "parent":{
-    "name":"RPG",
-    "path":"folders/Objects/RPG.yy",
+    "name":"Special",
+    "path":"folders/Objects/RPG/Special.yy",
   },
   "parentObjectId":{
     "name":"Obj_NPC",

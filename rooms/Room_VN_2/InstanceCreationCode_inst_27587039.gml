@@ -1,2 +1,1 @@
-dialogue_code = @"
-";
+go();

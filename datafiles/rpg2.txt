@@ -1,0 +1,75 @@
+### Draw basic rectangle at top of the screen and have characters face up at it
+
+nar Standing before a big door
+
+g "This looks right."
+p "How do we use this key?"
+g "Stand back."
+
+### Gordon steps up to the door and pauses
+
+stop_sound m_entering_the_void 2
+
+### turn door white
+
+g "Ha! Easy!"
+
+loop_sound m_royal_mischief
+
+
+### have a few NPCS walk on screen
+
+robo "Aha! You fools!"
+g "Ehh??"
+p "Great."
+c "Are we about to fight...?"
+robo "Our patience has been rewarded!"
+g "How long have you been waiting...?"
+robo "158.35 years."
+g "..."
+robo "We have the superior night vision!"
+robo "Onward, comrades! For the queen!"
+
+### NPCs walk through the door
+
+g "Robos..."
+p "Collins."
+p "Your lace lets you see in the dark right?"
+c "Doesn't everyone's?"
+p "Not a hundred-fifty years ago apparently."
+p "Let's go."
+g "Good thing you can fight, eh kid?"
+
+stop_sound m_royal_mischief 3
+
+
+### transition to new room
+
+
+loop_sound m_neural_net_nightmare
+
+### Fight one Robo after the other until you reach the end of the room. Dialogue before each fight:
+
+
+### 1
+robo "For the queen!"
+
+### 2
+robo "Statement: I am definitely a robot."
+c "What?"
+p "They're messing with you."
+p "Manipulative little buggers."
+
+### 3
+robo "Come at me, fleshies!"
+p "Wow. Can they really say that word?"
+g "You clanky!"
+
+
+stop_sound m_neural_net_nightmare 5
+
+pause 5
+
+loop_sound m_alien_artifact
+
+goto_room Room_VN_3

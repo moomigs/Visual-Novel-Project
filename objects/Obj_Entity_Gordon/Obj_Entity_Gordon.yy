@@ -8,8 +8,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"can_move","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
-    "name":"RPG",
-    "path":"folders/Objects/RPG.yy",
+    "name":"Special",
+    "path":"folders/Objects/RPG/Special.yy",
   },
   "parentObjectId":{
     "name":"Obj_Entity",

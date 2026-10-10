@@ -1,0 +1,234 @@
+name c Collins
+name g Gordon
+name p Phoebe
+name r Rey
+name ri Richard
+name f Fiber
+name man Man
+name woman Woman
+name bar Bartender
+name robo Robot
+name child Child
+name villager Villager
+name m Mayor
+name a Artensa
+name n Navigator
+name Man1 Man 1
+name Man2 Man 2
+name Man3 Man 3
+name ? ???
+name ct  
+name nar Narrator
+name both Both
+name loc Local
+
+textbox false
+
+# skipto 1
+
+play_sound m_in_legends
+
+pause 2
+
+dissolve spr_bg_galaxy 2
+
+pause 6
+
+new_title title1 In the Third Epoch there roamed the galaxy men
+new_title title1_2 and women of renown in search of treasure and glory.
+new_title title2 They heeded the call of the stars and set their hearts on infamy at any cost.
+new_title title3 Admired. Feared. Resented. They were larger than life and lower than dirt.
+new_title title4 These adventurers were known as:
+new_title title5 [font_title]STAR RUNNERS[/f]
+
+title_setpos title1 0 0.4
+title_setpos title1_2 0 0.3
+title_setpos title2 0 0
+title_setpos title3 0 -0.35
+title_setpos title4 0 0.1
+title_setpos title5 0 -0.1
+
+title_fadein title1 2
+title_fadein title1_2 2
+pause 5
+title_fadein title2 2
+pause 5
+title_fadein title3 2
+pause 6
+title_fadeout title1 2
+title_fadeout title1_2 2
+title_fadeout title2 2
+title_fadeout title3 2
+pause 4
+title_fadein title4 2
+pause 6
+title_fadein title5 3
+pause 6
+title_fadeout title4 4
+title_fadeout title5 4
+
+pause 5
+
+dissolve spr_planet 3
+
+pause 5
+
+textbox true
+
+pause 2
+
+nar In the outer edges of the Western Republic
+
+dissolve spr_black 1
+stop_sound m_in_legends 0
+
+loop_sound m_putrescent_facsimile
+
+nar Show a dingy bar, a young man is sweeping next to some older men at a table
+man "There I was on Thaxthia."
+man "Facing five robos--"
+c "Thaxthia? You've been off-world??"
+man "..."
+c "What was it like? Thaxthia? Have you been to other worlds? What about the robos--"
+nar The man tosses his beer in Collins' face.
+man "Yeah. And?"
+c "N-Nothing, I just..."
+man "Got something to say?"
+nar The man pulls back his cloak to reveal his sword.
+nar Collins bows his head and keeps sweeping.
+nar The man grins in triumph.
+nar Something catches his attention. A beautiful girl at the bar.
+nar He grins and saunters over.
+man "Hey beautiful."
+woman "Leave me alone."
+man "Come on. I'll buy you a drink."
+nar He places a hand on her arm. The woman slaps him in the face.
+woman "Don't touch me."
+man "..."
+man "Is that how it is?"
+nar He slaps her back and the bar falls silent.
+bar "Hey! What are you doing??"
+bar "She's a regular!"
+man "Shut it, bartender. You gonna stop me?"
+man "I don't see a sword on your hip, and the boy certainly isn't going to save her."
+man "Isn't that right, boy?"
+nar Collins hangs his head and walks away
+man "Ha! Hahaha!"
+nar He turns to the woman who is holding her face in shock.
+man "No one's coming. They never do."
+woman "You... You bastard!"
+man "That's better."
+
+stop_sound m_putrescent_facsimile 2
+
+nar He raises his hand.
+c "Hey!"
+play_sound snd_boom
+nar Show Collins wearing robes with a sword and pistol on his belt.
+c "Let her go."
+bar "Collins!"
+man "..."
+man "Collins, eh?"
+man "So now you come out, still wet, wearing fighter robes?"
+nar He draws his sword and activates it.
+man "Collins, on some backwater planet no one's ever heard of."
+man "You want this fight?"
+nar Collins draws his sword.
+c "I didn't come out here to talk."
+bar "No pistols! Keep your duel between yourselves!"
+nar Show man grinning, sword ready
+
+loop_sound m_leap_into_eternity
+
+nar Show Collins closeup with his sword poised. His face is controlled but deeply angry.
+ct I hate God.
+ct Because in this galaxy, the strong prey on the weak.
+ct And the innocent live in fear.
+ct Blood.
+ct Blood that cries out from the rocks.
+ct But He does not answer.
+ct He isn't there for us.
+ct He wasn't there for me.
+ct I...
+ct I still remember his smile.
+nar Show blue cat eyes and smile
+ct I can still smell the blood.
+ct But there is one thing I am grateful for.
+ct Hell.
+ct It is said the unrighteous burn in fire.
+ct So I will send them there. 
+ct And once I've met my end...
+ct I will surely join them.
+
+nar Collins slashes the man across the chest, drawing blood and wounding him
+nar The man collapses.
+nar Collins stares at him with gentle shock for a moment. His hand trembles.
+
+stop_sound m_leap_into_eternity 5
+
+bar "Collins... don't look at him like that."
+bar "You scare me when you get quiet."
+nar Collins snaps out of it and looks shocked
+
+bar "You two! Since you like listening to his stories so much, take him to a hospital!"
+
+ct I look at the blood on the floor, my mind blank.
+nar The bartender throws a mop into his hands
+
+bar "Put your weapons away and clean this mess."
+nar The woman puts a hand on his shoulder.
+woman "Thank you."
+woman "I thought he was right."
+
+nar Cut to Collins mopping
+
+loop_sound m_edge_of_the_galaxy
+
+nar Phoebe and Gordon walk in
+
+? "Are you sure this is the place to ask around?"
+? "Pretty dingy."
+? "That's the point, Phoebe. Besides, not a bad place to grab a beer."
+p "Absolutely not."
+nar They walk up next to Collins.
+nar Gordon looks at him, then looks down at the blood.
+nar He grins
+? "Told you."
+? "Oi, bartender!"
+bar "What?"
+? "Listen, we're not from around here."
+bar "Hmph."
+? "We were interested in some sightseeing."
+? "Are there any ancient ruins in the area?"
+? "You know, like a great stone building with a big locked door?"
+bar "Get lost, star runners."
+? "Okay, okay."
+? "How about a drink?"
+p "[font_italic]No.[/f]"
+bar "We don't do business with your kind."
+? "What kind is that?"
+bar "The pillaging kind."
+? "Pillaging? Ehh???"
+? "Where did you get that idea?"
+p "Let's go, Gordon."
+p "This room wants us gone."
+g "Come on, just one drink!"
+p "[font_italic]Let's go.[/f]"
+nar They walk by Collins
+c "Um...!"
+g "Hm?"
+c "Are you really star runners?"
+g "That's right."
+nar Gordon and Phoebe look at each other.
+g "You know any ruins?"
+c "I..."
+ct The whole bar stares daggers at me, daring me to speak up.
+c "No..."
+g "Tch. Figures."
+nar The star runners walk out while Collins stares at the door.
+bar "You're going to get yourself killed, Collins."
+c "Maybe..."
+
+stop_sound m_edge_of_the_galaxy 3
+
+goto_room Room_RPG_1
