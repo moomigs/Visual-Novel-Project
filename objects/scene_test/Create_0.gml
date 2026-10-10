@@ -1,12 +1,13 @@
-collins = instance_find(Obj_Entity_Collins, 0);
-npc = instance_find(Obj_NPC, 0);
+player = instance_find(Obj_Player, 0);
+npc1 = instance_find(Obj_NPC, 0);
+npc2 = instance_find(Obj_NPC, 1);
+npc3 = instance_find(Obj_NPC, 2);
 
 dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 dialoguemaster.set_scene(self);
 dialoguemaster.dialogue_code = @"
 	name c Collins
 	name ? ???
-	
     entity_walk_to collins 288 384
 	pause 0.5
     entity_walk_to npc 352 384
@@ -23,29 +24,14 @@ dialoguemaster.dialogue_code = @"
 	textbox false
 	pause 1
 	textbox true
-	c Goodbyemigs.
+	c Prepare to die...
 	textbox false
-	
-	trigger 0
-	
-	pause 1
-	entity_freesprite collins
-	entity_walk_to collins -64 384
-	pause 3.5
-	? Woah
-	pause 1
-	textbox false
-	
-	entity_walk npc 0 -64
-	pause 0.1
-	entity_walk npc -64 0
-	pause 0.1
-	entity_walk npc 0 64
-	pause 0.1
-	
-    entity_walk_to npc 704 384
-	entity_waitfor npc
 ";
-dialoguemaster.ended = function() {room_goto_next();};
-dialoguemaster.go();
-dialoguemaster.unpause();
+dialoguemaster.ended = function() {
+	//npc.start_battle(collins);
+	//collins.start_battle(npc);
+};
+//dialoguemaster.go();
+//dialoguemaster.unpause();
+
+alarm_set(0, 2);

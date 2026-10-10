@@ -34,6 +34,8 @@ background = noone;
 background_dissolving = 0;
 background_dissolving_final = 0;
 
+initial_viewport_subject = noone;
+
 titles = {};
 characters = {};
 names = {};
@@ -201,7 +203,6 @@ function next_line() {
 			var gain = real(arguments[2]);
 			var sound = asset_get_index(arg);
 			audio_sound_gain(sound, gain);
-			
 			next_line();
 		} else if command == "set_sound_pitch" {
 			var arg = arguments[1];
@@ -387,6 +388,21 @@ function next_line() {
 			}
 			
 			next_line();
+		} else if command == "scene_pan" {
+			var arg1 = real(arguments[1]);
+			var arg2 = real(arguments[2]);
+			var pan_speed = 1;
+			if array_length(arguments)>3 {
+				pan_speed = real(arguments[3]);
+			}
+			
+			//finish
+			
+			next_line();
+		} else if command == "viewport_reset" {
+			camera_set_view_target(view_camera[0], initial_viewport_subject);
+			
+			next_line();
 		} else if command == "entity_speed" {
 			var arg1 = arguments[1];
 			var arg2 = real(arguments[2]);
@@ -485,6 +501,7 @@ function set_scene(scene_instance) {
 }
 
 function go() {
+	initial_viewport_subject = camera_get_view_target(view_camera[0]);
 	if instance_exists(Obj_Player) {
 		Obj_Player.freeze = true;
 	}

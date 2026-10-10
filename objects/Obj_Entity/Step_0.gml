@@ -21,27 +21,29 @@ if can_move {
 
 	image_xscale = 1;
 
-	if velocity_x > 0 {
-		if velocity_y > 0 {
-			direction = 270+45;
+	if not lock_direction {
+		if velocity_x > 0 {
+			if velocity_y > 0 {
+				direction = 270+45;
+			} else if velocity_y < 0 {
+				direction = 45;
+			} else {
+				direction = 0;
+			}
+		} else if velocity_x < 0 {
+			if velocity_y > 0 {
+				direction = 180+45;
+			} else if velocity_y < 0 {
+				direction = 90+45;
+			} else {
+				direction = 180;
+			}
+		} else if velocity_y > 0 {
+			direction = 270;
 		} else if velocity_y < 0 {
-			direction = 45;
-		} else {
-			direction = 0;
+			direction = 90;
 		}
-	} else if velocity_x < 0 {
-		if velocity_y > 0 {
-			direction = 180+45;
-		} else if velocity_y < 0 {
-			direction = 90+45;
-		} else {
-			direction = 180;
-		}
-	} else if velocity_y > 0 {
-		direction = 270;
-	} else if velocity_y < 0 {
-		direction = 90;
-	} 
+	}
 	
 	if scene_setsprite != noone {
 		sprite_index = scene_setsprite;

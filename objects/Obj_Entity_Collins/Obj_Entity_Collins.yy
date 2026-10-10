@@ -18,8 +18,8 @@
     "path":"folders/Objects/RPG.yy",
   },
   "parentObjectId":{
-    "name":"Obj_Entity",
-    "path":"objects/Obj_Entity/Obj_Entity.yy",
+    "name":"Obj_NPC",
+    "path":"objects/Obj_NPC/Obj_NPC.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -4,6 +4,7 @@ velocity_x = 0;
 velocity_y = 0;
 
 movespeed_alpha = 1;
+lock_direction = false;
 
 pause = false;
 global_paused = false;
@@ -64,6 +65,11 @@ function move_to_relative(_x, _y) {
 	goto_x = x+_x;
 	goto_y = y+_y;
 	moving_to = true;
+}
+function move_stop() {
+	goto_x = x;
+	goto_y = y;
+	moving_to = false;
 }
 
 function face_direction(d) {

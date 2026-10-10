@@ -5,6 +5,9 @@ y_velocity = 0;
 right_x = 0;
 right_y = 0;
 
+charge_begin = 0;
+charge_value = -1;
+
 image_alpha = 0;
 image_speed = 0;
 
@@ -30,9 +33,6 @@ function set_direction(dir) {
 		right_y = -1;
 	}
 }
-
-charge_begin = 0;
-charge_value = -1;
 
 function charge() {
 	charge_begin = current_time/1000;
