@@ -141,8 +141,13 @@ if can_move {
 		var entity_pause = variable_global_exists("entity_pause");
 		global_paused = entity_pause and global.entity_pause;
 		if !global_paused and !pause {
-			move_and_collide(velocity_x*movespeed_alpha + push_x, velocity_y*movespeed_alpha + push_y, Obj_Solid);
-		
+			if ignore_collision {
+				x += velocity_x*movespeed_alpha + push_x;
+				y += velocity_y*movespeed_alpha + push_y;
+			} else {
+				move_and_collide(velocity_x*movespeed_alpha + push_x, velocity_y*movespeed_alpha + push_y, Obj_Solid);
+			}
+			
 			push_x *= push_friction;
 			push_y *= push_friction;
 		

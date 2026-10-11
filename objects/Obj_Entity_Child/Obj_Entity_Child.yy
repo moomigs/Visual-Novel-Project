@@ -6,7 +6,9 @@
   ],
   "managed":true,
   "name":"Obj_Entity_Child",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"can_die","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+  ],
   "parent":{
     "name":"Special",
     "path":"folders/Objects/RPG/Special.yy",

@@ -24,7 +24,7 @@ name loc Local
 
 textbox false
 
-# skipto 1
+skipto 1
 
 play_sound m_in_legends
 
@@ -230,5 +230,7 @@ bar "You're going to get yourself killed, Collins."
 c "Maybe..."
 
 stop_sound m_edge_of_the_galaxy 3
+
+node 1
 
 goto_room Room_RPG_1

@@ -5,6 +5,7 @@ velocity_y = 0;
 
 movespeed_alpha = 1;
 lock_direction = false;
+ignore_collision = false;
 
 pause = false;
 global_paused = false;
@@ -53,7 +54,17 @@ function damage(n) {
 	hp = max(0, hp - n);
 	show_healthbar = 2*game_get_speed(gamespeed_fps);
 	instance_create_depth(x, y, depth, Effect_entity_hurt).go(self);
-	if hp == 0 { die(); }
+	if hp == 0 {
+		if can_die {
+			on_die();
+			die();
+		} else {
+			on_die();
+			battle_target = noone;
+			battle_state = "idle";
+			move_stop();
+		}
+	}
 }
 
 function move_to(_x, _y) {
@@ -83,4 +94,16 @@ function push(_x, _y) {
 	if passive { return; }
 	push_x += _x;
 	push_y += _y;
+}
+
+restart_room_on_die = false;
+function on_die() {
+	movespeed_alpha = 1;
+	if restart_room_on_die {
+		var fade = instance_create_depth(0, 0, 0, Effect_transition_fade);
+		fade.transition = function() {
+			room_restart();
+		}
+		fade.start(1);
+	}
 }

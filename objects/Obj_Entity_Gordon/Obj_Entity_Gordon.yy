@@ -1,19 +1,29 @@
 {
   "$GMObject":"",
   "%Name":"Obj_Entity_Gordon",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"Obj_Entity_Gordon",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"can_move","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"can_move","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"sprite_forward","path":"objects/Obj_Entity/Obj_Entity.yy",},"resource":{"name":"spr_entity_Gordon","path":"sprites/spr_entity_Gordon/spr_entity_Gordon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_entity_Gordon",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"sprite_right","path":"objects/Obj_Entity/Obj_Entity.yy",},"resource":{"name":"spr_Player_right","path":"sprites/spr_Player_right/spr_Player_right.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_Player_right",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"sprite_backward","path":"objects/Obj_Entity/Obj_Entity.yy",},"resource":{"name":"spr_Player_backward","path":"sprites/spr_Player_backward/spr_Player_backward.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_Player_backward",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"sprite_forward_run","path":"objects/Obj_Entity/Obj_Entity.yy",},"resource":{"name":"spr_Player_forward_running","path":"sprites/spr_Player_forward_running/spr_Player_forward_running.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_Player_forward_running",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"sprite_backward_run","path":"objects/Obj_Entity/Obj_Entity.yy",},"resource":{"name":"spr_Player_backward_running","path":"sprites/spr_Player_backward_running/spr_Player_backward_running.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_Player_backward_running",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"sprite_right_run","path":"objects/Obj_Entity/Obj_Entity.yy",},"resource":{"name":"spr_Player_right_running","path":"sprites/spr_Player_right_running/spr_Player_right_running.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_Player_right_running",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"passive","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
     "name":"Special",
     "path":"folders/Objects/RPG/Special.yy",
   },
   "parentObjectId":{
-    "name":"Obj_Entity",
-    "path":"objects/Obj_Entity/Obj_Entity.yy",
+    "name":"Obj_NPC",
+    "path":"objects/Obj_NPC/Obj_NPC.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -1,34 +1,52 @@
 # RPG section
 
+goto 1
+
 nar Cut to a back alley behind the bar as Collins walks out
-entity_speed collins 3
+
+entity_speed collins 4
 entity_walk_to collins 320 352
+
 c "I'm taking my break!"
 c "..."
 
 loop_sound m_the_beast
 
 nar A group of children are in the alley, an older one out front with a sword and pistol.
+
 entity_walk_to child 544 352
 entity_waitfor child
+
 child "I see you are a dreadful pirate!"
+
 entity_walk_to child 512 352
+
 child "I! Protector of this alley! Will cut you down!"
 c "Hmm..."
 c "Protector of the alley, eh?"
 nar Collins picks up his sword against the wall and activates it
+
 entity_walk_to collins 352 352
+
 c "You're a fool if you think you can stand against my blade!"
 
 
-nar Fight child, beat child
+### Fight child, beat child
+textbox false
+trigger 1
+entity_waitfor_battle child
+trigger 2
+pause 1
 
+entity_setsprite child spr_Player_forward_fatigued
 
 child "Gahh! You've bested me! Curse you!"
 child "..."
 
 stop_sound m_the_beast 3
 
+entity_freesprite child
+entity_turn child left
 child "Man, can't you go easy on me, Collins?"
 c "I was going easy on you."
 
@@ -39,16 +57,29 @@ loop_sound m_beyond_the_star_gate
 
 
 g "So, that mess was you?"
+entity_turn gordon down
+scene_pan 64 150
 nar Show Gordon leaning against the wall with a cocky expression.
 c "You--!"
 c "You're the star runner from yesterday..."
+
+entity_turn child right
 child "Ehh??? Star runner?!"
+entity_speed child 3
+entity_walk_to child 608 288
+
 nar The children crowd around Gordon
 nar Gordon grins and flexes his muscles.
 g "Ha! That's right!"
 g "I travel the galaxy in search of treasure, crossing swords with pirates and miscreants alike!"
 g "But you..."
-nar Gordon approaches Collins
+
+entity_walk_to gordon 416 352
+entity_turn child left
+entity_waitfor gordon
+entity_turn gordon left
+pause 1
+
 g "You teach well. You must be a decent fighter."
 g "That's a valuable skill in this galaxy."
 nar draws his sword
@@ -58,6 +89,12 @@ c "You're on."
 
 
 ### Fight Gordon, beat Gordon, harder fight
+textbox false
+trigger 3
+entity_waitfor_battle gordon
+trigger 4
+pause 1
+entity_setsprite gordon spr_Player_forward_fatigued
 
 
 stop_sound m_beyond_the_star_gate 5
@@ -86,5 +123,6 @@ g "Don't keep us waiting."
 
 ### Transitions to VN
 
+node 1
 
 goto_room Room_VN_2

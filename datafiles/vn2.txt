@@ -1,5 +1,7 @@
 loop_sound m_entering_the_void
 
+goto 1
+
 nar Cut to night. Collins is in his fighter robes. Phoebe and Gordon are talking outside the ship.
 
 g "You showed up!"
@@ -86,5 +88,7 @@ g "..."
 c "We're close. I can give you the coordinates."
  
 nar Show a wide shot of the ruins. It looks like a giant stone fortress.
+
+node 1
 
 goto_room Room_RPG_2

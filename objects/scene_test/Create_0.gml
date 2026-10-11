@@ -1,7 +1,7 @@
 player = instance_find(Obj_Player, 0);
 npc1 = instance_find(Obj_NPC, 0);
-npc2 = instance_find(Obj_NPC, 1);
-npc3 = instance_find(Obj_NPC, 2);
+//npc2 = instance_find(Obj_NPC, 1);
+//npc3 = instance_find(Obj_NPC, 2);
 
 dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 dialoguemaster.set_scene(self);

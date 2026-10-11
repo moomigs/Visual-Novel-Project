@@ -3,6 +3,7 @@ current_line = -1;
 
 scene = noone;
 entity_waitingfor = noone;
+entity_waitingfor_battle = noone;
 
 name_scribble = scribble("");
 display_scribble = scribble("");
@@ -33,6 +34,9 @@ choices_visible = false;
 background = noone;
 background_dissolving = 0;
 background_dissolving_final = 0;
+
+pan_to_x = camera_get_view_x(view_camera[0]);
+pan_to_y = camera_get_view_y(view_camera[0]);
 
 initial_viewport_subject = noone;
 
@@ -396,6 +400,8 @@ function next_line() {
 				pan_speed = real(arguments[3]);
 			}
 			
+			pan_to_x = arg1;
+			pan_to_y = arg2;
 			//finish
 			
 			next_line();
@@ -455,12 +461,19 @@ function next_line() {
 			entity.image_xscale = arg3;
 			
 			next_line();
-		} else if command = "entity_freesprite" {
+		} else if command == "entity_freesprite" {
 			var arg1 = arguments[1];
 			var entity = variable_instance_get(scene, arg1);
 			entity.scene_setsprite = noone;
 			
 			next_line();
+		} else if command == "entity_waitfor_battle" {
+			var arg1 = arguments[1];
+			var entity = variable_instance_get(scene, arg1);
+			paused = true;
+			global.dialogueSkipping = false;
+			entity_waitingfor_battle = entity;
+			alarm_set(5, 5);
 		} else {
 			working = false;
 			if is_string(global.names[$ command]) or command == "say" {

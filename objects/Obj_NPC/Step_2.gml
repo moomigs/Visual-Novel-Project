@@ -49,3 +49,7 @@ if battle_state != "idle" and battle_target != noone and battle_target.hp > 0 {
 	
 	battle_state_tick ++;
 }
+if hp == 0 {
+	battle_state = "idle";
+	battle_target = noone;
+}

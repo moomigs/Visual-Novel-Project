@@ -23,4 +23,10 @@ if background_dissolving_final > 0 {
 	}
 }
 
+vp_x = camera_get_view_x(view_camera[0]);
+vp_y = camera_get_view_y(view_camera[0]);
+if floor(vp_x+0.5) != pan_to_x or floor(vp_y+0.5) != pan_to_y {
+	camera_set_view_pos(view_camera[0], vp_x + (pan_to_x - vp_x) * 0.25, vp_y + (pan_to_y - vp_y) * 0.25);
+}
+
 frame_count ++;

@@ -1,15 +1,24 @@
 ### Draw basic rectangle at top of the screen and have characters face up at it
 
-nar Standing before a big door
+entity_turn collins up
+entity_turn gordon up
+entity_turn phoebe up
+
+pause 1
 
 g "This looks right."
 p "How do we use this key?"
 g "Stand back."
 
 ### Gordon steps up to the door and pauses
+entity_walk_to gordon 672 256
+entity_waitfor gordon
+entity_turn gordon up
+pause 2
 
 stop_sound m_entering_the_void 2
 
+trigger 1
 ### turn door white
 
 g "Ha! Easy!"
