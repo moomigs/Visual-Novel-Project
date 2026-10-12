@@ -1,0 +1,17 @@
+nar Door opens
+nar pause
+robo "Finally."
+
+loop_sound m_nano_nemesis
+
+### large group of NPCs enter
+robo "Halt! In the name of the queen!"
+p "Perfect."
+p "Alright buddy, get out front. You're the one with powers."
+c "Powers?? I don't know how to use them!"
+g "Now's a great time to learn!"
+
+### Fighting starts and they fight their way out of the ruins against a swarm of enemies
+stop_sound m_nano_nemesis 3
+
+goto_room Room_VN_4

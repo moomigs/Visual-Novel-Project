@@ -1,3 +1,4 @@
+
 if can_move {
 	if is_player {
 		up = keyboard_check(ord("W"));
@@ -17,6 +18,9 @@ if can_move {
 	if moving_to {
 		velocity_x = goto_x - x;
 		velocity_y = goto_y - y;
+	} else if follow != noone and variable_instance_exists(self, "battle_target") and battle_target == noone {
+		velocity_x = follow.x - x;
+		velocity_y = follow.y - y;
 	}
 
 	image_xscale = 1;
@@ -134,6 +138,7 @@ if can_move {
 				velocity_x *= i;
 				velocity_y *= i;
 			} else {
+				on_move_end();
 				moving_to = false;
 			}
 		}

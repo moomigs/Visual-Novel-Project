@@ -1,0 +1,58 @@
+stop_sound m_neural_net_nightmare 5
+
+pause 4
+
+loop_sound m_alien_artifact
+
+nar Whatever the ruins contain, it will eventually lead to a chamber with a gem on a pedestal.
+
+g "Is this it?"
+p "There's gotta be traps. This looks too easy."
+g "Hey kid?"
+c "Huh?"
+g "This is your first time seeing a power gem, right?"
+g "Would you like to do the honors?"
+c "Really?"
+g "Yeah, just go grab it. We'll be right here."
+p "Time to earn your ten percent."
+nar Collins approaches the gem.
+c "It's..."
+c "Beautiful."
+nar He reaches out
+? "Collins."
+nar Collins freezes
+p "What's wrong?"
+c "..."
+g "Just grab it already."
+nar pause
+? "It is yours."
+nar Collins hesitantly takes the gem, which bursts into light until it vanishes.
+
+stop_sound m_alien_artifact 2
+
+nar Collins looks down at his hands. They are covered in blood for a second.
+c "Mine..."
+ct The walls whisper.
+ct The chamber is alive.
+ct It is watching.
+
+nar He turns around
+nar Phoebe and Gordon glare at him.
+nar Phoebe walks up and gently grabs Collins face.
+p "Look up."
+c "Uh... okay."
+p "Can you hear and see okay?"
+c "Everything was fuzzy for a second, but I'm fine now."
+p "Okay."
+nar She returns to Gordon
+p "Great. He absorbed it."
+p "Well done, Gordon."
+g "How was I supposed to know??"
+p "You could have picked anyone else in the city!"
+p "Do you know how much that thing was worth??"
+c "Hey, I feel kinda funny..."
+both "Shut up!"
+p "If you think you're still getting eight percent--!"
+g "Yeah you can forget about getting five percent!"
+
+goto_room Room_RPG_3

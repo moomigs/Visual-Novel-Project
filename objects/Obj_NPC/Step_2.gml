@@ -52,4 +52,11 @@ if battle_state != "idle" and battle_target != noone and battle_target.hp > 0 {
 if hp == 0 {
 	battle_state = "idle";
 	battle_target = noone;
+} else {
+	if follow != noone {
+		var enemy = instance_nearest(follow.x, follow.y, Obj_Robot)
+		if enemy != noone and enemy.battle_target == follow {
+			start_battle(enemy);
+		}
+	}
 }

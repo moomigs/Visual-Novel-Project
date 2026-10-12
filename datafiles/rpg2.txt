@@ -28,7 +28,10 @@ loop_sound m_royal_mischief
 
 ### have a few NPCS walk on screen
 
+trigger 2
+
 robo "Aha! You fools!"
+entity_turn gordon down
 g "Ehh??"
 p "Great."
 c "Are we about to fight...?"
@@ -40,6 +43,8 @@ robo "We have the superior night vision!"
 robo "Onward, comrades! For the queen!"
 
 ### NPCs walk through the door
+trigger 3
+pause 3
 
 g "Robos..."
 p "Collins."
@@ -51,34 +56,9 @@ g "Good thing you can fight, eh kid?"
 
 stop_sound m_royal_mischief 3
 
-
-### transition to new room
-
-
 loop_sound m_neural_net_nightmare
 
-### Fight one Robo after the other until you reach the end of the room. Dialogue before each fight:
+### transition to new room
+textbox false
+goto_room Room_RoboDungeon
 
-
-### 1
-robo "For the queen!"
-
-### 2
-robo "Statement: I am definitely a robot."
-c "What?"
-p "They're messing with you."
-p "Manipulative little buggers."
-
-### 3
-robo "Come at me, fleshies!"
-p "Wow. Can they really say that word?"
-g "You clanky!"
-
-
-stop_sound m_neural_net_nightmare 5
-
-pause 5
-
-loop_sound m_alien_artifact
-
-goto_room Room_VN_3

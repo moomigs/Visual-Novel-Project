@@ -6,6 +6,7 @@ velocity_y = 0;
 movespeed_alpha = 1;
 lock_direction = false;
 ignore_collision = false;
+follow = noone;
 
 pause = false;
 global_paused = false;
@@ -77,6 +78,7 @@ function move_to_relative(_x, _y) {
 	goto_y = y+_y;
 	moving_to = true;
 }
+function on_move_end() {}
 function move_stop() {
 	goto_x = x;
 	goto_y = y;
@@ -97,7 +99,7 @@ function push(_x, _y) {
 }
 
 restart_room_on_die = false;
-function on_die() {
+on_die = function() {
 	movespeed_alpha = 1;
 	if restart_room_on_die {
 		var fade = instance_create_depth(0, 0, 0, Effect_transition_fade);
