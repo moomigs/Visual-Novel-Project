@@ -1,0 +1,227 @@
+name nar Narrator
+name c Collins
+name g Gordon
+name p Phoebe
+name bar Bartender
+name ? ???
+name f Fiber
+name r Rey
+
+# Room_VN_4
+
+stop_sound m_nano_nemesis 3
+
+nar Gordon and Phoebe quietly sit down.
+
+c "Um... Guys?"
+p "How much did we get?"
+g "Not much."
+g "Two runs, maybe."
+p "What do you think?"
+g "I don't think we have a choice."
+p "I agree."
+c "Look, I don't care about getting a cut, just..."
+nar They turn to sternly face Collins
+p "Yes?"
+c "I'm sorry. I didn't-- it just... happened."
+g "You want a job?"
+c "Huh?"
+
+loop_sound m_piano_13
+
+p "You're a gem holder now."
+p "Which means we want you on our crew."
+g "You're already a good fighter."
+g "Wouldn't make sense to leave you behind now."
+p "Equal cut."
+g "What do you say?"
+c "..."
+c "I..."
+g "Dude, he's gonna cry."
+c "Me?"
+p "Yes."
+c "To go on adventures?"
+g "That's what a star runner is."
+c "I-I..."
+c "I have to ask my boss..."
+p "[font_italic]What?[/f]"
+g "Ahahaha!"
+g "I like this kid."
+p "Fine. But we leave tomorrow. So figure it out."
+
+node 1
+
+stop_sound m_piano_13 3
+
+pause 3
+
+loop_sound m_winds_of_destiny
+
+nar The next day Collins enters the bar.
+
+bar "Collins. You're not scheduled yet."
+c "Hey, I..."
+bar "..."
+bar "You're leaving."
+c "I have to go. I'm not coming back."
+bar "Those star runners got to you."
+c "Are you mad?"
+bar "Mad? No."
+bar "Listen, Collins."
+bar "The galaxy is a big place."
+bar "Promise me something."
+bar "Never forget who you are."
+bar "I've seen good kids like you become monsters."
+c "..."
+c "I promise."
+bar "Something tells me the galaxy will be hearing about you one day."
+c "I'll do my best."
+c "Thank you."
+c "For everything."
+bar "Farewell, Collins."
+
+stop_sound m_winds_of_destiny 3
+
+nar Cut to ship
+
+g "Well, look who's back!"
+p "Your boss let you go, huh?"
+c "Yeah."
+c "He's a good man."
+p "Good. I was worried about losing that gem for good."
+g "You've got potential, kid. You shouldn't waste it here."
+p "Potential, and a power gem."
+g "That too."
+? "Excuse me."
+nar They turn to face a blond man in a suit.
+
+loop_sound m_awakening_station
+
+? "Collins?"
+g "Who are you?"
+p "How did you find us?"
+? "Apologies."
+f "My name is Fiber. I am the president of the West Republic."
+g "Hah!"
+g "We don't have time for jokes."
+f "No jokes. I'll link my credentials."
+p "..."
+p "Those are... impressive credentials."
+f "I am an artificial super-intelligence."
+f "This is one of my shells."
+g "Oh..."
+g "I'll never get used to these things looking human."
+f "I have reason to believe you have a lead on a power gem?"
+p "You're too late."
+g "Yeah. Collins absorbed it."
+f "Oh?"
+f "..."
+f "I have a proposition."
+p "..."
+g "You think we want to be government dogs?"
+p "What are you offering?"
+f "Leads. Full price for any gem you find."
+nar Phoebe and Gordon share a glance
+p "Why are you after power gems?"
+nar Fiber looks surprised for a moment, then his face darkens
+f "The galaxy is a dark place."
+f "Murder. Exploitation. Slavery."
+f "Very few places are truly safe."
+c "!"
+f "The West Republic, though imperfect, is one of those places."
+c "That's true."
+g "..."
+c "I grew up here. I've never feared pirates once."
+f "I wish to make the people of this nation-state, and the galaxy, feel safe."
+f "This is one avenue I'm pursuing."
+p "I feel like there's a catch."
+f "Only one catch."
+nar A cheery blue haired girl approaches.
+f "This is Rey."
+p "You want us to take a robo with us."
+f "Rey is my interface with your crew."
+f "With her aboard, you get leads."
+g "It. With [font_italic]it[/f] aboard."
+f "I feel the personality makes her more hospitable."
+g "Hmph."
+p "Why not just send us a link?"
+f "Rey processes information for me in real time - and can act on my behalf."
+f "You may not always be able to contact me."
+f "Rey ensures I can still reach you."
+p "..."
+p "How good are these leads?"
+nar Fiber smiles.
+f "I have great confidence in you."
+f "Finding a power gem is quite rare."
+f "Much rarer..."
+f "Is absorbing one."
+p "We'll give it a try."
+g "Oi, Phoebe..."
+f "That's all I ask."
+f "If you change your mind, simply drop Rey off on any inhabited planet."
+f "Best of luck."
+f "..."
+f "Collins."
+f "Use your power wisely."
+
+stop_sound m_awakening_station 3
+
+nar He walks off
+g "Phoebe! You're not letting a robo onto the ship, are you??"
+p "In fact I am."
+p "This may be the greatest opportunity we've ever gotten."
+g "You don't really trust that AI creep?"
+p "Hey, Rey."
+
+loop_sound m_shenanigans
+
+r "Yes!! Rey here!"
+p "Let's go. On the ship."
+g "Ugh!"
+nar As Rey passes Collins
+r "You're Collins?"
+r "Cooollins?"
+c "Er, yes?"
+r "What an unusual name! That's so cool!"
+c "It's my last name."
+r "Ohhh!"
+r "I don't have a last name!"
+c "Okay?"
+nar On the ship, in the living quarters, the shared living space
+g "Now listen here, robo."
+r "Listening!"
+g "You go here. No bedroom."
+r "Aye-aye! I go here!"
+nar She squats on the floor
+g "Whatever."
+c "Hey, don't you have any other personalities?"
+c "This one's a little..."
+nar She pops up
+r "Of course!"
+r "I am programmed with a full range of emotions!"
+r "Here's angry."
+nar Pouty face
+c "Um. Wow. That's great."
+g "Don't patronize the thing, Collins."
+
+stop_sound m_shenanigans 2
+
+p "If you're done playing with your new toy, we need to figure out where we're going to go."
+r "Right!"
+r "The first lead is in the Mumbrux system!"
+nar Gordon and Phoebe both have an uh-oh face
+g "The, uh, Mumbrux system?"
+r "That's right!"
+p "That's all we've got?"
+r "That's the current mission!"
+c "Is something wrong with Mumbrux?"
+p "Nope!"
+g "Perfectly good system! Great people, once you get to know them!"
+c "So we're going to go?"
+g "We're kind of committed now, aren't we Phoebe?"
+p "Shut up."
+g "..."
+g "Let me show you to your room, kid."
+
+loop_sound m_serenity_by_the_sea
+goto_room Room_RPG_4

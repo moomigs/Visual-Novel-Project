@@ -1,0 +1,34 @@
+name g Gordon
+name c Collins
+name nar Narrator
+
+pause 1
+
+g "This is it."
+g "Nothing fancy, but the wall goes transparent. Great view."
+g "You seem the type to like that kind of thing."
+c "Thanks."
+g "..."
+g "First time on a crew?"
+g "I'll add you to the crew group. Sync your neuro-lace."
+g "You can see our holos. And we can see yours."
+g "I'd be lying if I wasn't curious how you decorate your room."
+g "Says a lot about a man."
+c "Added. I'll show you."
+nar A single, modest picture of Collins' parents appears on the wall.
+g "..."
+nar Gordon smiles.
+g "Very good."
+g "I can tell they were good people. They raised a good kid."
+c "They..."
+c "Thanks, Gordon."
+g "I'll let you settle in. Now that we're in orbit, should be a couple hours to Mumbrux."
+g "You'll have access to the ship's travel time. All that information."
+c "Got it."
+nar Gordon leaves.
+nar Collins looks around. Smiles. Sits down on the bed and makes the wall transparent, looking off into space
+
+stop_sound m_serenity_by_the_sea 3
+pause 3
+
+goto_room Room_RPG_5

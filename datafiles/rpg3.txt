@@ -1,8 +1,20 @@
+name nar Narrator
+name c Collins
+name g Gordon
+name p Phoebe
+name robo Robot
+
+entity_turn collins up
+entity_turn gordon up
+entity_turn phoebe up
+
 nar Door opens
-nar pause
+pause 1
 robo "Finally."
 
 loop_sound m_nano_nemesis
+
+trigger 1
 
 ### large group of NPCs enter
 robo "Halt! In the name of the queen!"
@@ -11,7 +23,7 @@ p "Alright buddy, get out front. You're the one with powers."
 c "Powers?? I don't know how to use them!"
 g "Now's a great time to learn!"
 
-### Fighting starts and they fight their way out of the ruins against a swarm of enemies
-stop_sound m_nano_nemesis 3
+textbox false
+trigger 2
 
-goto_room Room_VN_4
+### Fighting starts and they fight their way out of the ruins against a swarm of enemies

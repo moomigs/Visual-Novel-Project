@@ -78,7 +78,6 @@ function move_to_relative(_x, _y) {
 	goto_y = y+_y;
 	moving_to = true;
 }
-function on_move_end() {}
 function move_stop() {
 	goto_x = x;
 	goto_y = y;
@@ -91,6 +90,17 @@ function face_direction(d) {
 	if d == "right" then direction = 0 facing = d;
 	if d == "left" then direction = 180 facing = d;
 }
+function face_entity(e) {
+	if e.x < x and (abs(e.y-y) < abs(e.x-x)) {
+		face_direction("left");
+	} else if e.x > x and (abs(e.y-y) < abs(e.x-x)) {
+		face_direction("right");
+	} else if e.y < y {
+		face_direction("up");
+	} else {
+		face_direction("down");
+	}
+}
 
 function push(_x, _y) {
 	if passive { return; }
@@ -98,6 +108,8 @@ function push(_x, _y) {
 	push_y += _y;
 }
 
+
+on_move_end = function() {}
 restart_room_on_die = false;
 on_die = function() {
 	movespeed_alpha = 1;

@@ -1,0 +1,41 @@
+### Player can turn back and go to the ship, opening this scene with Rey:
+
+name c Collins
+name r Rey
+name nar Narrator
+
+entity_turn rey left
+entity_walk_to collins 408 192
+
+nar Rey is staring intensely at the kettle.
+
+pause 1
+
+c "Er... Am I interrupting something?"
+r "'I've revoked your kettle access.'"
+c "What?"
+entity_turn rey right
+r "This kettle does not seem to have voice recognition!"
+c "It does."
+c "You just sounded nothing like her."
+r "That was all my programming allows..."
+c "Why do you want to use the kettle so bad?"
+entity_turn rey left
+r "Seems fun."
+c "...Can you fight?"
+entity_turn rey right
+r "Android combat capabilities are quite advanced."
+r "I can hold my own in most fights."
+r "However, neuro-lace enhancements put the skills of a competent human fighter at or above my own."
+r "Let's have a duel some time! It should provide for adequate practice!"
+c "A duel. That sounds nice."
+r "I take it you are as new to this crew as I am?"
+c "Yeah. This is my first time off-world."
+r "Mine too!!"
+r "Isn't it exciting?!"
+c "Yeah. It kind of is."
+r "You're like a proper star runner now!"
+c "Heh. If you say so."
+entity_turn rey left
+
+trigger 1

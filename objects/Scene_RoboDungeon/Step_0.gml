@@ -75,6 +75,6 @@ if not fight_robo3 {
 if scene_player.y < 0 {
 	room_goto(Room_VN_3)
 } else {
-	Obj_Entity_Gordon.follow = scene_player;
-	Obj_Entity_Phoebe.follow = scene_player;
+	//Obj_Entity_Gordon.follow = scene_player;
+	//Obj_Entity_Phoebe.follow = scene_player;
 }
