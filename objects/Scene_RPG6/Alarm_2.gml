@@ -1,0 +1,1 @@
+fade_effect.fade_in(1);

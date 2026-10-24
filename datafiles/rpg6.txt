@@ -1,0 +1,168 @@
+### Crowd of NPC's, not too many, Collins and Richard facing off in the center. Gordon off to the side and Phoebe walks up to him
+
+name ? ???
+name c Collins
+name g Gordon
+name p Phoebe
+name ri Richard
+name m Mayor
+name r Rey
+name villager Villager
+
+entity_turn collins right
+entity_turn richard left
+entity_turn gordon right
+
+entity_walk_to phoebe 336 360
+entity_waitfor phoebe
+entity_turn phoebe down
+
+p "What's going on?"
+entity_turn gordon up
+g "Shh! Get out of here!"
+p "What?"
+g "Bounty. Hunter. Get out of here!"
+p "Why is Collins fighting him, then?!"
+g "Trust me. It's better this way."
+entity_turn phoebe right
+entity_turn gordon right
+ri "Stun only. Three clean hits end it."
+ri "Unless, of course, you face a larger opponent..."
+ri "Those are the rules. Agreed?"
+c "A-Agreed."
+
+### flashback, screen goes black for this little dialogue:
+
+trigger 1
+pause 1
+
+g "He won't see your powers coming.
+g "Save them for the right moment..."
+
+trigger 2
+pause 1
+
+### flashback over
+
+ri "Ready?"
+
+loop_sound m_blood_on_the_battlefield
+
+
+trigger 3
+entity_waitfor_battle richard
+
+### Duel! When Player wins, scripted scene happens:
+
+g "Now!!"
+
+### Collins jumps back and pulls Richards sword out of his hand. Richard shoots as Collins runs up, Collins blocks. Collins delivers the final blow and Richard falls to his knees.
+
+stop_sound m_blood_on_the_battlefield 3
+
+g "Yes!!"
+c "I--"
+c "I won!"
+g "And I had complete faith in you!"
+p "Sure you did."
+c "I-I can't believe..."
+c "I actually--!"
+ri "Hey."
+
+### Richard is standing again, holding his pistol to Collins head.
+
+ri "Bang."
+c "Huh...?"
+
+### gun away
+
+ri "Well fought. You're skilled."
+ri "Even without your gem powers."
+c "Thanks..."
+
+loop_sound m_chilling_whispers
+
+villager "Black Rose pirates!"
+p "Black Rose? Who's that?"
+ri "Robo pirates."
+g "Those things again?!"
+p "Do you think they followed us?"
+ri "The Black Rose pirates don't have a cause to take a town this small."
+ri "If you've had a run-in with them recently, they're probably here for you."
+c "Why would they be after us?"
+ri "Their hunger for crystals is insatiable."
+ri "We're far outside their territory."
+ri "My guess is..."
+ri "They're after that power gem you absorbed."
+ri "You ready to put those powers to use, boy?"
+
+stop_sound m_chilling_whispers 3
+
+### Big battle with Richard giving advice:
+
+loop_sound m_perpetual_tension
+
+ri "Your body knows what to do."
+ri "Command it."
+ri "The gem obeys certainty."
+ri "Your abilities are telekinetic. So think of what you can do with that."
+ri "Push. Pull. Move objects to your advantage."
+ri "Good."
+
+stop_sound m_perpetual_tension 3
+
+### Robos defeated. Collins and Richard stand together.
+
+ri "You're good."
+c "Thanks..."
+ri "God is with you."
+c "..."
+c "If He is, He's late."
+ri "..."
+ri "You've seen things, haven't you?"
+c "I don't want to talk about it."
+
+loop_sound m_ambient_4
+
+
+### Gordon and Phoebe approach
+
+g "Did you see that??"
+p "That was a heavy wave. But I think the three of us handled it."
+
+#Rey appears
+
+r "The four of us!!"
+p "Rey... I thought I told you to stay on the ship."
+r "Imminent danger overrode previous instructions."
+r "I came out to help!"
+g "Heh. Robo on robo."
+g "You sure you weren't pulling your punches?"
+r "Twelve androids confirmed down."
+r "Structural damage, zero."
+p "Twelve?"
+g "Th-That's nothing. I must've taken out at least that many!"
+p "Yeah, well..."
+p "I didn't."
+p "Good job, Rey. You might be kind of handy."
+r "Happy to be of service to my loyal crew!!"
+
+### Mayor walks up
+
+? "Excuse me."
+g "What's up? Who are you?"
+m "I am the mayor of this humble town."
+m "You've done us a great service."
+c "Not really. We're the ones--"
+p "Shut up."
+p "We just did what any passerby would do."
+m "A bit more than that I'd say."
+m "We have little left, but what we have is yours."
+m "But please stay the night with us. We'd like to hold a party in your honor and provide a modest meal."
+g "Modest meal, you say?"
+g "Will there be modest booze?"
+m "That is up to our local barkeep."
+m "But I'm sure he'd be happy to provide a couple drinks."
+g "Now we're talking."
+
+goto_room Room_VN_7

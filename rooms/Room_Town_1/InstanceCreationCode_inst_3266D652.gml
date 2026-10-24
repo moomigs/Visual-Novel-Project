@@ -22,4 +22,5 @@ function interact() {
 	}
 	face_entity(instance_find(Obj_Player, 0));
 	dialoguemaster.go();
+	global.town1task1 = true;
 }

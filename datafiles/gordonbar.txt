@@ -1,0 +1,57 @@
+name g Gordon
+name nar Narrator
+name c Collins
+name bar Bartender
+		
+g "You done out there?"
+		
+iftrue town1task1 2
+		
+g "Keep looking. I'll be here when you're finished."
+textbox false
+end
+		
+node 2
+stop_sound m_harmony_of_the_forgotten 3
+g "Good. Let me buy you a drink."
+		
+loop_sound m_the_old_tower_inn
+		
+c "Gordon, I'm not of age."
+g "Of age?"
+g "You think anyone cares about that?"
+g "There's no such thing in this galaxy."
+c "My home world cared."
+g "This isn't your home world."
+g "How old are you, sixteen?"
+c "..."
+c "I'm eighteen."
+g "Right. Gotcha."
+g "Bartender! This kid is eighteen. Can he drink here?"
+bar "What do I care?"
+g "See? Have a beer. If you're eighteen you're a man."
+c "I, uh..."
+bar "Same thing you're drinking?"
+g "Yessir!"
+bar "Right away."
+nar hands him a beer
+nar Collins takes a sip.
+c "Gross."
+g "Right?? Isn't it great?"
+c "Have you found out anything about the power gem?"
+g "Power gem? What power gem?"
+c "..."
+g "Just pulling your leg."
+g "Bartender! You know any rumors about a power gem around here?"
+bar "No rumors."
+g "Come on. We're friends, aren't we?"
+bar "The Blood Gem is a fact."
+g "..."
+bar "I can tell you're star runners. Let me give you some friendly advice."
+bar "Go chase some other treasure. You don't want to mess with the Blood Gem."
+c "What's so dangerous about this thing?"
+g "Yeah. With such a welcoming name, too."
+bar "I'm just trying to save your lives."
+bar "Trust me. Give up."
+
+goto_room Room_VN_6

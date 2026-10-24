@@ -15,7 +15,9 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":24,"gridY":24,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_763ED9ED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_763ED9ED","objectId":{"name":"Obj_Entity_Collins","path":"objects/Obj_Entity_Collins/Obj_Entity_Collins.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":192.0,},
-        {"$GMRInstance":"v4","%Name":"inst_71B70990","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71B70990","objectId":{"name":"Obj_Door","path":"objects/Obj_Door/Obj_Door.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":600.0,"y":144.0,},
+        {"$GMRInstance":"v4","%Name":"inst_71B70990","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71B70990","objectId":{"name":"Obj_Door","path":"objects/Obj_Door/Obj_Door.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Door","path":"objects/Obj_Door/Obj_Door.yy",},"propertyId":{"name":"goto_room","path":"objects/Obj_Door/Obj_Door.yy",},"resource":{"name":"Room_Town_1","path":"rooms/Room_Town_1/Room_Town_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Room_Town_1",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":600.0,"y":144.0,},
         {"$GMRInstance":"v4","%Name":"inst_5B790237","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5B790237","objectId":{"name":"Obj_Entity_Rey","path":"objects/Obj_Entity_Rey/Obj_Entity_Rey.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":192.0,},
         {"$GMRInstance":"v4","%Name":"inst_49C0A27D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49C0A27D","objectId":{"name":"Scene_Rey_Kettle","path":"objects/Scene_Rey_Kettle/Scene_Rey_Kettle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":24.0,"y":24.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
@@ -39,7 +41,7 @@
   "roomSettings":{
     "Height":360,
     "inheritRoomSettings":false,
-    "persistent":false,
+    "persistent":true,
     "Width":640,
   },
   "sequenceId":null,

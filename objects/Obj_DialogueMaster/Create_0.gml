@@ -348,7 +348,16 @@ function next_line() {
 					goingto = arg2;
 				}
 			}
-			next_line()
+			next_line();
+		} else if command == "iftrue" {
+			var arg1 = arguments[1];
+			var arg2 = arguments[2];
+			if variable_global_exists(arg1) and variable_global_get(arg1) == true {
+				if goingto == -1 {
+					goingto = arg2;
+				}
+			}
+			next_line();
 		} else if command == "goto" {
 			if goingto == -1 {
 				var arg = arguments[1];
@@ -366,6 +375,12 @@ function next_line() {
 			}
 			
 			next_line();
+		} else if command == "end" {
+			if goingto == -1 {
+				instance_destroy();
+			} else {
+				next_line();
+			}
 		} else if command == "#" or string_copy(command,0,1)=="#" {
 			//nothing
 			next_line();

@@ -1,0 +1,76 @@
+# Room_VN_6
+
+name g Gordon
+name nar Narrator
+name c Collins
+name bar Bartender
+name ri Richard
+name ? ???
+
+nar A burly man sat next to Gordon speaks up. Switch to anime art
+? "You want the Blood Gem?"
+? "I can tell you where it is."
+bar "Richard--!"
+g "You'll do that? Now we're talking."
+g "Come on, let me buy you a drink."
+ri "You're star runners, are you?"
+g "That's right. We just got a big find, too."
+g "Whatever this Blood Gem is, we can handle it."
+ri "Impressive. Not many can handle the Blood Gem."
+g "You don't seem local. You an adventurer as well?"
+ri "Something like that."
+ri "Bounty hunter."
+nar Comical shot of Gordon's sweating face. Richard leans in.
+ri "I find... unsavory characters and bring them to justice."
+ri "Some bounties want 'em alive."
+ri "Others don't care."
+ri "What did that kid call you? Gordon?"
+ri "Would that be... Gordon Titan?"
+g "Welp!!"
+g "Thanks for the drinks, bartender, I think it's time I settle my tab!!"
+nar Richard grabs Gordon by the collar
+ri "I believe you were about to buy me a drink."
+g "Some other time, maybe. Gotta get going, you know?"
+c "Gordon, do you have a bounty??"
+g "Look, we ran into some trouble, things went south..."
+g "You know how it goes!"
+c "Did you kill anyone?!"
+g "What?? No!"
+g "Just stole some goods."
+g "Er... Allegedly."
+ri "I'll make you a deal, Gordon Titan."
+ri "Let's take this outside."
+ri "Beat me in a duel. You win, I tell you what I know about the Blood Gem."
+ri "I win..."
+g "H-Hey, I..."
+nar Looks at Collins... gets a sly expression
+g "Is it still galaxy standard to offer a substitute?"
+c "Gordon?"
+ri "You want the kid to fight for you?"
+g "He's stronger than he looks."
+g "If you win, I'll come quietly. Promise."
+ri "Hmm..."
+nar He lets Gordon go
+c "What are you doing?"
+nar quietly
+g "It's not a problem. He doesn't know you're a gem holder."
+g "You'll wipe the floor with this guy, trust me."
+g "You're good at wiping floors, aren't you?"
+c "I've only fought practice duels!"
+c "This is for real!"
+nar Gordon looks at Richard
+g "On stun, right?"
+ri "Of course. He doesn't have a bounty."
+ri "That I'm aware of..."
+g "Trust me, he doesn't."
+g "..."
+g "Right?"
+c "I don't have a bounty!"
+g "Of course you don't."
+g "Don't worry about it. No pressure. Whatever happens, happens."
+g "But..."
+g "Don't lose. Lot at stake here."
+
+stop_sound m_the_old_tower_inn 3
+
+goto_room Room_RPG_6
