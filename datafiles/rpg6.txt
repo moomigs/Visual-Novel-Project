@@ -48,14 +48,28 @@ ri "Ready?"
 
 loop_sound m_blood_on_the_battlefield
 
+textbox false
 
 trigger 3
 entity_waitfor_battle richard
 
 ### Duel! When Player wins, scripted scene happens:
 
+trigger 4
+pause 1
+
 g "Now!!"
 
+entity_speed collins 5
+entity_walk_to collins 600 360
+entity_waitfor collins
+entity_turn collins right
+entity_speed collins 2
+pause 0.5
+trigger 6 10
+entity_walk_to collins 672 360
+entity_waitfor collins
+trigger 8
 ### Collins jumps back and pulls Richards sword out of his hand. Richard shoots as Collins runs up, Collins blocks. Collins delivers the final blow and Richard falls to his knees.
 
 stop_sound m_blood_on_the_battlefield 3
@@ -65,17 +79,25 @@ c "I--"
 c "I won!"
 g "And I had complete faith in you!"
 p "Sure you did."
+entity_turn collins left
 c "I-I can't believe..."
 c "I actually--!"
+entity_freesprite richard
+entity_walk_to richard 716 360
+entity_waitfor richard
 ri "Hey."
+entity_setsprite richard spr_Player_left_gun
 
 ### Richard is standing again, holding his pistol to Collins head.
 
+pause 1
 ri "Bang."
+entity_turn collins right
 c "Huh...?"
 
 ### gun away
 
+entity_freesprite richard
 ri "Well fought. You're skilled."
 ri "Even without your gem powers."
 c "Thanks..."
@@ -96,73 +118,4 @@ ri "My guess is..."
 ri "They're after that power gem you absorbed."
 ri "You ready to put those powers to use, boy?"
 
-stop_sound m_chilling_whispers 3
-
-### Big battle with Richard giving advice:
-
-loop_sound m_perpetual_tension
-
-ri "Your body knows what to do."
-ri "Command it."
-ri "The gem obeys certainty."
-ri "Your abilities are telekinetic. So think of what you can do with that."
-ri "Push. Pull. Move objects to your advantage."
-ri "Good."
-
-stop_sound m_perpetual_tension 3
-
-### Robos defeated. Collins and Richard stand together.
-
-ri "You're good."
-c "Thanks..."
-ri "God is with you."
-c "..."
-c "If He is, He's late."
-ri "..."
-ri "You've seen things, haven't you?"
-c "I don't want to talk about it."
-
-loop_sound m_ambient_4
-
-
-### Gordon and Phoebe approach
-
-g "Did you see that??"
-p "That was a heavy wave. But I think the three of us handled it."
-
-#Rey appears
-
-r "The four of us!!"
-p "Rey... I thought I told you to stay on the ship."
-r "Imminent danger overrode previous instructions."
-r "I came out to help!"
-g "Heh. Robo on robo."
-g "You sure you weren't pulling your punches?"
-r "Twelve androids confirmed down."
-r "Structural damage, zero."
-p "Twelve?"
-g "Th-That's nothing. I must've taken out at least that many!"
-p "Yeah, well..."
-p "I didn't."
-p "Good job, Rey. You might be kind of handy."
-r "Happy to be of service to my loyal crew!!"
-
-### Mayor walks up
-
-? "Excuse me."
-g "What's up? Who are you?"
-m "I am the mayor of this humble town."
-m "You've done us a great service."
-c "Not really. We're the ones--"
-p "Shut up."
-p "We just did what any passerby would do."
-m "A bit more than that I'd say."
-m "We have little left, but what we have is yours."
-m "But please stay the night with us. We'd like to hold a party in your honor and provide a modest meal."
-g "Modest meal, you say?"
-g "Will there be modest booze?"
-m "That is up to our local barkeep."
-m "But I'm sure he'd be happy to provide a couple drinks."
-g "Now we're talking."
-
-goto_room Room_VN_7
+goto_room Room_RPG_6_1

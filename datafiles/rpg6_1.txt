@@ -1,0 +1,142 @@
+name ? ???
+name c Collins
+name g Gordon
+name p Phoebe
+name ri Richard
+name m Mayor
+name r Rey
+name villager Villager
+
+### Big battle with Richard giving advice:
+
+stop_sound m_chilling_whispers 3
+
+loop_sound m_perpetual_tension
+
+trigger 1
+textbox false
+
+pause 5
+textbox true
+entity_pause
+ri "Your body knows what to do."
+ri "Command it."
+entity_unpause
+textbox false
+
+pause 8
+textbox true
+entity_pause
+ri "The gem obeys certainty."
+ri "Your abilities are telekinetic. So think of what you can do with that."
+entity_unpause
+textbox false
+
+pause 8
+textbox true
+entity_pause
+ri "Push. Pull. Move objects to your advantage."
+entity_unpause
+textbox false
+
+pause 8
+textbox true
+entity_pause
+ri "Good."
+entity_unpause
+textbox false
+
+waitfor robots_defeated
+
+stop_sound m_perpetual_tension 3
+
+### Robos defeated. Collins and Richard stand together.
+
+pause 1
+
+ri "You're good."
+c "Thanks..."
+ri "God is with you."
+c "..."
+c "If He is, He's late."
+ri "..."
+ri "You've seen things, haven't you?"
+c "I don't want to talk about it."
+
+textbox false
+
+loop_sound m_ambient_4
+
+pause 1
+
+trigger 2
+pause 2
+
+### Gordon and Phoebe approach
+
+entity_walk_to gordon 528 312
+entity_walk_to phoebe 528 384
+
+entity_turn collins left
+entity_turn richard left
+
+entity_waitfor gordon
+
+textbox true
+
+g "Did you see that??"
+p "That was a heavy wave. But I think the three of us handled it."
+
+#Rey appears
+entity_walk_to rey 480 336
+entity_waitfor rey
+
+entity_turn gordon left
+entity_turn phoebe left
+
+r "The four of us!!"
+p "Rey... I thought I told you to stay on the ship."
+r "Imminent danger overrode previous instructions."
+r "I came out to help!"
+g "Heh. Robo on robo."
+g "You sure you weren't pulling your punches?"
+r "Twelve androids confirmed down."
+r "Structural damage, zero."
+p "Twelve?"
+g "Th-That's nothing. I must've taken out at least that many!"
+p "Yeah, well..."
+p "I didn't."
+p "Good job, Rey. You might be kind of handy."
+r "Happy to be of service to my loyal crew!!"
+
+### Mayor walks up
+
+entity_walk_to mayor 648 240
+entity_waitfor mayor
+
+? "Excuse me."
+
+entity_turn gordon up
+entity_turn phoebe up
+entity_turn rey up
+entity_turn collins up
+entity_turn richard up
+
+g "What's up? Who are you?"
+m "I am the mayor of this humble town."
+m "You've done us a great service."
+c "Not really. We're the ones--"
+entity_turn phoebe left
+p "Shut up."
+entity_turn phoebe up
+p "We just did what any passerby would do."
+m "A bit more than that I'd say."
+m "We have little left, but what we have is yours."
+m "But please stay the night with us. We'd like to hold a party in your honor and provide a modest meal."
+g "Modest meal, you say?"
+g "Will there be modest booze?"
+m "That is up to our local barkeep."
+m "But I'm sure he'd be happy to provide a couple drinks."
+g "Now we're talking."
+
+goto_room Room_VN_7

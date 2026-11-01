@@ -5,6 +5,8 @@ scene = noone;
 entity_waitingfor = noone;
 entity_waitingfor_battle = noone;
 
+variable_waitfor = noone;
+
 name_scribble = scribble("");
 display_scribble = scribble("");
 typist = scribble_typist();
@@ -358,6 +360,11 @@ function next_line() {
 				}
 			}
 			next_line();
+		} else if command == "waitfor" {
+			var arg1 = arguments[1];
+			paused = true;
+			variable_waitfor = arg1;
+			alarm_set(6, 5);
 		} else if command == "goto" {
 			if goingto == -1 {
 				var arg = arguments[1];
@@ -489,6 +496,12 @@ function next_line() {
 			global.dialogueSkipping = false;
 			entity_waitingfor_battle = entity;
 			alarm_set(5, 5);
+		} else if command == "entity_pause" {
+			pause();
+			next_line();
+		} else if command == "entity_unpause" {
+			unpause();
+			next_line();
 		} else {
 			working = false;
 			if is_string(global.names[$ command]) or command == "say" {
@@ -535,6 +548,10 @@ function go() {
 	}
 	global.entity_pause = true;
 	alarm_set(1, 10);
+}
+
+function pause() {
+	global.entity_pause = true;
 }
 
 function unpause() {

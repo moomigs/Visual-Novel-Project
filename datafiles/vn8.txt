@@ -1,0 +1,64 @@
+name nar Narrator
+name c Collins
+name a Artensa
+name Man1 Man1
+name Man2 Man2
+name Man3 Man3
+name ? ???
+name n Navigator
+
+nar In his room
+
+loop_sound m_piano_50
+
+c "Mom... Dad..."
+c "I think I made some friends."
+c "You would have liked them."
+c "..."
+c "I'm a star runner now."
+c "That's what I've always wanted."
+c "..."
+c "That pirate killed you."
+c "We had no money. Just sheep."
+c "..."
+c "There are people who deserve Hell."
+c "If God won't send them there..."
+c "I will."
+nar looks at picture
+c "..."
+c "I hope you'd still be proud of me."
+
+stop_sound m_piano_50 5
+
+pause 5
+
+loop_sound m_no_more_magic
+
+nar Three men restrained and kneeling. A robed figure in front of them. Show his gun in hand. Show his smile with blue cat eyes.
+
+? "Your world has hidden itself well."
+Man1 "We'd rather die."
+play_sound snd_blaster_art
+nar He shoots him.
+? "One of you will give me the coordinates."
+Man2 "One day."
+Man2 "One day you will die."
+Man2 "And you will go to Hell."
+nar Show smile
+? "I know."
+play_sound snd_blaster_art
+nar Shoots him. He approaches man 3, who is visibly shaken
+? "What kind of man are you?" 
+Man3 "I-I'll give you what you want." 
+nar Show his smile fade
+? "Good."
+Man3 "1.38--"
+play_sound snd_blaster_art
+nar He shoots him, smiling.
+nar He looks at the body for a moment.
+? "Navigator."
+n "Yes, captain Artensa?"
+nar Closeup of face, pupils are dilated
+a "Set course for coordinates 1.385.6124.982."
+
+nar credits

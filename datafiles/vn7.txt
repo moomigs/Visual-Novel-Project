@@ -1,0 +1,36 @@
+name nar Narrator
+name ri Richard
+name ? ???
+name c Collins
+
+nar Cut to night. Party in the streets. Collins stands alone.
+
+stop_sound m_ambient_4 5
+
+nar He notices a blond woman wearing robes staring at him.
+nar She steps into an alley. Collins follows her.
+nar Elle faces Collins and draws her weapons.
+nar Richard is behind Collins.
+
+ri "Careful, son."
+
+play_sound snd_boom
+
+nar Show girl brushing her hair back, her lips parted to show fangs.
+
+ri "She's a vampire."
+ri "She traded her humanity for eternal life."
+
+loop_sound m_nova_nexus
+
+? "You seek the Blood Gem."
+? "If you cannot defeat me..."
+? "You have no hope of claiming it."
+ri "What will you do, Collins?"
+c "I will bring her to justice."
+nar Collins draws his weapons.
+c "I will be the one to cut you down, vampire."
+ri "..."
+? "Enough talk."
+
+goto_room Room_RPG_7

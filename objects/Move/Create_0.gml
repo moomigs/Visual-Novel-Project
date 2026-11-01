@@ -34,13 +34,20 @@ function set_direction(dir) {
 	}
 }
 
-function charge() {
+charge = function() {
+	if global.entity_pause == true {
+		return;
+	}
 	charge_begin = current_time/1000;
 	charge_value = 0;
 	mover.freeze = true;
 }
 
 function go(_direction) {
+	if global.entity_pause == true {
+		mover.freeze = false;
+		return;
+	}
 	if _direction != noone {
 		set_direction(_direction);
 	}

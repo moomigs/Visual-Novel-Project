@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Player",
-    "path":"folders/Sprites/RPG/Entities/Player.yy",
+    "name":"running",
+    "path":"folders/Sprites/RPG/Entities/Player/running.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
