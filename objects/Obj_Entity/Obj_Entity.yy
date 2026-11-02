@@ -63,6 +63,7 @@
     {"$GMObjectProperty":"v2","%Name":"sprite_downright","filters":[],"listItems":[],"multiselect":false,"name":"sprite_downright","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"sprite_upright_run","filters":[],"listItems":[],"multiselect":false,"name":"sprite_upright_run","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"sprite_downright_run","filters":[],"listItems":[],"multiselect":false,"name":"sprite_downright_run","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"friendly","filters":[],"listItems":[],"multiselect":false,"name":"friendly","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -1,9 +1,9 @@
 name nar Narrator
 name c Collins
 name a Artensa
-name Man1 Man1
-name Man2 Man2
-name Man3 Man3
+name Man1 Man 1
+name Man2 Man 2
+name Man3 Man 3
 name ? ???
 name n Navigator
 

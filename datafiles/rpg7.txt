@@ -8,19 +8,36 @@ name p Phoebe
 name r Rey
 
 ### First hit on the player:
-c "What? She's using stun?"
+#c "What? She's using stun?"
+#textbox false
 
 ### Next hit
-c "Fight seriously!"
+#c "Fight seriously!"
+#textbox false
+
+entity_waitfor_battle vampire
+entity_pause
+trigger 1
+
+pause 3
 
 #On loss Collins falls:
 c "She cut me..."
 c "I'm bleeding."
 
+pause 2
+
 ### Art: Closeup of her face, disgusted
 ? "I won't drink."
 
+pause 1
+
 ### Art gone, Richard steps between them
+entity_unpause
+entity_walk_to richard 648 360
+entity_waitfor richard
+
+pause 0.5
 
 ri "Enough."
 c "What are you doing?!"
@@ -32,7 +49,10 @@ c "I would have had her..."
 
 stop_sound m_nova_nexus 3
 
+entity_walk_to vampire 1032 360
+entity_waitfor vampire
 ### Vampire leaves
+pause 1.5
 
 ri "Curious..."
 ri "A merciful vampire."
@@ -45,79 +65,7 @@ ri "Train it like your blade."
 c "..."
 ri "Come. It is time I tell you about the Blood Gem."
 
-loop_sound m_orbital_scan
+trigger 3
+pause 2
 
-### Crew gathered together, Collins and Richard walk up
-
-g "Hey, where'd you go, Collins?"
-g "This town is great!"
-g "Good people. Solid people."
-g "The best people!"
-p "I find it's best to just ignore him when he drinks."
-c "I'm gathering that."
-r "I like it!"
-r "He seems much nicer to me like this."
-g "You know, I think I was wrong about this thing."
-g "Not too bad! Not too bad!"
-ri "It's time for me to hold my end of the deal."
-ri "The Blood Gem."
-g "..."
-g "Alright."
-ri "There is a race known as the vampire."
-ri "Created by the Blood Gem, they are its keepers."
-p "Wait, vampires?"
-g "Are these guys pirates?"
-ri "I don't think you could call them pirates. But they're just as dangerous."
-ri "Their treasure is blood. They plunder humans like pirates plunder crystals."
-r "This is scary..."
-c "They... plunder humans?"
-ri "This is a bloody sector, Collins."
-p "How many of these things are there?"
-ri "A few hundred."
-ri "But their power is enough to control dozens of systems."
-p "Dozens..."
-g "I don't know about this..."
-p "I agree. I was expecting to hit some ruins and call it a day."
-g "Yeah. Maybe this juice isn't worth the squeeze."
-r "Um!"
-r "I have an estimate for the reward for the Blood Gem."
-r "I'll link it."
-p "..."
-p "So where do we find these vampires?"
-g "Yeah, what are we worried about?"
-g "We've got a gem holder on the crew!"
-ri "Don't go in blind."
-ri "Capture one. Get information."
-ri "I'll help you secure a bounty."
-c "You'll be coming with us?"
-ri "I'll follow in my ship."
-ri "I want to see the Blood Gem restored."
-ri "You'd be doing a service to the galaxy."
-g "Alright, but you're not one of the crew, got it?"
-g "We've got enough additional members as it is."
-r "Yeah! I'm a crew member now, too!"
-g "Well..."
-g "We just got Collins at least."
-ri "Enjoy your party. We leave in the morning."
-
-### Richard turns to Collins
-
-ri "Develop your powers. You'll need them."
-c "I..."
-c "I know what I have to do."
-ri "Hm."
-
-### Richard leaves
-
-c "I need sleep."
-g "Alright, alright."
-p "Goodnight, Collins."
-r "Night!!"
-
-### Fade to black
-
-stop_sound m_orbital_scan 3
-
-pause 3
-
-goto_room Room_VN_8
+goto_room Room_RPG_7_1

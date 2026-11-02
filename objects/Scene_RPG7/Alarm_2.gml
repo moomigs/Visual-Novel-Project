@@ -8,4 +8,4 @@ instance_destroy(new_player);
 collins.scene_setsprite = spr_Player_forward_fatigued;
 
 richard = instance_create_depth(288, 360, 0, Obj_Entity_Richard);
-
+richard.ignore_collision = true;

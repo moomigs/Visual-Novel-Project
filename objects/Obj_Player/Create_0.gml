@@ -1,6 +1,8 @@
 event_inherited();
 
-ignore_collision = true;
+//ignore_collision = true;
+
+call_menu_open = false;
 
 die = function() {
 	audio_stop_all();

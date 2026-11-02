@@ -4,6 +4,7 @@ if not fight_robo1 {
 		dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 		dialoguemaster.set_scene(self);
 		dialoguemaster.dialogue_code = @"
+			name robo Robot
 			robo ^For the queen!^
 		";
 		dialoguemaster.dialogue_code = string_replace_all(dialoguemaster.dialogue_code, "^", chr(34));
@@ -27,6 +28,9 @@ if not fight_robo2 {
 		dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 		dialoguemaster.set_scene(self);
 		dialoguemaster.dialogue_code = @"
+			name robo Robot
+			name c Collins
+			name p Phoebe
 			robo ^Statement: I am definitely a robot.^
 			c ^What?^
 			p ^They're messing with you.^
@@ -53,6 +57,9 @@ if not fight_robo3 {
 		dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 		dialoguemaster.set_scene(self);
 		dialoguemaster.dialogue_code = @"
+			name robo Robot
+			name g Gordon
+			name p Phoebe
 			robo ^Come at me, fleshies!^
 			p ^Wow. Can they really say that word?^
 			g ^You clanky!^

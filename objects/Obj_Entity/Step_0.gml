@@ -150,7 +150,7 @@ if can_move {
 				x += velocity_x*movespeed_alpha + push_x;
 				y += velocity_y*movespeed_alpha + push_y;
 			} else {
-				move_and_collide(velocity_x*movespeed_alpha + push_x, velocity_y*movespeed_alpha + push_y, Obj_Solid);
+				entity_move_and_collide(velocity_x*movespeed_alpha + push_x, velocity_y*movespeed_alpha + push_y);
 			}
 			
 			push_x *= push_friction;

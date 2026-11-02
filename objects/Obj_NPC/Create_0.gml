@@ -20,5 +20,5 @@ function start_battle(target) {
 }
 
 function start_wandering() {
-	alarm_set(1, 40);
+	alarm_set(1, random_range(60, 180));
 }

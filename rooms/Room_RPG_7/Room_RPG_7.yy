@@ -11,7 +11,6 @@
     {"name":"inst_106F5E66","path":"rooms/Room_RPG_7/Room_RPG_7.yy",},
     {"name":"inst_6A07E764","path":"rooms/Room_RPG_7/Room_RPG_7.yy",},
     {"name":"inst_192E2E5B","path":"rooms/Room_RPG_7/Room_RPG_7.yy",},
-    {"name":"inst_3DE2D077","path":"rooms/Room_RPG_7/Room_RPG_7.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -25,7 +24,6 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":360.0,},
         {"$GMRInstance":"v4","%Name":"inst_6A07E764","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A07E764","objectId":{"name":"Obj_Entity_Vampire","path":"objects/Obj_Entity_Vampire/Obj_Entity_Vampire.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":816.0,"y":360.0,},
         {"$GMRInstance":"v4","%Name":"inst_192E2E5B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_192E2E5B","objectId":{"name":"Scene_RPG7","path":"objects/Scene_RPG7/Scene_RPG7.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":24.0,"y":24.0,},
-        {"$GMRInstance":"v4","%Name":"inst_3DE2D077","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3DE2D077","objectId":{"name":"Obj_NPC","path":"objects/Obj_NPC/Obj_NPC.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1008.0,"y":360.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":11000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_bg_space","path":"sprites/spr_bg_space/spr_bg_space.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
