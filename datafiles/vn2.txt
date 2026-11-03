@@ -1,7 +1,5 @@
 loop_sound m_entering_the_void
 
-goto 1
-
 nar Cut to night. Collins is in his fighter robes. Phoebe and Gordon are talking outside the ship.
 
 g "You showed up!"

@@ -146,6 +146,7 @@ function face_entity(e) {
 
 function push(_x, _y) {
 	if passive { return; }
+	if freeze { return; }
 	push_x += _x;
 	push_y += _y;
 }

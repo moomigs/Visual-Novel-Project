@@ -5,5 +5,6 @@ function interact() {
 		
 	}
 	face_entity(instance_find(Obj_Player, 0));
+	dialogue
 	dialoguemaster.go();
 }

@@ -1,3 +1,8 @@
+if call_menu_open != false and variable_global_exists("link") {
+	call_menu_open = (call_menu_open mod array_length(global.link)) + 1;
+	return;
+}
+
 if defending { return; }
 if freeze { return; }
 if attack_pending { return; }

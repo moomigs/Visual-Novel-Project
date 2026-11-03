@@ -1,7 +1,5 @@
 # RPG section
 
-goto 1
-
 nar Cut to a back alley behind the bar as Collins walks out
 
 entity_speed collins 4

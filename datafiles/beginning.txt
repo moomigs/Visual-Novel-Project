@@ -24,8 +24,6 @@ name loc Local
 
 textbox false
 
-skipto 1
-
 play_sound m_in_legends
 
 pause 2
