@@ -1,7 +1,7 @@
 event_inherited();
 
 if !attacking and !freeze {
-	defending = keyboard_check(vk_lcontrol);
+	defending = keyboard_check(vk_lshift);
 	if defending {
 		if facing == "down" {
 			sprite_index = spr_Player_forward_defending;
