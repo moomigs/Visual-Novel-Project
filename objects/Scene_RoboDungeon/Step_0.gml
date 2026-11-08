@@ -1,5 +1,5 @@
 if not fight_robo1 {
-	if abs(enemy_robo1.y - scene_player.y) <= 128 {
+	if abs(enemy_robo1.y - player.y) <= 128 {
 		fight_robo1 = true;
 		dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 		dialoguemaster.set_scene(self);
@@ -9,7 +9,7 @@ if not fight_robo1 {
 		";
 		dialoguemaster.dialogue_code = string_replace_all(dialoguemaster.dialogue_code, "^", chr(34));
 		dialoguemaster.ended = function() {
-			enemy_robo1.start_battle(scene_player);
+			enemy_robo1.start_battle(player);
 			with (enemy_robo1) {
 				on_die = function() {
 					instance_destroy(unlock_wall1);
@@ -23,7 +23,7 @@ if not fight_robo1 {
 }
 
 if not fight_robo2 {
-	if abs(enemy_robo2.y - scene_player.y) <= 128 {
+	if abs(enemy_robo2.y - player.y) <= 128 {
 		fight_robo2 = true;
 		dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 		dialoguemaster.set_scene(self);
@@ -38,7 +38,7 @@ if not fight_robo2 {
 		";
 		dialoguemaster.dialogue_code = string_replace_all(dialoguemaster.dialogue_code, "^", chr(34));
 		dialoguemaster.ended = function() {
-			enemy_robo2.start_battle(scene_player);
+			enemy_robo2.start_battle(player);
 			with (enemy_robo2) {
 				on_die = function() {
 					instance_destroy(unlock_wall2);
@@ -52,7 +52,7 @@ if not fight_robo2 {
 }
 
 if not fight_robo3 {
-	if abs(enemy_robo3.y - scene_player.y) <= 128 {
+	if abs(enemy_robo3.y - player.y) <= 128 {
 		fight_robo3 = true;
 		dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 		dialoguemaster.set_scene(self);
@@ -66,7 +66,7 @@ if not fight_robo3 {
 		";
 		dialoguemaster.dialogue_code = string_replace_all(dialoguemaster.dialogue_code, "^", chr(34));
 		dialoguemaster.ended = function() {
-			enemy_robo3.start_battle(scene_player);
+			enemy_robo3.start_battle(player);
 			with (enemy_robo3) {
 				on_die = function() {
 					instance_destroy(unlock_wall3);
@@ -79,9 +79,12 @@ if not fight_robo3 {
 	}
 }
 
-if scene_player.y < 0 {
+if player.y < 0 {
 	room_goto(Room_VN_3)
 } else {
-	//Obj_Entity_Gordon.follow = scene_player;
-	//Obj_Entity_Phoebe.follow = scene_player;
+	gordon.leader = player;
+	phoebe.leader = player;
+	
+	gordon.follow = player;
+	phoebe.follow = gordon;
 }

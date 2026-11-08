@@ -1,4 +1,7 @@
-if battle_state != "idle" and battle_target != noone and battle_target.hp > 0 {
+if battle_state != "idle"
+and battle_target != noone
+and instance_exists(battle_target)
+and battle_target.hp > 0 {
 	//currently battling!
 	
 	lock_direction = true;
@@ -50,21 +53,24 @@ if battle_state != "idle" and battle_target != noone and battle_target.hp > 0 {
 	battle_state_tick ++;
 }
 if hp == 0 {
-	battle_state = "idle";
 	battle_target = noone;
-	lock_direction = false;
-	movespeed_alpha = 1;
 } else {
-	if battle_target != noone and battle_target.hp <= 0 {
-		battle_state = "idle";
+	if battle_target != noone and not instance_exists(battle_target) {
 		battle_target = noone;
-		lock_direction = false;
-		movespeed_alpha = 1;
 	}
-	if follow != noone {
-		var enemy = instance_nearest(follow.x, follow.y, Obj_Robot)
-		if enemy != noone and enemy.battle_target == follow {
+	if battle_target != noone and instance_exists(battle_target) and battle_target.hp <= 0 {
+		battle_target = noone;
+	}
+	if leader != noone {
+		var enemy = instance_nearest(leader.x, leader.y, Obj_Robot)
+		if enemy != noone and enemy.battle_target == leader {
 			start_battle(enemy);
 		}
 	}
+}
+if battle_target == noone {
+	battle_state = "idle";
+	lock_direction = false;
+	movespeed_alpha = 1;
+	defending = false;
 }

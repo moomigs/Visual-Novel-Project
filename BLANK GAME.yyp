@@ -363,6 +363,7 @@
     {"id":{"name":"spr_collins_face_1","path":"sprites/spr_collins_face_1/spr_collins_face_1.yy",},},
     {"id":{"name":"spr_dialoguebox","path":"sprites/spr_dialoguebox/spr_dialoguebox.yy",},},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
+    {"id":{"name":"spr_empty_mask","path":"sprites/spr_empty_mask/spr_empty_mask.yy",},},
     {"id":{"name":"spr_entity_Collins","path":"sprites/spr_entity_Collins/spr_entity_Collins.yy",},},
     {"id":{"name":"spr_entity_Gordon_clownnose","path":"sprites/spr_entity_Gordon_clownnose/spr_entity_Gordon_clownnose.yy",},},
     {"id":{"name":"spr_entity_Gordon","path":"sprites/spr_entity_Gordon/spr_entity_Gordon.yy",},},
@@ -397,9 +398,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room_Dialogue","path":"rooms/Room_Dialogue/Room_Dialogue.yy",},},
+    {"roomId":{"name":"Room_RoboDungeon","path":"rooms/Room_RoboDungeon/Room_RoboDungeon.yy",},},
     {"roomId":{"name":"Room_Town_1","path":"rooms/Room_Town_1/Room_Town_1.yy",},},
     {"roomId":{"name":"Room_RPG_5","path":"rooms/Room_RPG_5/Room_RPG_5.yy",},},
-    {"roomId":{"name":"Room_RoboDungeon","path":"rooms/Room_RoboDungeon/Room_RoboDungeon.yy",},},
     {"roomId":{"name":"Room_RPG_7_1","path":"rooms/Room_RPG_7_1/Room_RPG_7_1.yy",},},
     {"roomId":{"name":"Room_RPG_7","path":"rooms/Room_RPG_7/Room_RPG_7.yy",},},
     {"roomId":{"name":"Room_RPG_6_1","path":"rooms/Room_RPG_6_1/Room_RPG_6_1.yy",},},

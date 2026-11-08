@@ -1,4 +1,6 @@
 
+var currently_moving = (velocity_x!=0 or velocity_y!=0);
+
 if can_move {
 	if is_player {
 		up = keyboard_check(ord("W"));
@@ -18,9 +20,11 @@ if can_move {
 	if moving_to {
 		velocity_x = goto_x - x;
 		velocity_y = goto_y - y;
-	} else if follow != noone and variable_instance_exists(self, "battle_target") and battle_target == noone {
-		velocity_x = follow.x - x;
-		velocity_y = follow.y - y;
+	} else if follow != noone and variable_instance_exists(self, "battle_target") and (battle_target == noone) and point_distance(x, y, follow.x, follow.y) > 48 {
+		if (not currently_moving and point_distance(x, y, follow.x, follow.y) > 64) or currently_moving {
+			velocity_x = follow.x - x;
+			velocity_y = follow.y - y;
+		}
 	}
 
 	image_xscale = 1;
@@ -28,17 +32,17 @@ if can_move {
 	if not lock_direction {
 		if velocity_x > 0 {
 			if velocity_y > 0 {
-				direction = 270+45;
+				direction = 0;//270+45;
 			} else if velocity_y < 0 {
-				direction = 45;
+				direction = 0;//45;
 			} else {
 				direction = 0;
 			}
 		} else if velocity_x < 0 {
 			if velocity_y > 0 {
-				direction = 180+45;
+				direction = 180;//180+45;
 			} else if velocity_y < 0 {
-				direction = 90+45;
+				direction = 180;//90+45;
 			} else {
 				direction = 180;
 			}

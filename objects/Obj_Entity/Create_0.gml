@@ -47,7 +47,8 @@ function die() {
 	instance_destroy();
 }
 
-function damage(n) {
+function damage(n, from=noone) {
+	if from != noone and from.friendly == friendly { return; }
 	if passive { return; }
 	if hp == 0 { return; }
 	audio_play_sound(snd_hurt, 1, false, 2.5, 0, 0.9 + random(1) * 0.2);
@@ -70,43 +71,42 @@ function damage(n) {
 
 /// @function entity_move_and_collide(dx, dy, [num_iterations], [xoff], [yoff], [max_x_move], [max_y_move])
 /// @desc Custom move_and_collide for Obj_Entity.
-///       Ignores other Obj_Entity instances that share the same "friendly" value
-///       and have can_move == true. Collides with everything else under Obj_Solid.
-/// @param {Real} dx
-/// @param {Real} dy
-/// @param {Real} [num_iterations=4]
-/// @param {Real} [xoff=0]
-/// @param {Real} [yoff=0]
-/// @param {Real} [max_x_move=-1]
-/// @param {Real} [max_y_move=-1]
-/// @return {Array} Array of instance IDs collided with (same as built-in)
-function entity_move_and_collide(_dx, _dy, _num_iterations = 4, _xoff = 0, _yoff = 0, _max_x_move = -1, _max_y_move = -1)
+///       Ignores other entities that share the same "friendly" value and have can_move == true.
+///       Always collides with non-entity Obj_Solid instances (walls, etc.).
+///       Clamps sliding speed so diagonal movement does not accelerate along flat walls.
+function entity_move_and_collide(_dx, _dy, _num_iterations = 4, _xoff = 0, _yoff = 0, _max_x_move = undefined, _max_y_move = undefined)
 {
+    // Prevent diagonal wall-slide speed boost
+    if (is_undefined(_max_x_move)) _max_x_move = abs(_dx);
+    if (is_undefined(_max_y_move)) _max_y_move = abs(_dy);
+
     var _colliders = [];
+    var _me = id;
+    var _my_friendly = variable_instance_exists(id, "friendly") ? friendly : false;
 
     with (Obj_Solid)
     {
-        // Always skip self
-        if (id == other.id) continue;
+        if (id == _me) continue;
 
-        var _ignore = false;
+        var _should_collide = true;
 
-        // Only consider ignoring if this is an Obj_Entity (or a child of it)
+        // Only consider ignoring if this solid is actually an entity
         if (object_index == Obj_Entity || object_is_ancestor(object_index, Obj_Entity))
         {
-            if variable_instance_exists(other, "friendly") and variable_instance_exists(other, "can_move") and (can_move && friendly == other.friendly)
+            if (variable_instance_exists(id, "can_move") && can_move &&
+                variable_instance_exists(id, "friendly") && friendly == _my_friendly)
             {
-                _ignore = true;
+                _should_collide = false;
             }
         }
 
-        if (!_ignore)
+        if (_should_collide)
         {
             array_push(_colliders, id);
         }
     }
 
-    // Call the real function with only the instances we care about
+    // Pass the filtered list of instance IDs (walls are always present)
     return move_and_collide(_dx, _dy, _colliders, _num_iterations, _xoff, _yoff, _max_x_move, _max_y_move);
 }
 

@@ -38,7 +38,7 @@ if _nHits > 0 {
 			var _x = (inst.x - mover.x) / _d;
 			var _y = (inst.y - mover.y) / _d;
 			inst.push(_x * KNOCKBACK * charge_value*2, _y * KNOCKBACK * charge_value*2);
-			inst.damage(STRENGTH * 1+charge_value*0.2);
+			inst.damage(STRENGTH * 1+charge_value*0.2, mover);
 		}
 	}
 }
