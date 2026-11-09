@@ -1,6 +1,6 @@
 event_inherited();
 
-if !attacking and !freeze {
+if !attacking and !freeze and can_defend {
 	defending = keyboard_check(vk_lshift);
 	if defending {
 		if facing == "down" {

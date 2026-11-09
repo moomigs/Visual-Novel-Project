@@ -13,6 +13,8 @@ battle_attack_distance = 64;
 battle_charging = false;
 battle_state = "idle"; // attack, retreat, fatigued
 battle_state_tick = 0;
+battle_preferred_attack = Move_Slash;
+battle_will_defend = true;
 
 function start_battle(target) {
 	battle_target = target;

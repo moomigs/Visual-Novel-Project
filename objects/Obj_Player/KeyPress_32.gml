@@ -8,9 +8,8 @@ if call_menu_open != false and variable_global_exists("link") and is_array(globa
 	dialoguemaster.dialogue_code = _dialogue;
 	dialoguemaster.dialogue_code = string_replace_all(dialoguemaster.dialogue_code, "^", chr(34));
 	dialoguemaster.ended = function() {
-	
 	};
 	dialoguemaster.go();
 	dialoguemaster.unpause();
-
+	array_delete(global.link, _index, 1);
 }

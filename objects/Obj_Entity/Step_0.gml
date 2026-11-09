@@ -7,6 +7,12 @@ if can_move {
 		down = keyboard_check(ord("S"));
 		left = keyboard_check(ord("A"));
 		right = keyboard_check(ord("D"));
+		if !input_enabled {
+			up = false;
+			down = false;
+			left = false;
+			right = false;
+		}
 	}
 
 	velocity_x = 0;
@@ -31,18 +37,22 @@ if can_move {
 
 	if not lock_direction {
 		if velocity_x > 0 {
-			if velocity_y > 0 {
-				direction = 0;//270+45;
-			} else if velocity_y < 0 {
-				direction = 0;//45;
+			if abs(velocity_y) > abs(velocity_x) {
+				if velocity_y > 0 {
+					direction = 270;
+				} else {
+					direction = 90;
+				}
 			} else {
 				direction = 0;
 			}
 		} else if velocity_x < 0 {
-			if velocity_y > 0 {
-				direction = 180;//180+45;
-			} else if velocity_y < 0 {
-				direction = 180;//90+45;
+			if abs(velocity_y) > abs(velocity_x) {
+				if velocity_y > 0 {
+					direction = 270;
+				} else {
+					direction = 90;
+				}
 			} else {
 				direction = 180;
 			}

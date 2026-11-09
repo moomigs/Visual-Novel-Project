@@ -1,6 +1,8 @@
 if defending { return; }
 if freeze { return; }
 if attack_pending { return; }
+if attacking_disabled { return; }
+if not can_heavy { return; }
 
 var attack = instance_create_depth(x, y, depth, Move_Heavy);
 attack.mover = self;

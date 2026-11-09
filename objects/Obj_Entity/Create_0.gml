@@ -47,12 +47,13 @@ function die() {
 	instance_destroy();
 }
 
-function damage(n, from=noone) {
+function damage(n, from=noone, heavy=false) {
 	if from != noone and from.friendly == friendly { return; }
 	if passive { return; }
 	if hp == 0 { return; }
 	audio_play_sound(snd_hurt, 1, false, 2.5, 0, 0.9 + random(1) * 0.2);
-	if defending { return; }
+	if defending and heavy==false { return; }
+	if heavy { n *= 0.5 }
 	hp = max(0, hp - n);
 	show_healthbar = 2*game_get_speed(gamespeed_fps);
 	instance_create_depth(x, y, depth, Effect_entity_hurt).go(self);

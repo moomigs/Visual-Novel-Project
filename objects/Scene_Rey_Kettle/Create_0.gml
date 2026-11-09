@@ -13,3 +13,10 @@ dialoguemaster.ended = function() {
 };
 dialoguemaster.go();
 dialoguemaster.unpause();
+
+var _index = array_find_index(global.link, function(element) {
+    return element.name == "Rey";
+});
+if (_index != -1) {
+    array_delete(global.link, _index, 1);
+}

@@ -22,14 +22,18 @@ and battle_target.hp > 0 {
 				move_stop();
 				battle_state_tick = 0;
 				alarm_set(4, 1);
-			} else {
-				var attack = instance_create_depth(x, y, depth, Move_Slash);
+			} else if battle_preferred_attack != noone {
+				var attack = instance_create_depth(x, y, depth, battle_preferred_attack);
 				attack.mover = self;
 				attack.set_direction(direction);
 				attack_pending = attack;
 				attack.charge();
 				battle_charging = true;
 				alarm_set(3, random_range(chargetime_min, chargetime_max));
+			} else if battle_preferred_attack == noone {
+				move_stop();
+				battle_state_tick = 0;
+				alarm_set(4, attack_postcooldown);
 			}
 		} else if battle_charging == false {
 			move_to(battle_target.x, battle_target.y);
@@ -37,7 +41,7 @@ and battle_target.hp > 0 {
 		movespeed_alpha = 1;
 	} else if battle_state == "retreat" {
 		move_to_relative(x - battle_target.x, y - battle_target.y);
-		defending = (point_distance(x, y, battle_target.x, battle_target.y) <= battle_attack_distance);
+		defending = battle_will_defend and (point_distance(x, y, battle_target.x, battle_target.y) <= battle_attack_distance);
 		if defending {
 			if facing == "down" {
 				sprite_index = spr_Player_forward_defending;
@@ -46,8 +50,8 @@ and battle_target.hp > 0 {
 			} else if facing == "right" or facing == "left" {
 				sprite_index = spr_Player_right_defending;
 			}
+			movespeed_alpha = 0.5;
 		}
-		movespeed_alpha = 0.5;
 	}
 	
 	battle_state_tick ++;

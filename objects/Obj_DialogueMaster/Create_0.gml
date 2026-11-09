@@ -431,6 +431,18 @@ function next_line() {
 			camera_set_view_target(view_camera[0], initial_viewport_subject);
 			
 			next_line();
+		} else if command == "player_disable" {
+			var player = instance_find(Obj_Player, 0);
+			if player != noone {
+				player.input_enabled = false;
+			}
+			next_line();
+		} else if command == "player_enable" {
+			var player = instance_find(Obj_Player, 0);
+			if player != noone {
+				player.input_enabled = true;
+			}
+			next_line();
 		} else if command == "entity_speed" {
 			var arg1 = arguments[1];
 			var arg2 = real(arguments[2]);

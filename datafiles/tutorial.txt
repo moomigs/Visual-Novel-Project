@@ -1,0 +1,57 @@
+name c Collins
+name child Child
+name tutorial  
+
+player_disable
+
+pause 1
+
+child En garde!
+
+textbox false
+entity_walk_to collins 360 192
+entity_waitfor collins
+trigger 0
+
+pause 2
+
+c "Do you... know what you're doing?"
+child "I may have forgotten our lessons..."
+c "Let me show you."
+c "The most important move you can make is to block."
+c "A good defensive position can stand up to most attacks."
+c "Like this:"
+
+tutorial Press Shift
+textbox false
+trigger 2
+player_enable
+
+waitfor collins_defend
+pause 1
+
+player_disable
+child "Oh! I got it!"
+
+entity_setsprite child spr_Player_forward_defending
+pause 1
+
+c "Good. Just like that."
+c "Next I'll show you the quickest and most effective attack:"
+c "The stab."
+entity_freesprite child
+
+tutorial Press Left
+textbox false
+trigger 3
+player_enable
+
+waitfor collins_stab
+player_disable
+
+child "Oooo..."
+c "It's quick, it reaches, it'll take you a long way in a battle."
+c "But sometimes you want to do more damage."
+
+trigger 4
+
