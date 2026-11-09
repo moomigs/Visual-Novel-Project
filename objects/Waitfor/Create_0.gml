@@ -13,6 +13,8 @@ waitfor = function(_inst, _var, _val) {
 
 waitfor_instance = function(_obj, _var=noone, _val=noone) {
 	focus_object = _obj;
+	focus_variable = _var;
+	focus_value = _val;
 	alarm_set(1, 1);
 }
 

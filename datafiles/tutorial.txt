@@ -49,9 +49,45 @@ player_enable
 waitfor collins_stab
 player_disable
 
+pause 1
+
 child "Oooo..."
 c "It's quick, it reaches, it'll take you a long way in a battle."
 c "But sometimes you want to do more damage."
 
 trigger 4
+pause 0.5
+trigger 4
+pause 0.4
+trigger 4
+pause 0.6
 
+child "Taste my blade!"
+c "Good."
+c "Let me show you the swing."
+
+tutorial Hold Down
+textbox false
+trigger 5
+player_enable
+
+waitfor collins_slash
+player_disable
+
+pause 1
+
+c "A swing has wider range, and slices. It will do more damage if it connects."
+c "It's also slower."
+
+pause 1
+
+trigger 6
+
+pause 0.5
+
+child "I can almost swing as wide as you can!"
+c "Erm... sure."
+c "Speaking of slow, this one is called a heavy."
+c "It's when you thrust with all your might."
+c "It's slow and easy to read, but you can bash through defenses."
+c "Like this:"

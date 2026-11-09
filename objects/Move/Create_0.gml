@@ -8,6 +8,8 @@ right_y = 0;
 charge_begin = 0;
 charge_value = -1;
 
+discharge = false;
+
 image_alpha = 0;
 image_speed = 0;
 
@@ -34,12 +36,12 @@ function set_direction(dir) {
 	}
 }
 
-charge = function() {
+charge = function(autocharge=0) {
 	if global.entity_pause == true {
 		return;
 	}
 	charge_begin = current_time/1000;
-	charge_value = 0;
+	charge_value = autocharge;
 	mover.freeze = true;
 }
 
@@ -54,6 +56,7 @@ function go(_direction) {
 	mover.freeze = true;
 	var timeCharging = (current_time/1000)-charge_begin;
 	if not charge { timeCharging = 0 };
+	discharge = true;
 	if timeCharging <= windup {
 		alarm_set(0,
 			(windup-timeCharging)*game_get_speed(gamespeed_fps)+1

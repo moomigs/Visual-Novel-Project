@@ -4,7 +4,7 @@ child = instance_find(Obj_Entity_Child, 0);
 child_blindswings = false;
 collins_defend = false;
 collins_stab = false;
-collins_swing = false;
+collins_slash = false;
 collins_heavy = false;
 collins_shoot = false;
 
