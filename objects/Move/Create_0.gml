@@ -45,7 +45,7 @@ charge = function(autocharge=0) {
 	mover.freeze = true;
 }
 
-function go(_direction) {
+function go(_direction, _delay=0) {
 	if global.entity_pause == true {
 		mover.freeze = false;
 		return;
@@ -59,12 +59,12 @@ function go(_direction) {
 	discharge = true;
 	if timeCharging <= windup {
 		alarm_set(0,
-			(windup-timeCharging)*game_get_speed(gamespeed_fps)+1
+			_delay+(windup-timeCharging)*game_get_speed(gamespeed_fps)+1
 		);
-		alarm_set(1, ((windup-timeCharging)+winddown)*game_get_speed(gamespeed_fps)+1);
+		alarm_set(1, _delay+((windup-timeCharging)+winddown)*game_get_speed(gamespeed_fps)+1);
 	} else {
-		alarm_set(0, 1);
-		alarm_set(1, winddown*game_get_speed(gamespeed_fps)+1);
+		alarm_set(0, _delay+1);
+		alarm_set(1, _delay+winddown*game_get_speed(gamespeed_fps)+1);
 	}
-	alarm_set(1, (windup+winddown)*game_get_speed(gamespeed_fps)+1);
+	alarm_set(1, _delay+(windup+winddown)*game_get_speed(gamespeed_fps)+1);
 }

@@ -2,6 +2,20 @@ name c Collins
 name child Child
 name tutorial  
 
+new_title press_shift Hold Shift
+new_title press_left Press Left
+new_title hold_down Hold Down
+new_title hold_right Hold Right
+new_title press_up Press Up
+new_title waitforsignal Wait for signal and press down
+
+title_setpos press_shift 0 0.3
+title_setpos press_left 0 0.3
+title_setpos hold_down 0 0.3
+title_setpos hold_right 0 0.3
+title_setpos press_up 0 0.3
+title_setpos waitforsignal 0 0.3
+
 player_disable
 
 pause 1
@@ -9,7 +23,7 @@ pause 1
 child En garde!
 
 textbox false
-entity_walk_to collins 360 192
+entity_walk_to collins 312 192
 entity_waitfor collins
 trigger 0
 
@@ -22,18 +36,18 @@ c "The most important move you can make is to block."
 c "A good defensive position can stand up to most attacks."
 c "Like this:"
 
-tutorial Press Shift
+title_fadein press_shift 0.5
 textbox false
 trigger 2
-player_enable
-
+#player_enable
 waitfor collins_defend
+title_fadeout press_shift 0.5
 pause 1
 
 player_disable
 child "Oh! I got it!"
 
-entity_setsprite child spr_Player_forward_defending
+entity_setsprite child spr_Player_left_defending
 pause 1
 
 c "Good. Just like that."
@@ -41,14 +55,13 @@ c "Next I'll show you the quickest and most effective attack:"
 c "The stab."
 entity_freesprite child
 
-tutorial Press Left
+title_fadein press_left 0.5
 textbox false
 trigger 3
-player_enable
-
+#player_enable
 waitfor collins_stab
 player_disable
-
+title_fadeout press_left 0.5
 pause 1
 
 child "Oooo..."
@@ -66,14 +79,13 @@ child "Taste my blade!"
 c "Good."
 c "Let me show you the swing."
 
-tutorial Hold Down
+title_fadein hold_down 0.5
 textbox false
 trigger 5
-player_enable
-
+#player_enable
 waitfor collins_slash
 player_disable
-
+title_fadeout hold_down 0.5
 pause 1
 
 c "A swing has wider range, and slices. It will do more damage if it connects."
@@ -83,7 +95,7 @@ pause 1
 
 trigger 6
 
-pause 0.5
+pause 1
 
 child "I can almost swing as wide as you can!"
 c "Erm... sure."
@@ -91,3 +103,76 @@ c "Speaking of slow, this one is called a heavy."
 c "It's when you thrust with all your might."
 c "It's slow and easy to read, but you can bash through defenses."
 c "Like this:"
+
+title_fadein hold_right 0.5
+textbox false
+trigger 7
+#player_enable
+waitfor collins_heavy
+player_disable
+title_fadeout hold_right 0.5
+pause 1
+
+c "Now you do it."
+
+pause 1
+
+trigger 8
+
+pause 1
+
+child "I feel powerful!"
+c "Don't feel too powerful."
+c "When your preparing the swing and heavy, you're vulnerable."
+c "Remember that."
+child "Got it."
+child "But we're missing something."
+c "Well..."
+c "You're too young to have your neuro-lace..."
+child "Show me!"
+c "Alright."
+c "Normally you need brain enhancements to block pistol shots."
+c "But take your best defensive stance. I'll throw one your way."
+
+entity_setsprite child spr_Player_left_defending
+child "Come at me!"
+
+title_fadein press_up 0.5
+textbox false
+trigger 9
+#player_enable
+waitfor collins_shoot
+player_disable
+title_fadeout press_up 0.5
+pause 0.5
+
+child "Ow!"
+entity_freesprite child
+c "Yeah, a stun shot will sting."
+c "But you won't go down right away."
+c "You've got a practice gun. Let's see you try and hit me."
+child "Alright, get ready!"
+
+title_fadein waitforsignal 0.5
+textbox false
+#player_enable
+pause 2
+trigger 10
+waitfor shot_blocked
+player_disable
+title_fadeout waitforsignal 0.5
+pause 1
+
+c "Nice aim."
+child "Thanks!"
+c "The galaxy runs on swords."
+c "It's too easy to block pistols when everyone has a neuro-lace."
+c "But they're good at range when you can't reach someone with your sword yet."
+c "And even at close-quarters you can take someone by surprise sometimes."
+c "That's why a pistol and a sword are standard for fighters across the galaxy."
+child "Let's do it for real now!"
+c "Yeah? You ready?"
+child "Ready!"
+c "En garde."
+
+goto_room Room_RPG_1

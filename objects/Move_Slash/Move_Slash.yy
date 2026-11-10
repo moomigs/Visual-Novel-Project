@@ -11,7 +11,7 @@
   "name":"Move_Slash",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Move","path":"objects/Move/Move.yy",},"propertyId":{"name":"windup","path":"objects/Move/Move.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":".15",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Move","path":"objects/Move/Move.yy",},"propertyId":{"name":"winddown","path":"objects/Move/Move.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Move","path":"objects/Move/Move.yy",},"propertyId":{"name":"winddown","path":"objects/Move/Move.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":".25",},
   ],
   "parent":{
     "name":"Moves",

@@ -7,6 +7,7 @@ collins_stab = false;
 collins_slash = false;
 collins_heavy = false;
 collins_shoot = false;
+shot_blocked = false;
 
 collins.can_slash = false;
 collins.can_stab = false;

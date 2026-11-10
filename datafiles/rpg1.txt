@@ -1,5 +1,10 @@
 # RPG section
 
+name nar Narrator
+name c Collins
+name child Child
+name g Gordon
+
 nar Cut to a back alley behind the bar as Collins walks out
 
 entity_speed collins 4
@@ -28,9 +33,11 @@ entity_walk_to collins 352 352
 
 c "You're a fool if you think you can stand against my blade!"
 
+textbox false
+
+goto_room Room_Tutorial
 
 ### Fight child, beat child
-textbox false
 trigger 1
 entity_waitfor_battle child
 trigger 2
@@ -120,7 +127,5 @@ g "Don't keep us waiting."
 
 
 ### Transitions to VN
-
-node 1
 
 goto_room Room_VN_2

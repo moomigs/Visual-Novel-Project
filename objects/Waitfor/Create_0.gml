@@ -18,4 +18,4 @@ waitfor_instance = function(_obj, _var=noone, _val=noone) {
 	alarm_set(1, 1);
 }
 
-done = function() {}
+done = function(_inst) {}
