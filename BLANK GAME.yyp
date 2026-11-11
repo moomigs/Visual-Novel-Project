@@ -66,7 +66,9 @@
     {"$GMFolder":"","%Name":"Tilesets","folderPath":"folders/Sprites/Tilesets.yy","name":"Tilesets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tilesets","folderPath":"folders/Tilesets.yy","name":"Tilesets","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"beginning.txt","CopyToMask":-1,"filePath":"datafiles","name":"beginning.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"fullscript.txt","CopyToMask":-1,"filePath":"datafiles","name":"fullscript.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -100,6 +102,9 @@
   "name":"BLANK GAME",
   "resources":[
     {"id":{"name":"font_bold","path":"fonts/font_bold/font_bold.yy",},},
+    {"id":{"name":"font_crawl","path":"fonts/font_crawl/font_crawl.yy",},},
+    {"id":{"name":"font_crawl2","path":"fonts/font_crawl2/font_crawl2.yy",},},
+    {"id":{"name":"font_crawl3","path":"fonts/font_crawl3/font_crawl3.yy",},},
     {"id":{"name":"font_dialogue","path":"fonts/font_dialogue/font_dialogue.yy",},},
     {"id":{"name":"font_italic","path":"fonts/font_italic/font_italic.yy",},},
     {"id":{"name":"font_menu","path":"fonts/font_menu/font_menu.yy",},},

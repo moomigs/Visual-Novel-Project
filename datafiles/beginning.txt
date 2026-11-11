@@ -32,17 +32,21 @@ dissolve spr_bg_galaxy 2
 
 pause 6
 
-new_title title1 In the Third Epoch there roamed the galaxy men
-new_title title1_2 and women of renown in search of treasure and glory.
-new_title title2 They heeded the call of the stars and set their hearts on infamy at any cost.
-new_title title3 Admired. Feared. Resented. They were larger than life and lower than dirt.
-new_title title4 These adventurers were known as:
-new_title title5 [font_title]STAR RUNNERS[/f]
+new_title title1 [#EEE7D7][font_crawl]In the Third Epoch there roamed throughout the galaxy[/f][/c]
+new_title title1_2 [#EEE7D7][font_crawl]men and women of renown in search of treasure and glory.[/f][/c]
+new_title title2 [#EEE7D7][font_crawl]They heeded the call of the stars[/f][/c]
+new_title title22 [#EEE7D7][font_crawl]and set their hearts on infamy at any cost.[/f][/c]
+new_title title3 [font_crawl2][#D9C38F]ADMIRED.    FEARED.    RESENTED.[/c][/f]
+new_title title32 [#EEE7D7][font_crawl3]They were larger than life and lower than dirt.[/f][/c]
+new_title title4 [#EEE7D7][font_crawl]These adventurers were known as:[/f][/c]
+new_title title5 [#EEE7D7][font_title]STAR RUNNERS[/f][/c]
 
-title_setpos title1 0 0.4
-title_setpos title1_2 0 0.3
-title_setpos title2 0 0
+title_setpos title1 0 0.46
+title_setpos title1_2 0 0.34
+title_setpos title2 0 0.06
+title_setpos title22 0 -0.06
 title_setpos title3 0 -0.35
+title_setpos title32 0 -0.47
 title_setpos title4 0 0.1
 title_setpos title5 0 -0.1
 
@@ -50,13 +54,17 @@ title_fadein title1 2
 title_fadein title1_2 2
 pause 5
 title_fadein title2 2
+title_fadein title22 2
 pause 5
 title_fadein title3 2
+title_fadein title32 2
 pause 6
 title_fadeout title1 2
 title_fadeout title1_2 2
 title_fadeout title2 2
+title_fadeout title22 2
 title_fadeout title3 2
+title_fadeout title32 2
 pause 4
 title_fadein title4 2
 pause 6

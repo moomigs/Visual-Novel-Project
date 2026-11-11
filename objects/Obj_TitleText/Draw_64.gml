@@ -10,5 +10,6 @@ if text != noone {
 	text.align(fa_center, fa_middle);
 	text.scale(scale);
 	text.blend(c_white, alpha);
+	text.sdf_shadow(c_black, 0.85, 0, 2, 6);
 	text.draw(x, y);
 }
