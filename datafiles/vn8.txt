@@ -61,4 +61,21 @@ n "Yes, captain Artensa?"
 nar Closeup of face, pupils are dilated
 a "Set course for coordinates 1.385.6124.982."
 
-nar credits
+stop_sound m_no_more_magic 5
+pause 2
+
+new_title credit1 Writer and Director             Sam Capener
+new_title credit2 Programmer             Peter Capener
+new_title credit3 Thanks for playing the demo!
+title_setpos credit1 0 0
+title_setpos credit2 0 0
+title_setpos credit3 0 0
+
+title_fadein credit1 1
+pause 2
+title_fadeout credit1 1
+title_fadein credit2 1
+pause 2
+title_fadeout credit2 1
+title_fadein credit3 1
+pause 4

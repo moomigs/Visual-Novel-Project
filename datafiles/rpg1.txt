@@ -8,7 +8,7 @@ name g Gordon
 nar Cut to a back alley behind the bar as Collins walks out
 
 entity_speed collins 4
-entity_walk_to collins 320 352
+entity_walk_to collins 160 352
 
 c "I'm taking my break!"
 c "..."
@@ -29,7 +29,7 @@ c "Hmm..."
 c "Protector of the alley, eh?"
 nar Collins picks up his sword against the wall and activates it
 
-entity_walk_to collins 352 352
+entity_walk_to collins 184 352
 
 c "You're a fool if you think you can stand against my blade!"
 
@@ -107,6 +107,9 @@ stop_sound m_beyond_the_star_gate 5
 c "I..."
 c "I won..."
 g "Yeah. You did."
+
+entity_freesprite gordon
+
 g "You know something about those ruins."
 c "..."
 c "Maybe."

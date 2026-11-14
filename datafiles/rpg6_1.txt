@@ -16,35 +16,35 @@ loop_sound m_perpetual_tension
 trigger 1
 textbox false
 
-pause 5
-textbox true
-entity_pause
-ri "Your body knows what to do."
-ri "Command it."
-entity_unpause
-textbox false
+#pause 5
+#textbox true
+#entity_pause
+#ri "Your body knows what to do."
+#ri "Command it."
+#entity_unpause
+#textbox false
 
-pause 8
-textbox true
-entity_pause
-ri "The gem obeys certainty."
-ri "Your abilities are telekinetic. So think of what you can do with that."
-entity_unpause
-textbox false
+#pause 8
+#textbox true
+#entity_pause
+#ri "The gem obeys certainty."
+#ri "Your abilities are telekinetic. So think of what you can do with that."
+#entity_unpause
+#textbox false
 
-pause 8
-textbox true
-entity_pause
-ri "Push. Pull. Move objects to your advantage."
-entity_unpause
-textbox false
+#pause 8
+#textbox true
+#entity_pause
+#ri "Push. Pull. Move objects to your advantage."
+#entity_unpause
+#textbox false
 
-pause 8
-textbox true
-entity_pause
-ri "Good."
-entity_unpause
-textbox false
+#pause 8
+#textbox true
+#entity_pause
+#ri "Good."
+#entity_unpause
+#textbox false
 
 waitfor robots_defeated
 

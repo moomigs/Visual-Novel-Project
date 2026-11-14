@@ -8,9 +8,10 @@
   "name":"Obj_Entity_Vampire",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"can_die","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"max_health","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"200",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"hp","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"200",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"max_health","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"300",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"hp","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"300",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_Entity","path":"objects/Obj_Entity/Obj_Entity.yy",},"propertyId":{"name":"friendly","path":"objects/Obj_Entity/Obj_Entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_NPC","path":"objects/Obj_NPC/Obj_NPC.yy",},"propertyId":{"name":"unkillable","path":"objects/Obj_NPC/Obj_NPC.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
     "name":"Special",
@@ -33,7 +34,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"defence","filters":[],"listItems":[],"multiselect":false,"name":"defence","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.0","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

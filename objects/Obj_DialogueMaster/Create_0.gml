@@ -569,4 +569,3 @@ function pause() {
 function unpause() {
 	global.entity_pause = false;
 }
-

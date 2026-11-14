@@ -2,16 +2,27 @@ name g Gordon
 name nar Narrator
 name c Collins
 name bar Bartender
-		
+
 g "You done out there?"
-		
-iftrue town1task1 2
+
+iftrue town1task1 end
 		
 g "Keep looking. I'll be here when you're finished."
 textbox false
 end
-		
-node 2
+
+choice [Yes] [No]
+	case 0 yes
+	case 1 no
+	case 2 end
+	
+	node yes
+	goto end
+	
+	node no
+	end
+node end
+
 stop_sound m_harmony_of_the_forgotten 3
 g "Good. Let me buy you a drink."
 		

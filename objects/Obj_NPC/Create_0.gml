@@ -8,6 +8,13 @@ attack_postcooldown = 10;
 retreattime_min = 10;
 retreattime_max = 120;
 
+if variable_instance_exists(self, "defence") and defence == 1.0 {
+	attack_postcooldown = 1;
+	retreattime_min = 20;
+	retreattime_max = 40;
+	chargetime_max = 10;
+}
+
 battle_target = noone;
 battle_attack_distance = 64;
 battle_charging = false;

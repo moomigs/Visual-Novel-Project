@@ -10,7 +10,7 @@ var off_y_percent = off_y / camera_get_view_height(view_camera[0])
 var mousex = off_x_percent * display_get_gui_width()
 var mousey = off_y_percent * display_get_gui_height()
 
-if (Obj_MenuButton.menuVisible or Obj_HistoryButton.historyVisible) {
+if ((instance_find(Obj_MenuButton, 0) != noone and Obj_MenuButton.menuVisible) or (instance_find(Obj_HistoryButton, 0) != noone and Obj_HistoryButton.historyVisible)) {
 	alternateInput = true;
 }
 for (var i = 0; i < array_length(buttons); i++) {
