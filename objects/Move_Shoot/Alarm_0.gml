@@ -19,7 +19,21 @@ if nearest != noone {
 var range = view_get_wport(0)/2 + 128;
 
 var _hits = ds_list_create();
-var _nHits = collision_line_list(x, y, x + x_direction*range, y + y_direction*range, Obj_Entity, false, true, _hits, true);
+
+// Direction vector (assume x_direction / y_direction are already normalized)
+var _end_x = x + x_direction * range;
+var _end_y = y + y_direction * range;
+
+// Thin thickness perpendicular to the shot (0.5–2 works well; higher = more forgiving)
+var _thick = 2;
+var _perp_x = -y_direction * _thick;
+var _perp_y =  x_direction * _thick;
+
+var _nHits = collision_rectangle_list(
+    min(x, _end_x) + _perp_x, min(y, _end_y) + _perp_y,
+    max(x, _end_x) - _perp_x, max(y, _end_y) - _perp_y,
+    Obj_Entity, false, true, _hits, true
+);
 
 inst = noone;
 
