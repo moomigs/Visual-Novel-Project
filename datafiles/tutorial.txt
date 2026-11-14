@@ -173,6 +173,5 @@ c "That's why a pistol and a sword are standard for fighters across the galaxy."
 child "Let's do it for real now!"
 c "Yeah? You ready?"
 child "Ready!"
-c "En garde."
 
 goto_room Room_RPG_1
