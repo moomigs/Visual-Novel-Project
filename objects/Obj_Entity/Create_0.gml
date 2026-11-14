@@ -53,7 +53,8 @@ function damage(n, from=noone, heavy=false) {
 	if hp == 0 { return; }
 	audio_play_sound(snd_hurt, 1, false, 2.5, 0, 0.9 + random(1) * 0.2);
 	if defending and heavy==false { return; }
-	if heavy { n *= 0.5 }
+	if defending and heavy { n *= 0.5; }
+	if from.friendly and from.object_index != Obj_Player { n *= 0.33; }
 	hp = max(0, hp - n);
 	show_healthbar = 2*game_get_speed(gamespeed_fps);
 	instance_create_depth(x, y, depth, Effect_entity_hurt).go(self);

@@ -15,6 +15,8 @@ var x1 = min(_x1, _x2);
 var y1 = min(_y1, _y2);
 var x2 = max(_x1, _x2);
 var y2 = max(_y1, _y2);
+
+_time = current_time/1000;
 	
 var _nHits = collision_rectangle_list(x1, y1, x2, y2, Obj_Entity, false, true, _hits, true);
 if _nHits > 0 {
@@ -30,3 +32,5 @@ if _nHits > 0 {
 		}
 	}
 }
+
+//alarm_set(1, winddown * game_get_speed(gamespeed_fps));

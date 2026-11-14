@@ -1,3 +1,8 @@
+name c Collins
+name p Phoebe
+name g Gordon
+name r Rey
+
 loop_sound m_shenanigans
 
 ### All four crew members walk on screen. Phoebe turns to face Rey
@@ -15,6 +20,7 @@ r "Okey-dokey!"
 entity_turn collins left
 entity_turn gordon left
 entity_walk_to rey 24 192
+entity_waitfor rey
 r "..."
 entity_turn rey right
 r "Um... I'm locked out."
@@ -54,5 +60,7 @@ pause 1
 entity_turn collins down
 
 loop_sound m_harmony_of_the_forgotten
+
+pause 0.25
 
 goto_room Room_Town_1

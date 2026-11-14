@@ -8,6 +8,6 @@ function interact() {
 		global.entity_pause = true;
 		
 		room_goto(goto_room);
-		audio_stop_all();
+		//audio_stop_all();
 	}
 }

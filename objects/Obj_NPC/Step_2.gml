@@ -31,9 +31,17 @@ and battle_target.hp > 0 {
 				battle_charging = true;
 				alarm_set(3, random_range(chargetime_min, chargetime_max));
 			} else if battle_preferred_attack == noone {
-				move_stop();
-				battle_state_tick = 0;
-				alarm_set(4, attack_postcooldown);
+				//move_stop();
+				//battle_state_tick = 0;
+				//alarm_set(4, attack_postcooldown);
+				//Make sure target is in line before including shoot////////////////////
+				var attack = instance_create_depth(x, y, depth, array_get(battle_attacks, random_range(0, 3)));
+				attack.mover = self;
+				attack.set_direction(direction);
+				attack_pending = attack;
+				attack.charge();
+				battle_charging = true;
+				alarm_set(3, 1+random(1)*attack.windup*game_get_speed(gamespeed_fps));
 			}
 		} else if battle_charging == false {
 			move_to(battle_target.x, battle_target.y);

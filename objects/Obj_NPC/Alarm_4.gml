@@ -1,4 +1,4 @@
-if random(10) >= 7 {
+if random(10) >= 8 {
 	battle_state = "attack";
 	battle_state_tick = 0;
 } else {

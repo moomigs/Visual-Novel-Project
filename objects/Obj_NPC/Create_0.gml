@@ -5,7 +5,7 @@ chargetime_min = 1;
 chargetime_max = 30;
 attack_postcooldown = 10;
 
-retreattime_min = 10;
+retreattime_min = 15;
 retreattime_max = 120;
 
 if variable_instance_exists(self, "defence") and defence == 1.0 {
@@ -15,12 +15,14 @@ if variable_instance_exists(self, "defence") and defence == 1.0 {
 	chargetime_max = 10;
 }
 
+battle_attacks = [Move_Slash, Move_Heavy, Move_Stab, Move_Shoot];
+
 battle_target = noone;
 battle_attack_distance = 64;
 battle_charging = false;
 battle_state = "idle"; // attack, retreat, fatigued
 battle_state_tick = 0;
-battle_preferred_attack = Move_Slash;
+battle_preferred_attack = noone;//Move_Slash;
 battle_will_defend = true;
 
 function start_battle(target) {

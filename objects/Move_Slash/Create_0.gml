@@ -6,6 +6,7 @@ TRAVEL = bbox_right - bbox_left;
 WIDTH = bbox_bottom - bbox_top;
 TIME = sprite_get_number(sprite_index)/sprite_get_speed(sprite_index);
 
+_time = 0;
 step = 0;
 
 forward_offset = 16;

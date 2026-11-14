@@ -59,12 +59,12 @@ function go(_direction, _delay=0) {
 	discharge = true;
 	if timeCharging <= windup {
 		alarm_set(0,
-			_delay+(windup-timeCharging)*game_get_speed(gamespeed_fps)+1
+			_delay+max(windup-timeCharging, 0)*game_get_speed(gamespeed_fps)+1
 		);
-		alarm_set(1, _delay+((windup-timeCharging)+winddown)*game_get_speed(gamespeed_fps)+1);
+		alarm_set(1, _delay+max((windup-timeCharging)+winddown, 0)*game_get_speed(gamespeed_fps)+1);
 	} else {
 		alarm_set(0, _delay+1);
-		alarm_set(1, _delay+winddown*game_get_speed(gamespeed_fps)+1);
+		alarm_set(1, _delay+max(winddown, 0)*game_get_speed(gamespeed_fps)+1);
 	}
-	alarm_set(1, _delay+(windup+winddown)*game_get_speed(gamespeed_fps)+1);
+	alarm_set(1, _delay+max(windup+winddown, 0)*game_get_speed(gamespeed_fps)+1);
 }
