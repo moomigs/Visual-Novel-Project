@@ -110,7 +110,7 @@
     "9647":{"character":9647,"h":60,"offset":5,"shift":20,"w":26,"x":380,"y":374,},
   },
   "hinting":0,
-  "includeTTF":false,
+  "includeTTF":true,
   "interpreter":0,
   "italic":false,
   "kerningPairs":[],
@@ -138,6 +138,6 @@
     "name":"Default",
     "path":"texturegroups/Default",
   },
-  "TTFName":"",
+  "TTFName":"/Users/artensa/Documents/GitHub/Visual-Novel-Project/fonts/font_crawl3/EBGaramond-Italic.ttf",
   "usesSDF":true,
 }
