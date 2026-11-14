@@ -316,6 +316,8 @@ function next_line() {
 			}
 		} else if command == "goto_room" {
 			room_goto(asset_get_index(arguments[1]));
+			
+			next_line();
 		} else if command == "skipto" {
 			if skippingto == -1 {
 				var arg = arguments[1];
