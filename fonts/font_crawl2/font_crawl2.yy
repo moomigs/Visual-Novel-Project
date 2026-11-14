@@ -110,7 +110,7 @@
     "9647":{"character":9647,"h":60,"offset":5,"shift":20,"w":26,"x":288,"y":374,},
   },
   "hinting":0,
-  "includeTTF":true,
+  "includeTTF":false,
   "interpreter":0,
   "italic":false,
   "kerningPairs":[],
@@ -138,6 +138,6 @@
     "name":"Default",
     "path":"texturegroups/Default",
   },
-  "TTFName":"/Users/artensa/Documents/GitHub/Visual-Novel-Project/fonts/font_crawl2/EBGaramond-Medium.ttf",
+  "TTFName":"",
   "usesSDF":true,
 }

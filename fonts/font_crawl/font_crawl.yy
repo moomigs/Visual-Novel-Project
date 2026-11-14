@@ -110,7 +110,7 @@
     "9647":{"character":9647,"h":64,"offset":5,"shift":22,"w":28,"x":346,"y":398,},
   },
   "hinting":0,
-  "includeTTF":true,
+  "includeTTF":false,
   "interpreter":0,
   "italic":false,
   "kerningPairs":[],
@@ -138,6 +138,6 @@
     "name":"Default",
     "path":"texturegroups/Default",
   },
-  "TTFName":"/Users/artensa/Documents/GitHub/Visual-Novel-Project/fonts/font_crawl/EBGaramond-Regular.ttf",
+  "TTFName":"",
   "usesSDF":true,
 }
