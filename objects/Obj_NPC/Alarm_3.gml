@@ -26,7 +26,7 @@ if attack_pending != noone {
 		battle_state_tick = 0;
 		alarm_set(4, max(attack_postcooldown, winddown));
 	} else if attack_pending.object_index = Move_Shoot {
-		attack_pending.go(direction);
+		attack_pending.go(direction, 40);
 		attack_pending = noone;
 		battle_charging = false;
 		battle_state = "fatigued";

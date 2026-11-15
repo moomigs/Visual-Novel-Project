@@ -2,6 +2,8 @@ fade_effect.fade_in(1);
 
 collins = instance_create_depth(600, 360, new_player.depth, Obj_Entity_Collins);
 vampire.x = 696; vampire.y = 360;
+vampire.move_stop();
+vampire.battle_target = noone;
 vampire.face_direction("left");
 instance_destroy(new_player);
 

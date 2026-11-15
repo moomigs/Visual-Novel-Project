@@ -55,7 +55,11 @@ function damage(n, from=noone, heavy=false) {
 	if defending and heavy==false { return; }
 	if defending and heavy { n *= 0.5; }
 	if from.friendly and from.object_index != Obj_Player { n *= 0.33; }
-	hp = max(0, hp - n);
+	if variable_instance_exists(self, "unkillable") and unkillable {
+		hp = max(max_health * 0.25, hp - n);
+	} else {
+		hp = max(0, hp - n);
+	}
 	show_healthbar = 2*game_get_speed(gamespeed_fps);
 	instance_create_depth(x, y, depth, Effect_entity_hurt).go(self);
 	if hp == 0 {

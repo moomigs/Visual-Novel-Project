@@ -34,8 +34,12 @@ and battle_target.hp > 0 {
 				//move_stop();
 				//battle_state_tick = 0;
 				//alarm_set(4, attack_postcooldown);
-				//Make sure target is in line before including shoot////////////////////
-				var attack = instance_create_depth(x, y, depth, array_get(battle_attacks, random_range(0, 3)));
+				
+				var random_attack = irandom_range(0, 2);
+				if abs(battle_target.x - x) <= 12 or abs(battle_target.y - y) <= 12 {
+					random_attack = irandom_range(0, 3);
+				}
+				var attack = instance_create_depth(x, y, depth, array_get(battle_attacks, random_attack));
 				attack.mover = self;
 				attack.set_direction(direction);
 				attack_pending = attack;

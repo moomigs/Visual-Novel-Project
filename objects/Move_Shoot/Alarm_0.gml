@@ -59,8 +59,8 @@ if _nHits > 0 {
 					other.blocked = true;
 				}
 			}
-			if blocked == false and inst.battle_target != noone {
-				if random(1) > 0.83 {
+			if blocked == false and inst.object_index != Obj_Player and inst.battle_target != noone {
+				if random(1) > 0.17 {
 					//auto block
 					var slash = instance_create_depth(inst.x, inst.y, inst.depth, Move_Slash);
 					slash.mover = inst;
