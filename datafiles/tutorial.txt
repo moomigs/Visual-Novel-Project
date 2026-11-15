@@ -20,7 +20,7 @@ player_disable
 
 pause 1
 
-child En garde!
+child "En garde!"
 
 textbox false
 entity_walk_to collins 312 192
@@ -31,8 +31,8 @@ pause 2
 
 c "Do you... know what you're doing?"
 child "I may have forgotten our lessons..."
-c "Let me show you."
-c "The most important move you can make is to block."
+c "Alright, let me show you again."
+c "Blocking is your greatest tool."
 c "A good defensive position can stand up to most attacks."
 c "Like this:"
 
@@ -51,8 +51,9 @@ entity_setsprite child spr_Player_left_defending
 pause 1
 
 c "Good. Just like that."
-c "Next I'll show you the quickest and most effective attack:"
-c "The stab."
+c "Next I'll show you the quickest and most effective attack."
+c “It’s a stab, or a thrust.”
+
 entity_freesprite child
 
 title_fadein press_left 0.5
@@ -65,8 +66,8 @@ title_fadeout press_left 0.5
 pause 1
 
 child "Oooo..."
-c "It's quick, it reaches, it'll take you a long way in a battle."
-c "But sometimes you want to do more damage."
+c "It's quick. It reaches. It'll take you a long way in a battle."
+c "But it’s not the strongest move..."
 
 trigger 4
 pause 0.5
@@ -77,7 +78,7 @@ pause 0.6
 
 child "Taste my blade!"
 c "Good."
-c "Let me show you the swing."
+c "Now let me show you how to swing."
 
 title_fadein hold_down 0.5
 textbox false
@@ -99,10 +100,11 @@ pause 1
 
 child "I can almost swing as wide as you can!"
 c "Erm... sure."
-c "Speaking of slow, this one is called a heavy."
+c "Speaking of slow, this next one is a common heavy attack."
 c "It's when you thrust with all your might."
-c "It's slow and easy to read, but you can bash through defenses."
-c "Like this:"
+c "It's slow and easy to read, but it can bash through defenses."
+c "It’s done like this."
+
 
 title_fadein hold_right 0.5
 textbox false
@@ -123,7 +125,7 @@ pause 1
 
 child "I feel powerful!"
 c "Don't feel too powerful."
-c "When your preparing the swing and heavy, you're vulnerable."
+c "When you're preparing slower attacks, you're vulnerable."
 c "Remember that."
 child "Got it."
 child "But we're missing something."
@@ -132,10 +134,10 @@ c "You're too young to have your neuro-lace..."
 child "Show me!"
 c "Alright."
 c "Normally you need brain enhancements to block pistol shots."
-c "But take your best defensive stance. I'll throw one your way."
+c "I'll throw one your way. Swing to try and block it."
 
 entity_setsprite child spr_Player_left_defending
-child "Come at me!"
+child "I’m ready!"
 
 title_fadein press_up 0.5
 textbox false
@@ -151,7 +153,7 @@ entity_freesprite child
 c "Yeah, a stun shot will sting."
 c "But you won't go down right away."
 c "You've got a practice gun. Let's see you try and hit me."
-child "Alright, get ready!"
+child "Alright, prepare ye-self!"
 
 title_fadein waitforsignal 0.5
 textbox false
@@ -167,8 +169,8 @@ c "Nice aim."
 child "Thanks!"
 c "The galaxy runs on swords."
 c "It's too easy to block pistols when everyone has a neuro-lace."
-c "But they're good at range when you can't reach someone with your sword yet."
-c "And even at close-quarters you can take someone by surprise sometimes."
+c "But they're good at a range when you can't reach someone with your sword yet."
+c "And even at close quarters you can take someone by surprise sometimes."
 c "That's why a pistol and a sword are standard for fighters across the galaxy."
 child "Let's do it for real now!"
 c "Yeah? You ready?"

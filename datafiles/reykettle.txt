@@ -11,14 +11,14 @@ nar Rey is staring intensely at the kettle.
 
 pause 1
 
-c "Er... Am I interrupting something?"
+c "Er... am I interrupting something?"
 r "'I've revoked your kettle access.'"
 c "What?"
 entity_turn rey right
 r "This kettle does not seem to have voice recognition!"
 c "It does."
 c "You just sounded nothing like her."
-r "That was all my programming allows..."
+r "That was all my programming allowed..."
 c "Why do you want to use the kettle so bad?"
 entity_turn rey left
 r "Seems fun."
@@ -36,6 +36,6 @@ r "Isn't it exciting?!"
 c "Yeah. It kind of is."
 r "You're like a proper star runner now!"
 c "Heh. If you say so."
-entity_turn rey left
+
 
 trigger 1

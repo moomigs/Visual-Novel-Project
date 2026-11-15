@@ -10,41 +10,42 @@ g "Is this it?"
 p "There's gotta be traps. This looks too easy."
 g "Hey kid?"
 c "Huh?"
-g "This is your first time seeing a power gem, right?"
+g "This is your first time seeing a Galactic Gem, right?"
 g "Would you like to do the honors?"
 c "Really?"
 g "Yeah, just go grab it. We'll be right here."
 p "Time to earn your ten percent."
-nar Collins approaches the gem.
 c "It's..."
 c "Beautiful."
-nar He reaches out
 ? "Collins."
-nar Collins freezes
+c "!"
 p "What's wrong?"
 c "..."
 g "Just grab it already."
-nar pause
 ? "It is yours."
 nar Collins hesitantly takes the gem, which bursts into light until it vanishes.
 
+
 stop_sound m_alien_artifact 2
 
-nar Collins looks down at his hands. They are covered in blood for a second.
+ct I look down at my hands.
+ct My palms are covered in blood.
 c "Mine..."
 ct The walls whisper.
 ct The chamber is alive.
-ct It is watching.
 
-nar He turns around
-nar Phoebe and Gordon glare at him.
-nar Phoebe walks up and gently grabs Collins face.
+nar Pause
+
+c "Guys?"
+nar Show Gordon and Phoebe glaring.
+c "I..."
+ct Phoebe walks up to me and gently grabs my face.
 p "Look up."
 c "Uh... okay."
 p "Can you hear and see okay?"
 c "Everything was fuzzy for a second, but I'm fine now."
 p "Okay."
-nar She returns to Gordon
+ct She walks back to Gordon.
 p "Great. He absorbed it."
 p "Well done, Gordon."
 g "How was I supposed to know??"
@@ -52,7 +53,8 @@ p "You could have picked anyone else in the city!"
 p "Do you know how much that thing was worth??"
 c "Hey, I feel kinda funny..."
 both "Shut up!"
-p "If you think you're still getting eight percent--!"
-g "Yeah you can forget about getting five percent!"
+p "If you think you're still getting eight percent—!"
+g "Yeah you can forget about getting your five percent!"
+
 
 goto_room Room_RPG_3

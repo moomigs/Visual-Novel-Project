@@ -26,8 +26,7 @@ p "Why is Collins fighting him, then?!"
 g "Trust me. It's better this way."
 entity_turn phoebe right
 entity_turn gordon right
-ri "Stun only. Three clean hits end it."
-ri "Unless, of course, you face a larger opponent..."
+ri "Stun only. First to fall wins."
 ri "Those are the rules. Agreed?"
 c "A-Agreed."
 
@@ -75,13 +74,13 @@ trigger 8
 stop_sound m_blood_on_the_battlefield 3
 
 g "Yes!!"
-c "I--"
+c "I—"
 c "I won!"
 g "And I had complete faith in you!"
 p "Sure you did."
 entity_turn collins left
 c "I-I can't believe..."
-c "I actually--!"
+c "I actually—!"
 entity_freesprite richard
 entity_walk_to richard 716 360
 entity_waitfor richard
@@ -99,23 +98,23 @@ c "Huh...?"
 
 entity_freesprite richard
 ri "Well fought. You're skilled."
-ri "Even without your gem powers."
+ri "Even without your Gem powers."
 c "Thanks..."
 
 loop_sound m_chilling_whispers
 
-villager "Black Rose pirates!"
-p "Black Rose? Who's that?"
+villager "Black Rose Pirates!"
+c "Black Rose? Who's that?"
 ri "Robo pirates."
 g "Those things again?!"
 p "Do you think they followed us?"
-ri "The Black Rose pirates don't have a cause to take a town this small."
+ri "The Black Rose Pirates don't have a cause to take a town this small."
 ri "If you've had a run-in with them recently, they're probably here for you."
 c "Why would they be after us?"
 ri "Their hunger for crystals is insatiable."
 ri "We're far outside their territory."
-ri "My guess is..."
-ri "They're after that power gem you absorbed."
+ri "So, my guess is..."
+ri "They're after that Galactic Gem you absorbed."
 ri "You ready to put those powers to use, boy?"
 
 goto_room Room_RPG_6_1

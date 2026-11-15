@@ -10,7 +10,7 @@ function interact() {
 		loc ^I'd offer you a meal, but...^
 		loc ^We barely have enough for ourselves.^
 		loc ^Sorry. Come back again when things are better.^
-		loc ^Power gem?^
+		loc ^Galactic Gem?^
 		loc ^Wh-Why would you ask something like that?^
 		loc ^Ask someone else! I don't want to bring those monsters here!^
 	"; 
