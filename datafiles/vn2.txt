@@ -1,10 +1,9 @@
 loop_sound m_entering_the_void
 
-nar Cut to night. Collins is in his fighter robes. Phoebe and Gordon are talking outside the ship.
-
+ct I find the two star runners outside their ship.
 g "You showed up!"
 p "Hmph. Why is he wearing that ridiculous thing?"
-g "Hey."
+g "Hey, now."
 g "Those are fighter's robes."
 g "Harder to fight in. Which is the point."
 g "Shows you have skill."
@@ -15,7 +14,7 @@ c "I'm just the only one who's going to tell you."
 g "Don't mind her. Phoebe takes a long time to warm up to people."
 g "But we get along fine, don't we Phoebe?"
 p "Don't think I forgot you offered him ten percent."
-g "Come on, it's a power gem!"
+g "Come on, it's a Galactic Gem!"
 g "We can afford ten percent."
 c "A Galactic Gem??"
 p "That's right. We got a lead there's one in your local ruins."
@@ -23,40 +22,37 @@ p "Even at ten percent, you'll make a killing."
 g "Assuming we find it."
 p "Let's stop wasting time."
 p "If he's lying, we turn around."
-
 nar Cut to cockpit, Gordon takes a seat
-
 g "Welcome aboard!"
-g "Here's where all the magic happens--"
-nar A laser bolt hits a spot next to Gordon
-g "What the--?!"
+g "Here's where all the magic happens—"
+ct A laser bolt hits a spot next to Gordon.
+g "What the—?!"
 g "Are you trying to stun me, woman??"
-nar Show Phoebe with her pistol out and Collins slightly shocked
+ct Phoebe holsters her pistol and folds her arms.
 p "Which seat are you in right now?"
 g "Uhh, the pilot's seat...?"
 p "The [font_italic]captain's[/f] seat. I'm the captain. That's my seat."
-nar Gordon gets up
+ct Gordon raises his hands in surrender and relinquishes the chair.
 g "Sheesh, alright, alright. Whatever you say."
-nar Gordon stands next to Collins
+ct He stands next to me.
 g "You ever been in a spaceship before?"
 c "Not since I was a little kid."
 g "She's a beauty, ain't she?"
-g "Plenty of room for Phoebe and I. We got a couple guestrooms if you want to relax a little."
+g "Plenty of room for Phoebe and I. We got a couple guest rooms if you want to relax a little."
 p "He stays up here. We need directions."
 p "Kid. What's your name?"
 c "Collins."
 p "Collins. Just Collins?"
 c "Collins is fine."
 p "Whatever."
-p "Where we going, Collins?"
+p "Where are we going, Collins?"
 c "Head due west. It's a ways away."
 p "You got it."
-nar The ship takes off
-g "You grew up on this planet?"
+ct The ship raises into the air with a gentle hum, and takes off.
+g "You grow up on this planet?"
 c "Mostly. I came here when I was seven."
 g "Really? Why'd your parents do that?"
 c "I don't have parents."
-nar pause
 p "..."
 g "Oh..."
 p "Nice one, Gordon."
@@ -71,21 +67,19 @@ p "Are you the dumbest man alive?!"
 p "You don't just ask something like that!"
 g "I'm trying to get to know the kid!"
 c "Ahahaha!"
-nar Gordon and Phoebe look at Collins.
+ct The pair of star runners look at me with a puzzled stare.
 c "You two are funny."
-nar They look at each other.
+ct Phoebe raises an eyebrow at Gordon, who shrugs.
 g "Well, why'd you get into fighting, then?"
-c "I fight to hunt a pirate."
-nar pause.
+c "I fight to hunt down a pirate."
+g "..."
 g "You don't want to run into pirates in this galaxy."
 c "There's one I do."
 g "Yeah?"
-nar pause
 c "He'll be smiling."
 g "..."
 c "We're close. I can give you the coordinates."
- 
-nar Show a wide shot of the ruins. It looks like a giant stone fortress.
+
 
 node 1
 

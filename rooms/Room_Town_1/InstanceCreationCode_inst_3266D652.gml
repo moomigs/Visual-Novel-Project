@@ -10,7 +10,7 @@ function interact() {
 		loc ^I dreamed of traveling to different worlds, crossing swords with pirates.^
 		loc ^Got a wife and kid now.^
 		loc ^Different kind of adventure.^
-		loc ^What? You're asking about a power gem?^
+		loc ^What? You're asking about a Galactic Gem?^
 		loc ^...^
 		loc ^You're a star runner.^
 		loc ^I was just starting to like you.^

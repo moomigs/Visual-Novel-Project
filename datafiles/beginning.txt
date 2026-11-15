@@ -90,39 +90,38 @@ stop_sound m_in_legends 0
 
 loop_sound m_putrescent_facsimile
 
-nar Show a dingy bar, a young man is sweeping next to some older men at a table
 man "There I was on Thaxthia."
-man "Facing five robos--"
+man "Facing five robos—"
 c "Thaxthia? You've been off-world??"
 man "..."
-c "What was it like? Thaxthia? Have you been to other worlds? What about the robos--"
-nar The man tosses his beer in Collins' face.
-man "Yeah. And?"
+c "What was it like? Thaxthia? Have you been to other worlds? What about the robos—"
+ct Splash.
+ct A glassful of beer drenches my face.
+man "Yeah, I’ve been off-world. So what?"
 c "N-Nothing, I just..."
 man "Got something to say?"
-nar The man pulls back his cloak to reveal his sword.
-nar Collins bows his head and keeps sweeping.
-nar The man grins in triumph.
-nar Something catches his attention. A beautiful girl at the bar.
-nar He grins and saunters over.
+ct The man pulls back his cloak to reveal a sword.
+ct I bow my head and resume my sweeping.
+man "Ha!"
+ct Something catches his attention: a beautiful girl at the bar.
 man "Hey beautiful."
 woman "Leave me alone."
 man "Come on. I'll buy you a drink."
-nar He places a hand on her arm. The woman slaps him in the face.
+ct He places a hand on her arm.
+ct Slap!
 woman "Don't touch me."
 man "..."
 man "Is that how it is?"
-nar He slaps her back and the bar falls silent.
+ct He strikes her back and the bar falls silent.
 bar "Hey! What are you doing??"
 bar "She's a regular!"
 man "Shut it, bartender. You gonna stop me?"
 man "I don't see a sword on your hip, and the boy certainly isn't going to save her."
 man "Isn't that right, boy?"
-nar Collins hangs his head and walks away
+ct I hang my head and walk away to a back room.
 man "Ha! Hahaha!"
-nar He turns to the woman who is holding her face in shock.
 man "No one's coming. They never do."
-woman "You... You bastard!"
+woman "You... you bastard!"
 man "That's better."
 
 stop_sound m_putrescent_facsimile 2
@@ -136,14 +135,11 @@ bar "Collins!"
 man "..."
 man "Collins, eh?"
 man "So now you come out, still wet, wearing fighter robes?"
-nar He draws his sword and activates it.
-man "Collins, on some backwater planet no one's ever heard of."
+ct He draws his sword and activates it.
+man "Collins, from some backwater planet no one's ever heard of…"
 man "You want this fight?"
-nar Collins draws his sword.
 c "I didn't come out here to talk."
 bar "No pistols! Keep your duel between yourselves!"
-nar Show man grinning, sword ready
-
 loop_sound m_leap_into_eternity
 
 nar Show Collins closeup with his sword poised. His face is controlled but deeply angry.
@@ -151,7 +147,7 @@ ct I hate God.
 ct Because in this galaxy, the strong prey on the weak.
 ct And the innocent live in fear.
 ct Blood.
-ct Blood that cries out from the rocks.
+ct Blood cries out from the rocks.
 ct But He does not answer.
 ct He isn't there for us.
 ct He wasn't there for me.
@@ -161,43 +157,37 @@ nar Show blue cat eyes and smile
 ct I can still smell the blood.
 ct But there is one thing I am grateful for.
 ct Hell.
-ct It is said the unrighteous burn in fire.
-ct So I will send them there. 
+ct It is said that the unrighteous burn in fire.
+ct So I will send them there.
 ct And once I've met my end...
 ct I will surely join them.
 
-nar Collins slashes the man across the chest, drawing blood and wounding him
-nar The man collapses.
-nar Collins stares at him with gentle shock for a moment. His hand trembles.
+ct It's over in a moment.
+ct A man is on the floor and my sword is covered in blood.
+ct The anger slips from my face, and my hand trembles.
 
 stop_sound m_leap_into_eternity 5
 
 bar "Collins... don't look at him like that."
 bar "You scare me when you get quiet."
-nar Collins snaps out of it and looks shocked
-
+ct He angrily points at two bystanders.
 bar "You two! Since you like listening to his stories so much, take him to a hospital!"
-
 ct I look at the blood on the floor, my mind blank.
-nar The bartender throws a mop into his hands
-
+ct My boss thrusts a mop into my hands.
 bar "Put your weapons away and clean this mess."
-nar The woman puts a hand on his shoulder.
+ct The woman puts a hand on my shoulder.
+woman “I thought he was right, that no one was coming…”
 woman "Thank you."
-woman "I thought he was right."
-
-nar Cut to Collins mopping
 
 loop_sound m_edge_of_the_galaxy
 
 nar Phoebe and Gordon walk in
-
-? "Are you sure this is the place to ask around?"
+? "Are you sure this is the right place to ask around?"
 ? "Pretty dingy."
 ? "That's the point, Phoebe. Besides, not a bad place to grab a beer."
 p "Absolutely not."
-nar They walk up next to Collins.
-nar Gordon looks at him, then looks down at the blood.
+ct The pair of strangers walk up next to me.
+ct The cocky-looking man looks at me, then down at the blood, and back to his companion.
 nar He grins
 ? "Told you."
 ? "Oi, bartender!"
@@ -220,20 +210,23 @@ p "Let's go, Gordon."
 p "This room wants us gone."
 g "Come on, just one drink!"
 p "[font_italic]Let's go.[/f]"
-nar They walk by Collins
+ct The two walk past me.
 c "Um...!"
 g "Hm?"
 c "Are you really star runners?"
 g "That's right."
-nar Gordon and Phoebe look at each other.
+ct They share a glance.
 g "You know any ruins?"
 c "I..."
 ct The whole bar stares daggers at me, daring me to speak up.
 c "No..."
 g "Tch. Figures."
-nar The star runners walk out while Collins stares at the door.
+ct The one named Gordon swings the door open and gestures for Phoebe to go ahead.
+g "Ladies first."
+ct She scoffs. They walk out, and they're gone.
 bar "You're going to get yourself killed, Collins."
 c "Maybe..."
+
 
 stop_sound m_edge_of_the_galaxy 3
 

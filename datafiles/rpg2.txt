@@ -38,7 +38,7 @@ c "Are we about to fight...?"
 robo "Our patience has been rewarded!"
 g "How long have you been waiting...?"
 robo "158.35 years."
-g "..."
+g "...Wow."
 robo "We have the superior night vision!"
 robo "Onward, comrades! For the queen!"
 

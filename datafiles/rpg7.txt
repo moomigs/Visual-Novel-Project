@@ -43,7 +43,7 @@ ri "Enough."
 c "What are you doing?!"
 ri "You were about to lose."
 c "I would have had her..."
-? "So you have absorbed a gem."
+? "So you have absorbed a Gem."
 ? "Take this as a warning."
 ? "Forget the Blood Gem."
 
@@ -55,8 +55,8 @@ entity_waitfor vampire
 pause 1.5
 
 ri "Curious..."
-ri "A merciful vampire."
-ri "This galaxy holds many mysteries."
+ri "She did not want to drink your blood."
+ri “Although she has much of it on her hands…”
 c "..."
 ri "This power of yours..."
 ri "You've been given a gift."

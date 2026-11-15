@@ -5,7 +5,7 @@ name c Collins
 name child Child
 name g Gordon
 
-nar Cut to a back alley behind the bar as Collins walks out
+nar Back alley
 
 entity_speed collins 4
 entity_walk_to collins 160 352
@@ -14,8 +14,6 @@ c "I'm taking my break!"
 c "..."
 
 loop_sound m_the_beast
-
-nar A group of children are in the alley, an older one out front with a sword and pistol.
 
 entity_walk_to child 544 352
 entity_waitfor child
@@ -27,7 +25,6 @@ entity_walk_to child 512 352
 child "I! Protector of this alley! Will cut you down!"
 c "Hmm..."
 c "Protector of the alley, eh?"
-nar Collins picks up his sword against the wall and activates it
 
 entity_walk_to collins 200 352
 
@@ -63,20 +60,17 @@ loop_sound m_beyond_the_star_gate
 ### Gordon steps up
 
 
-g "So, that mess was you?"
+g "So, that mess [font_italic]was[/f] you?"
 entity_turn gordon down
 scene_pan 64 150
-nar Show Gordon leaning against the wall with a cocky expression.
-c "You--!"
-c "You're the star runner from yesterday..."
+c "You—!"
+c "You're the star runner from earlier..."
 
 entity_turn child right
 child "Ehh??? Star runner?!"
 entity_speed child 3
 entity_walk_to child 608 288
 
-nar The children crowd around Gordon
-nar Gordon grins and flexes his muscles.
 g "Ha! That's right!"
 g "I travel the galaxy in search of treasure, crossing swords with pirates and miscreants alike!"
 g "But you..."
@@ -113,8 +107,8 @@ entity_freesprite gordon
 g "You know something about those ruins."
 c "..."
 c "Maybe."
-g "We've got a key. We're heading there."
-g "Ten percent."
+g "We've got a key."
+g "Ten percent for your info."
 c "Take me with you."
 g "..."
 g "Kid..."

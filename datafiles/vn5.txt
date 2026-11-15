@@ -12,21 +12,24 @@ g "..."
 g "First time on a crew?"
 g "I'll add you to the crew group. Sync your neuro-lace."
 g "You can see our holos. And we can see yours."
-g "I'd be lying if I wasn't curious how you decorate your room."
+g "I'd be lying if I said I wasn't curious about how you decorate your room."
 g "Says a lot about a man."
 c "Added. I'll show you."
 nar A single, modest picture of Collins' parents appears on the wall.
 g "..."
 nar Gordon smiles.
-g "Very good."
+g "Very nice."
 g "I can tell they were good people. They raised a good kid."
 c "They..."
 c "Thanks, Gordon."
 g "I'll let you settle in. Now that we're in orbit, should be a couple hours to Mumbrux."
 g "You'll have access to the ship's travel time. All that information."
 c "Got it."
-nar Gordon leaves.
-nar Collins looks around. Smiles. Sits down on the bed and makes the wall transparent, looking off into space
+ct Gordon closes the door behind him.
+ct I look around the small room.
+nar Wall turns transparent, showing space.
+ct I smile to myself and sit down on the bed.
+
 
 stop_sound m_serenity_by_the_sea 3
 pause 3

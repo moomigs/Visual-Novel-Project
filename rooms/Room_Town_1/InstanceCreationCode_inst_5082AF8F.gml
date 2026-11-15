@@ -8,10 +8,10 @@ function interact() {
 		loc ^Did you just arrive?^
 		loc ^Funny place to pick for a pit-stop. We don't see off-worlders too often.^
 		loc ^Make yourself at home. Mumbrux prides itself on its hospitality.^
-		loc ^Huh? You want to know about a power gem?^
+		loc ^Huh? You want to know about a Galactic Gem?^
 		loc ^...Yeah. There's one around.^
 		loc ^Not on Mumbrux though. Elsewhere in the sector.^
-		loc ^It's known as the Red Stone.^
+		loc ^It's known as the Blood Gem.^
 		loc ^For good reasons, if you ask me.^
 		loc ^You're better off forgetting about it.^
 		loc ^That thing is bad news, you hear?^
