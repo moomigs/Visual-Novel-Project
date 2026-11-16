@@ -9,6 +9,7 @@ name n Navigator
 
 nar In his room
 
+set_sound_volume m_piano_50 4
 loop_sound m_piano_50
 
 c "Mom... Dad..."

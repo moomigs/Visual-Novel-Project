@@ -26,6 +26,7 @@ c "I'm sorry. I didn't— it just... happened."
 g "You want a job?"
 c "Huh?"
 
+set_sound_volume m_piano_13 4
 loop_sound m_piano_13
 
 p "You're a Gem Holder now."
