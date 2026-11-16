@@ -14,4 +14,10 @@ if fade == fade_to {
 
 draw_set_alpha(fade);
 draw_set_colour(c_black);
-draw_rectangle(0, 0, room_width*2, room_height*2, false);
+if fade_sprite != noone {
+	draw_sprite_stretched(fade_sprite, 0, 0, 0, room_width, room_height);
+} else {
+	draw_rectangle(-1, -1, room_width+1, room_height+1, false);
+}
+draw_set_alpha(1);
+draw_set_colour(c_white);

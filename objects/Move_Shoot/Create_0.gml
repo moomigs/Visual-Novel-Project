@@ -2,6 +2,8 @@ event_inherited();
 
 warning = noone;
 blocked = false;
+blocked_x = 0;
+blocked_y = 0;
 complete = false;
 
 charge = function() {

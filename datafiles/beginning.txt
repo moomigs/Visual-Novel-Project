@@ -26,11 +26,11 @@ textbox false
 
 play_sound m_in_legends
 
-pause 2
+#pause 2
 
-dissolve spr_bg_galaxy 2
+background spr_bg_galaxy
 
-pause 6
+pause 8
 
 new_title title1 [#EEE7D7][font_crawl]In the Third Epoch there roamed throughout the galaxy[/f][/c]
 new_title title1_2 [#EEE7D7][font_crawl]men and women of renown in search of treasure and glory.[/f][/c]

@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-ignore_collision = true;
+//ignore_collision = true;

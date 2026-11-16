@@ -1,0 +1,1 @@
+global.gem_power = true;

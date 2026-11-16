@@ -27,12 +27,16 @@ close_button = instance_create_depth(view_width/2 + 2*width/3, view_height/2 - h
 close_button.close = function() {
 	menuVisible = false;
 }
-array_push(Obj_DialogueMaster.buttons, close_button);
+if instance_exists(Obj_DialogueMaster) {
+	array_push(Obj_DialogueMaster.buttons, close_button);
+}
 
 function click() {
 	menuVisible = !menuVisible;
-	if Obj_HistoryButton.historyVisible {
-		Obj_HistoryButton.historyVisible = false;
+	if instance_exists(Obj_HistoryButton) {
+		if Obj_HistoryButton.historyVisible {
+			Obj_HistoryButton.historyVisible = false;
+		}
 	}
 }
 

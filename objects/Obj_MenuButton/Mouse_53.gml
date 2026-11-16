@@ -27,6 +27,15 @@ if menuVisible {
 			var nvalue = !_value;
 			if _name == "Fullscreen" {
 				fullscreen(nvalue);
+				return;
+			}
+		}
+	}
+	if not instance_exists(Obj_DialogueMaster) {
+		if mousex >= (close_button.x-sprite_get_xoffset(close_button.sprite_index)) and mousey >= (close_button.y-sprite_get_yoffset(close_button.sprite_index)) and mousex <= (close_button.x-sprite_get_xoffset(close_button.sprite_index)+close_button.sprite_width*close_button.image_xscale) and mousey <= (close_button.y-sprite_get_yoffset(close_button.sprite_index)+close_button.sprite_height*close_button.image_yscale) {
+			close_button.close();
+			if x < 0 and y < 0 {
+				instance_destroy();
 			}
 		}
 	}

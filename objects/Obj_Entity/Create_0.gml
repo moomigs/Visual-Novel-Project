@@ -13,7 +13,7 @@ global_paused = false;
 
 push_x = 0;
 push_y = 0;
-push_friction = 0.9;
+push_friction = 0.8;
 
 scene_setsprite = noone;
 moving_to = false

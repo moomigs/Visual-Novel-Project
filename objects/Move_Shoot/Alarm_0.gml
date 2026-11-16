@@ -57,6 +57,8 @@ if _nHits > 0 {
 			with(Move_Slash) {
 				if mover.id == other.inst and ((current_time/1000)-_time)<winddown {
 					other.blocked = true;
+					other.blocked_x = mover.x;
+					other.blocked_y = mover.y;
 				}
 			}
 			if blocked == false and inst.object_index != Obj_Player and inst.battle_target != noone {
@@ -68,6 +70,8 @@ if _nHits > 0 {
 					if random(1) > 0.33 {
 						slash.go(inst.direction);
 						blocked = true;
+						blocked_x = inst.x;
+						blocked_y = inst.y;
 					} else {
 						slash.go(inst.direction, random_range(4, 8));
 						blocked = false;
@@ -84,6 +88,10 @@ if _nHits > 0 {
 			}
 		}
 	}
+}
+
+if blocked == true {
+	range = point_distance(x, y, blocked_x, blocked_y);
 }
 
 tracer_alpha = 1;
