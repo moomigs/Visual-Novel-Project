@@ -1,4 +1,5 @@
 
 mover.freeze = false;
 mover = noone;
-instance_destroy();
+
+instance_destroy()

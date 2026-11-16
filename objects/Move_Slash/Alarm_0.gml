@@ -1,5 +1,7 @@
 audio_play_sound(snd_swing, 1, false, 1.5, 0, 0.9+random(1)*0.2);
 
+if not instance_exists(mover) { return; }
+
 set_direction(mover.direction);
 image_alpha = 1;
 image_speed = 1;

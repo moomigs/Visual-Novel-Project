@@ -2,7 +2,7 @@ name c [#F1F547]Collins[/]
 name g Gordon
 name ? ???
 
-skipto 2
+#skipto 2
 
 autoskip 2
 textbox false

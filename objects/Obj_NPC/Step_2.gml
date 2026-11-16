@@ -79,7 +79,7 @@ if hp == 0 {
 	}
 	if leader != noone {
 		var enemy = instance_nearest(leader.x, leader.y, Obj_Robot)
-		if enemy != noone and enemy.battle_target == leader {
+		if enemy != noone and enemy.battle_target == leader and battle_target == noone {
 			start_battle(enemy);
 		}
 	}

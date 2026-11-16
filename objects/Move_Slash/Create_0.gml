@@ -12,3 +12,11 @@ step = 0;
 forward_offset = 16;
 start_x = x;
 start_y = y;
+
+if mover != noone {
+	start_x = mover.x;
+	start_y = mover.y;
+}
+
+x = start_x;
+y = start_y;
