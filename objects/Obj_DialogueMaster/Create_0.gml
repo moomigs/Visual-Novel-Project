@@ -60,10 +60,10 @@ function next_line() {
 		instance_destroy();
 	} else {
 		lines[current_line] = string_trim_start(lines[current_line]);
-		lines[current_line] = string_replace_all(lines[current_line], ord(8216), "'");
-		lines[current_line] = string_replace_all(lines[current_line], ord(8217), "'");
-		lines[current_line] = string_replace_all(lines[current_line], ord(8220), chr(34));
-		lines[current_line] = string_replace_all(lines[current_line], ord(8221), chr(34));
+		lines[current_line] = string_replace_all(lines[current_line], chr(8216), "'");
+		lines[current_line] = string_replace_all(lines[current_line], chr(8217), "'");
+		lines[current_line] = string_replace_all(lines[current_line], chr(8220), chr(34));
+		lines[current_line] = string_replace_all(lines[current_line], chr(8221), chr(34));
 		show_debug_message(string(current_line) + " " + lines[current_line]);
 
 		display_scribble = scribble("");

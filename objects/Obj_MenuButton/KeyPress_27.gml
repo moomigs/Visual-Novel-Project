@@ -1,0 +1,1 @@
+//menuVisible = !menuVisible

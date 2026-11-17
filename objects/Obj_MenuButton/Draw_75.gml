@@ -5,19 +5,26 @@ view_height = display_get_gui_height();
 height = view_height * 0.67;
 width = height * 1;
 
+var __x = x;
+var __y = y;
+
 if instance_exists(Obj_DialogueMaster) {
-	if Obj_DialogueMaster.textbox_visible == false {
-		draw_set_alpha(0);
-	}
-	x = view_width/2;
-	y = view_height - sprite_get_height(spr_menubutton) - 3;
 	if menuVisible {
 		draw_set_alpha(1);
 	} else {
 		draw_set_alpha(0.4);
 	}
+	if Obj_DialogueMaster.textbox_visible == false {
+		draw_set_alpha(0);
+	}
+	__x = view_width/2;
+	__y = view_height - sprite_get_height(spr_menubutton) - 3;
 } else {
 	draw_set_alpha(1);
+	__x = x/room_width * display_get_gui_width();
+	__y = y/room_height * display_get_gui_height();
+	image_xscale = display_get_gui_width()/room_width;
+	image_yscale = display_get_gui_height()/room_height;
 }
 close_button.visible = menuVisible;
 
@@ -30,9 +37,9 @@ close_button.x = view_width/2 + 2*width/3;
 close_button.y = view_height/2 - height/2;
 
 image_alpha = draw_get_alpha();
-draw_sprite_ext(sprite_index, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+draw_sprite_ext(sprite_index, 0, __x, __y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
-draw_text_transformed(x, y + image_yscale*sprite_get_height(sprite_index)/2, button_text, image_xscale, image_yscale, 0);
+draw_text_transformed(__x, __y + image_yscale*sprite_get_height(sprite_index)/2, button_text, image_xscale, image_yscale, 0);
 
 
 if menuVisible {
@@ -92,6 +99,7 @@ if menuVisible {
 			draw_rectangle(_x-padding/2 +2, _y+padding*2-padding/2 +2, _x+padding/2 -3, _y+padding*2+padding/2 -3, false);
 		}
 	}
+	
 	
 	//gpu_set_scissor(0, 0, window_get_width(), window_get_height());
 }

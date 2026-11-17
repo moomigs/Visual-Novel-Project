@@ -433,11 +433,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room_StartMenu","path":"rooms/Room_StartMenu/Room_StartMenu.yy",},},
     {"roomId":{"name":"Room_GoobleBrothers","path":"rooms/Room_GoobleBrothers/Room_GoobleBrothers.yy",},},
     {"roomId":{"name":"Room_RPG_1","path":"rooms/Room_RPG_1/Room_RPG_1.yy",},},
     {"roomId":{"name":"Room_RoboDungeon","path":"rooms/Room_RoboDungeon/Room_RoboDungeon.yy",},},
     {"roomId":{"name":"Room_SceneTest","path":"rooms/Room_SceneTest/Room_SceneTest.yy",},},
-    {"roomId":{"name":"Room_StartMenu","path":"rooms/Room_StartMenu/Room_StartMenu.yy",},},
     {"roomId":{"name":"Room_RPG_7","path":"rooms/Room_RPG_7/Room_RPG_7.yy",},},
     {"roomId":{"name":"Room_Dialogue","path":"rooms/Room_Dialogue/Room_Dialogue.yy",},},
     {"roomId":{"name":"Room_RPG_5","path":"rooms/Room_RPG_5/Room_RPG_5.yy",},},
