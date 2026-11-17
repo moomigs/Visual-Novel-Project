@@ -55,6 +55,7 @@ if _nHits > 0 {
 			
 			//blocked = false;
 			with(Move_Slash) {
+				if mover != noone and not instance_exists(mover) { continue; }
 				if mover.id == other.inst and ((current_time/1000)-_time)<winddown {
 					other.blocked = true;
 					other.blocked_x = mover.x;

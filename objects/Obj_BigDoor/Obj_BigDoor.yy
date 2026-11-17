@@ -9,10 +9,7 @@
     "name":"Misc",
     "path":"folders/Objects/RPG/Misc.yy",
   },
-  "parentObjectId":{
-    "name":"Obj_Solid",
-    "path":"objects/Obj_Solid/Obj_Solid.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

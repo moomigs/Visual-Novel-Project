@@ -17,10 +17,10 @@ dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 dialoguemaster.set_scene(self);
 dialoguemaster.file_name = "rpg3.txt";
 dialoguemaster.ended = function() {
-	gordon.leader = player;
-	phoebe.leader = player;
+	gordon.leader = collins;
+	phoebe.leader = collins;
 	
-	gordon.follow = player;
+	gordon.follow = collins;
 	phoebe.follow = gordon;
 };
 dialoguemaster.go();

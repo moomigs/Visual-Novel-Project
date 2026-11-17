@@ -55,14 +55,16 @@ function damage(n, from=noone, heavy=false) {
 	if defending and heavy==false { return; }
 	if defending and heavy { n *= 0.5; }
 	if from.friendly and from.object_index != Obj_Player { n *= 0.33; }
+	var _hp = hp;
 	if variable_instance_exists(self, "unkillable") and unkillable {
-		hp = max(max_health * 0.25, hp - n);
+		_hp = max(max_health * 0.25, _hp - n);
 	} else {
-		hp = max(0, hp - n);
+		_hp = max(0, _hp - n);
 	}
 	show_healthbar = 2*game_get_speed(gamespeed_fps);
 	instance_create_depth(x, y, depth, Effect_entity_hurt).go(self);
-	if hp == 0 {
+	if _hp == 0 {
+		hp = 0;
 		if can_die {
 			on_die();
 			die();
@@ -72,6 +74,9 @@ function damage(n, from=noone, heavy=false) {
 			battle_state = "idle";
 			move_stop();
 		}
+	} else {
+		if _hp > hp { return; }
+		hp = _hp;
 	}
 }
 

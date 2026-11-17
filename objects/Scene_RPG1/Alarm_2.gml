@@ -19,5 +19,7 @@ fade.transition = function(){
 	gordon.image_alpha = 1;
 	gordon.ignore_collision = true;
 	gordon.can_die = false;
+	gordon.max_health = 175;
+	gordon.hp = 175;
 }
 fade.start(1);
