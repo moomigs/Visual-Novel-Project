@@ -30,7 +30,7 @@ play_sound m_in_legends
 
 background spr_bg_galaxy
 
-pause 8
+pause 6
 
 new_title title1 [#EEE7D7][font_crawl]In the Third Epoch there roamed throughout the galaxy[/f][/c]
 new_title title1_2 [#EEE7D7][font_crawl]men and women of renown in search of treasure and glory.[/f][/c]
@@ -52,10 +52,10 @@ title_setpos title5 0 -0.1
 
 title_fadein title1 2
 title_fadein title1_2 2
-pause 5
+pause 6
 title_fadein title2 2
 title_fadein title22 2
-pause 5
+pause 6
 title_fadein title3 2
 title_fadein title32 2
 pause 6
@@ -79,25 +79,35 @@ dissolve spr_planet 3
 
 pause 5
 
-textbox true
+#textbox true
 
+#pause 2
+
+new_title titlewp [#EEE7D7][font_crawl]In the outer edges of the Western Republic...[/f][/c]
+title_setpos titlewp 0 -0.6
+title_fadein titlewp 2
+pause 5
+
+#nar In the outer edges of the Western Republic
+
+title_fadeout titlewp 1
+dissolve spr_black 1
 pause 2
 
-nar In the outer edges of the Western Republic
-
-dissolve spr_black 1
 stop_sound m_in_legends 0
 
 loop_sound m_putrescent_facsimile
 
+pause 2
+
 man "There I was on Thaxthia."
-man "Facing five robos—"
+man "Facing five robos-"
 c "Thaxthia? You've been off-world??"
 man "..."
 c "What was it like? Thaxthia? Have you been to other worlds? What about the robos—"
 ct Splash.
 ct A glassful of beer drenches my face.
-man "Yeah, I’ve been off-world. So what?"
+man "Yeah, I've been off-world. So what?"
 c "N-Nothing, I just..."
 man "Got something to say?"
 ct The man pulls back his cloak to reveal a sword.
@@ -136,7 +146,7 @@ man "..."
 man "Collins, eh?"
 man "So now you come out, still wet, wearing fighter robes?"
 ct He draws his sword and activates it.
-man "Collins, from some backwater planet no one's ever heard of…"
+man "Collins, from some backwater planet no one's ever heard of..."
 man "You want this fight?"
 c "I didn't come out here to talk."
 bar "No pistols! Keep your duel between yourselves!"
@@ -176,7 +186,7 @@ ct I look at the blood on the floor, my mind blank.
 ct My boss thrusts a mop into my hands.
 bar "Put your weapons away and clean this mess."
 ct The woman puts a hand on my shoulder.
-woman “I thought he was right, that no one was coming…”
+woman "I thought he was right, that no one was coming..."
 woman "Thank you."
 
 loop_sound m_edge_of_the_galaxy
@@ -227,8 +237,11 @@ ct She scoffs. They walk out, and they're gone.
 bar "You're going to get yourself killed, Collins."
 c "Maybe..."
 
-
+textbox false
 stop_sound m_edge_of_the_galaxy 3
+
+pause 4.5
+textbox true
 
 node 1
 

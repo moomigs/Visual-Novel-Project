@@ -1,0 +1,1 @@
+instance_create_depth(0, 0, 0, Effect_transition_fade).fade_out(1.5)

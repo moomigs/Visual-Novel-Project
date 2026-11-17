@@ -52,7 +52,7 @@ pause 1
 
 c "Good. Just like that."
 c "Next I'll show you the quickest and most effective attack."
-c “It’s a stab, or a thrust.”
+c "It's a stab, or a thrust."
 
 entity_freesprite child
 
@@ -67,7 +67,7 @@ pause 1
 
 child "Oooo..."
 c "It's quick. It reaches. It'll take you a long way in a battle."
-c "But it’s not the strongest move..."
+c "But it's not the strongest move..."
 
 trigger 4
 pause 0.5
@@ -103,7 +103,7 @@ c "Erm... sure."
 c "Speaking of slow, this next one is a common heavy attack."
 c "It's when you thrust with all your might."
 c "It's slow and easy to read, but it can bash through defenses."
-c "It’s done like this."
+c "It's done like this."
 
 
 title_fadein hold_right 0.5
@@ -137,7 +137,7 @@ c "Normally you need brain enhancements to block pistol shots."
 c "I'll throw one your way. Swing to try and block it."
 
 entity_setsprite child spr_Player_left_defending
-child "I’m ready!"
+child "I'm ready!"
 
 title_fadein press_up 0.5
 textbox false

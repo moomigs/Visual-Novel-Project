@@ -83,7 +83,6 @@ pause 1
 
 g "You teach well. You must be a decent fighter."
 g "That's a valuable skill in this galaxy."
-nar draws his sword
 g "One round."
 c "..."
 c "You're on."
@@ -122,6 +121,8 @@ g "Link with me. I'll send you the coordinates to our ship."
 g "When you get off work, swing by."
 g "Don't keep us waiting."
 
+trigger 5
+pause 2.3
 
 ### Transitions to VN
 

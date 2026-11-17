@@ -24,9 +24,9 @@ p "Let's stop wasting time."
 p "If he's lying, we turn around."
 nar Cut to cockpit, Gordon takes a seat
 g "Welcome aboard!"
-g "Here's where all the magic happens—"
+g "Here's where all the magic happens-"
 ct A laser bolt hits a spot next to Gordon.
-g "What the—?!"
+g "What the-?!"
 g "Are you trying to stun me, woman??"
 ct Phoebe holsters her pistol and folds her arms.
 p "Which seat are you in right now?"
@@ -79,6 +79,13 @@ g "Yeah?"
 c "He'll be smiling."
 g "..."
 c "We're close. I can give you the coordinates."
+
+textbox false
+
+stop_sound m_entering_the_void 2
+pause 3
+
+textbox true
 
 
 node 1
