@@ -40,7 +40,7 @@ stop_sound m_shenanigans 2
 pause 1
 
 entity_turn phoebe right
-pp "Blend in. Ask questions."
+p "Blend in. Ask questions."
 p "Don't be too pushy. People get strange about Gems."
 g "Right. I'll check the bar."
 p "Gordon..."

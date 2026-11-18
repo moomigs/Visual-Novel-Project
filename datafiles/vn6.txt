@@ -59,7 +59,7 @@ g "You're good at wiping floors, aren't you?"
 c "I've only fought practice duels!"
 c "This is for real!"
 g “What about that guy in the bar?”
-c “That… that was different!”
+c “That... that was different!”
 ct He looks back to the bounty hunter.
 g "On stun, right?"
 ri "Of course. He doesn't have a bounty."

@@ -15,6 +15,7 @@ if ((instance_find(Obj_MenuButton, 0) != noone and Obj_MenuButton.menuVisible) o
 }
 for (var i = 0; i < array_length(buttons); i++) {
 	var button = array_get(buttons, i);
+	if button == noone or not instance_exists(button) { continue; }
 	if mousex >= (button.x-sprite_get_xoffset(button.sprite_index)) and mousey >= (button.y-sprite_get_yoffset(button.sprite_index)) and mousex <= (button.x-sprite_get_xoffset(button.sprite_index)+button.sprite_width*button.image_xscale) and mousey <= (button.y-sprite_get_yoffset(button.sprite_index)+button.sprite_height*button.image_yscale) {
 		alternateInput = true;
 		if variable_instance_get(button, "click") {
