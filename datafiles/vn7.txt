@@ -2,6 +2,7 @@ name nar Narrator
 name ri Richard
 name ? ???
 name c Collins
+name ct  
 
 ct The party is in full swing.
 ct The others are busy celebrating. I stand alone.

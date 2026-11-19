@@ -77,12 +77,12 @@ if hp == 0 {
 	if battle_target != noone and instance_exists(battle_target) and battle_target.hp <= 0 {
 		battle_target = noone;
 	}
-	if leader != noone {
-		var enemy = instance_nearest(leader.x, leader.y, Obj_Robot)
+	if instance_exists(leader) {
+		var enemy = instance_nearest(leader.x, leader.y, Obj_Robot);
 		if enemy != noone and enemy.battle_target == leader and battle_target == noone {
 			start_battle(enemy);
 		}
-	}
+    }
 }
 if battle_target == noone {
 	battle_state = "idle";

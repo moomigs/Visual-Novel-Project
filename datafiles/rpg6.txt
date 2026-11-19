@@ -74,13 +74,13 @@ trigger 8
 stop_sound m_blood_on_the_battlefield 3
 
 g "Yes!!"
-c "I—"
+c "I-"
 c "I won!"
 g "And I had complete faith in you!"
 p "Sure you did."
 entity_turn collins left
 c "I-I can't believe..."
-c "I actually—!"
+c "I actually-!"
 entity_freesprite richard
 entity_walk_to richard 716 360
 entity_waitfor richard

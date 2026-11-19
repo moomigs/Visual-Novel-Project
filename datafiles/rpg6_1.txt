@@ -126,7 +126,7 @@ entity_turn richard up
 g "What's up? Who are you?"
 m "I am the mayor of this humble town."
 m "You've done us a great service."
-c "Not really. We're the ones—"
+c "Not really. We're the ones-"
 
 entity_turn phoebe left
 
