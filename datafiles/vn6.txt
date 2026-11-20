@@ -43,7 +43,7 @@ ri "Let's take this outside."
 ri "Beat me in a duel. You win, I tell you what I know about the Blood Gem."
 ri "I win..."
 g "H-Hey, I..."
-nar Looks at Collins... gets a sly expression
+g "..."
 g "Is it still galaxy standard to offer a substitute?"
 c "Gordon?"
 ri "You want the kid to fight for you?"
@@ -74,5 +74,8 @@ g "But..."
 g "Don't lose. Lot at stake here."
 
 stop_sound m_the_old_tower_inn 3
+textbox false
+pause 3.2
+textbox true
 
 goto_room Room_RPG_6

@@ -17,17 +17,19 @@ ct The hood drops.
 
 ri "Careful, son."
 
-play_sound snd_boom
+loop_sound m_nova_nexus
+#play_sound snd_boom
 
 nar Show girl brushing her hair back, her lips parted to show fangs.
 
 ri "She's a Vampire."
 ri "She traded her humanity for eternal life."
 ri “And she’s a threat.”
+
+#loop_sound m_nova_nexus
+
 ri “Like many duelists throughout the galaxy, she has marked on her robe every head she has claimed.”
 ri “And it looks like she’s claimed a lot.”
-
-loop_sound m_nova_nexus
 
 ? "You seek the Blood Gem."
 ? "If you cannot defeat me..."

@@ -56,7 +56,7 @@ pause 1.5
 
 ri "Curious..."
 ri "She did not want to drink your blood."
-ri “Although she has much of it on her hands…”
+ri “Although she has much of it on her hands...”
 c "..."
 ri "This power of yours..."
 ri "You've been given a gift."

@@ -198,7 +198,7 @@ nar Phoebe and Gordon walk in
 p "Absolutely not."
 ct The pair of strangers walk up next to me.
 ct The cocky-looking man looks at me, then down at the blood, and back to his companion.
-nar He grins
+ct He grins
 ? "Told you."
 ? "Oi, bartender!"
 bar "What?"
@@ -231,7 +231,7 @@ c "I..."
 ct The whole bar stares daggers at me, daring me to speak up.
 c "No..."
 g "Tch. Figures."
-ct The one named Gordon swings the door open and gestures for Phoebe to go ahead.
+ct The one named Gordon swings the door open and gestures to Phoebe.
 g "Ladies first."
 ct She scoffs. They walk out, and they're gone.
 bar "You're going to get yourself killed, Collins."

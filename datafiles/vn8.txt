@@ -40,7 +40,7 @@ nar Three men restrained and kneeling. A robed figure in front of them. Show his
 Man1 "We'd rather die."
 nar Gunshot
 ? "One of you will give me the coordinates."
-Man2 "One day…"
+Man2 "One day..."
 Man2 "One day you will die."
 Man2 "And you will go to Hell."
 ? "I know."
@@ -50,15 +50,17 @@ ct I approach the last man.
 Man3 "I-I'll give you what you want."
 nar Show his smile fade
 ? "Good."
-Man3 "1.38—"
+Man3 "1.38-"
 nar Gunshot
 ? "Navigator."
 n "Yes, Captain Artensa?"
 nar Closeup of face, pupils are dilated
 a "Set course for coordinates 1.385.6124.982."
 
+textbox false
+
 stop_sound m_no_more_magic 5
-pause 2
+pause 5
 
 new_title credit1 Writer and Director             Sam Capener
 new_title credit2 Programmer             Peter Capener

@@ -70,9 +70,9 @@ bar "Listen, Collins."
 bar "The galaxy is a big place."
 bar “There are many good people out there. Kind people.”
 bar “Brave people.”
-bar “And many monsters.
+bar “And many monsters."
 bar "I've seen too many good kids like you become monsters."
-bar "So, promise me something…"
+bar "So, promise me something..."
 bar "Never forget who you are."
 c "..."
 c "I promise."
@@ -85,8 +85,11 @@ bar "Farewell, Collins."
 
 stop_sound m_winds_of_destiny 3
 
-nar Cut to ship
+textbox false
+pause 3
+textbox true
 
+nar Cut to ship
 g "Well, look who's back!"
 p "Your boss let you go, huh?"
 c "Yeah."

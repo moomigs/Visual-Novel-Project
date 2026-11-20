@@ -15,6 +15,7 @@ g "Would you like to do the honors?"
 c "Really?"
 g "Yeah, just go grab it. We'll be right here."
 p "Time to earn your ten percent."
+ct I walk toward the artifact.
 c "It's..."
 c "Beautiful."
 ? "Collins."
@@ -34,7 +35,9 @@ c "Mine..."
 ct The walls whisper.
 ct The chamber is alive.
 
-nar Pause
+textbox false
+pause 2
+textbox true
 
 c "Guys?"
 nar Show Gordon and Phoebe glaring.
@@ -53,7 +56,7 @@ p "You could have picked anyone else in the city!"
 p "Do you know how much that thing was worth??"
 c "Hey, I feel kinda funny..."
 both "Shut up!"
-p "If you think you're still getting eight percent—!"
+p "If you think you're still getting eight percent-!"
 g "Yeah you can forget about getting your five percent!"
 
 
