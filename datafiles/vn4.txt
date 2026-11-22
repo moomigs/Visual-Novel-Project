@@ -10,6 +10,7 @@ name r Rey
 # Room_VN_4
 
 stop_sound m_nano_nemesis 3
+pause 2
 
 ct Phoebe and Gordon quietly sit down.
 c "Um... guys?"
@@ -53,11 +54,14 @@ node 1
 
 stop_sound m_piano_13 3
 
+textbox false
 pause 3
 
 loop_sound m_winds_of_destiny
 
-nar The next day Collins enters the bar.
+dissolve spr_bg_bar1 2
+pause 2
+
 bar "Collins, you're not scheduled yet."
 c "Hey, I..."
 bar "..."
@@ -86,10 +90,12 @@ bar "Farewell, Collins."
 stop_sound m_winds_of_destiny 3
 
 textbox false
+dissolve spr_black 3
 pause 3
+dissolve spr_bg_shipday 2
+pause 2.2
 textbox true
 
-nar Cut to ship
 g "Well, look who's back!"
 p "Your boss let you go, huh?"
 c "Yeah."
@@ -98,11 +104,11 @@ p "Good. I was worried about losing that Gem for good."
 g "You've got potential, kid. You shouldn't waste it here."
 p "Potential and a Galactic Gem."
 g "That too."
-? "Excuse me."
-ct We turn to face a man dressed in a sharp suit.
 
 loop_sound m_awakening_station
 
+? "Excuse me."
+ct We turn to face a man dressed in a sharp suit.
 ? "Collins?"
 g "Who are you?"
 p "How did you find us?"

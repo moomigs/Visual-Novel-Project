@@ -1,4 +1,5 @@
 loop_sound m_entering_the_void
+dissolve spr_bg_shipnight 2
 
 ct I find the two star runners outside their ship.
 g "You showed up!"
@@ -22,7 +23,11 @@ p "Even at ten percent, you'll make a killing."
 g "Assuming we find it."
 p "Let's stop wasting time."
 p "If he's lying, we turn around."
-nar Cut to cockpit, Gordon takes a seat
+
+dissolve spr_black 2
+
+nar Cut to cockpit
+ct Gordon takes a seat in the center chair.
 g "Welcome aboard!"
 g "Here's where all the magic happens-"
 ct A laser bolt hits a spot next to Gordon.

@@ -49,6 +49,9 @@ p "Can you hear and see okay?"
 c "Everything was fuzzy for a second, but I'm fine now."
 p "Okay."
 ct She walks back to Gordon.
+
+loop_sound m_su_turno
+
 p "Great. He absorbed it."
 p "Well done, Gordon."
 g "How was I supposed to know??"
@@ -58,6 +61,9 @@ c "Hey, I feel kinda funny..."
 both "Shut up!"
 p "If you think you're still getting eight percent-!"
 g "Yeah you can forget about getting your five percent!"
+
+stop_sound m_su_turno 2
+pause 2
 
 
 goto_room Room_RPG_3

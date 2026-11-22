@@ -97,6 +97,7 @@ pause 2
 stop_sound m_in_legends 0
 
 loop_sound m_putrescent_facsimile
+dissolve spr_bg_bar1 2
 
 pause 2
 
@@ -149,10 +150,18 @@ ct He draws his sword and activates it.
 man "Collins, from some backwater planet no one's ever heard of..."
 man "You want this fight?"
 c "I didn't come out here to talk."
-bar "No pistols! Keep your duel between yourselves!"
-loop_sound m_leap_into_eternity
 
-nar Show Collins closeup with his sword poised. His face is controlled but deeply angry.
+dissolve spr_black 2
+
+bar "No pistols! Keep your duel between yourselves!"
+
+textbox false
+pause 1.5
+loop_sound m_leap_into_eternity
+dissolve spr_cg_ihategod 3.5
+pause 4
+textbox true
+
 ct I hate God.
 ct Because in this galaxy, the strong prey on the weak.
 ct And the innocent live in fear.
@@ -172,12 +181,11 @@ ct So I will send them there.
 ct And once I've met my end...
 ct I will surely join them.
 
+dissolve spr_black 3
+
 ct It's over in a moment.
 ct A man is on the floor and my sword is covered in blood.
 ct The anger slips from my face, and my hand trembles.
-
-stop_sound m_leap_into_eternity 5
-
 bar "Collins... don't look at him like that."
 bar "You scare me when you get quiet."
 ct He angrily points at two bystanders.
@@ -189,7 +197,11 @@ ct The woman puts a hand on my shoulder.
 woman "I thought he was right, that no one was coming..."
 woman "Thank you."
 
+stop_sound m_leap_into_eternity 3
+textbox false
+pause 3
 loop_sound m_edge_of_the_galaxy
+dissolve spr_bg_bar1 2
 
 nar Phoebe and Gordon walk in
 ? "Are you sure this is the right place to ask around?"
@@ -198,7 +210,7 @@ nar Phoebe and Gordon walk in
 p "Absolutely not."
 ct The pair of strangers walk up next to me.
 ct The cocky-looking man looks at me, then down at the blood, and back to his companion.
-ct He grins
+ct He grins.
 ? "Told you."
 ? "Oi, bartender!"
 bar "What?"
@@ -238,6 +250,7 @@ bar "You're going to get yourself killed, Collins."
 c "Maybe..."
 
 textbox false
+dissolve spr_black 3
 stop_sound m_edge_of_the_galaxy 3
 
 pause 4.5
