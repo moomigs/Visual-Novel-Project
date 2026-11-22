@@ -19,7 +19,8 @@ draw_set_font(font_menu);
 view_width = display_get_gui_width();
 view_height = display_get_gui_height();
 x = view_width/2 - sprite_get_width(spr_menubutton) - padding/3;
-y = view_height - sprite_get_height(spr_menubutton) - 3;
+//y = view_height - sprite_get_height(spr_menubutton) - 3;
+y = Obj_DialogueMaster.textbox_y - sprite_get_height(sprite_index) - 3;
 height = view_height * 0.67;
 width = height * 1;
 

@@ -1,5 +1,33 @@
 
 
+
+
+var gx = device_mouse_x_to_gui(0);
+var gy = device_mouse_y_to_gui(0);
+
+var bx1 = draw_x - sprite_get_xoffset(sprite_index) * image_xscale;
+var by1 = draw_y - sprite_get_yoffset(sprite_index) * image_yscale;
+var bx2 = bx1 + sprite_get_width(sprite_index) * image_xscale;
+var by2 = by1 + sprite_get_height(sprite_index) * image_yscale;
+
+var button_shown = !instance_exists(Obj_DialogueMaster) || Obj_DialogueMaster.textbox_visible;
+
+if button_shown && point_in_rectangle(gx, gy, bx1, by1, bx2, by2) {
+	
+	if not menuVisible {
+		if not instance_exists(Obj_DialogueMaster) {
+			menuVisible = true;
+		}
+	}
+	exit;
+}
+
+
+
+
+
+
+
 if menuVisible {
 	var cl = camera_get_view_x(view_camera[0])
 	var ct = camera_get_view_y(view_camera[0])

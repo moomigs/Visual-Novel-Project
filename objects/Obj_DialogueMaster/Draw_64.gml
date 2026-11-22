@@ -5,7 +5,9 @@ draw_set_halign(fa_left)
 draw_set_font(font_dialogue);
 
 var gui_textbox_x = display_get_gui_width() / 2 - sprite_get_width(spr_dialoguebox) / 2;
-var gui_textbox_y = display_get_gui_height() - sprite_get_height(spr_dialoguebox) - padding*2;
+var gui_textbox_y = display_get_gui_height() - sprite_get_height(spr_dialoguebox) - padding2*2;
+
+textbox_y = display_get_gui_height() - sprite_get_height(spr_dialoguebox) - padding2;
 
 //Draw textbox
 if textbox_visible {

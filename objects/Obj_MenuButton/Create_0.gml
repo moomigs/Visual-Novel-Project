@@ -23,6 +23,16 @@ mousey = 0;
 view_width = display_get_gui_width();
 view_height = display_get_gui_height();
 
+
+
+
+
+draw_x = 0;
+draw_y = 0;
+
+
+
+
 close_button = instance_create_depth(view_width/2 + 2*width/3, view_height/2 - height/2, -1, Obj_CloseButton);
 close_button.close = function() {
 	menuVisible = false;

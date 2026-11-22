@@ -19,7 +19,7 @@ if Obj_DialogueMaster.textbox_visible == false {
 view_width = display_get_gui_width();
 view_height = display_get_gui_height();
 x = view_width/2 + sprite_get_width(spr_menubutton) + padding/3;
-y = view_height - sprite_get_height(spr_menubutton) - 3;
+y = Obj_DialogueMaster.textbox_y - sprite_get_height(sprite_index) - 3;
 
 image_alpha = draw_get_alpha();
 draw_sprite_ext(sprite_index, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);

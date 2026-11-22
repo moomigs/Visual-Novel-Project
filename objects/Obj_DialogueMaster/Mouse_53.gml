@@ -13,9 +13,24 @@ var mousey = off_y_percent * display_get_gui_height()
 if ((instance_find(Obj_MenuButton, 0) != noone and Obj_MenuButton.menuVisible) or (instance_find(Obj_HistoryButton, 0) != noone and Obj_HistoryButton.historyVisible)) {
 	alternateInput = true;
 }
+
+
+var panel_open = alternateInput;
+
+
+
 for (var i = 0; i < array_length(buttons); i++) {
 	var button = array_get(buttons, i);
 	if button == noone or not instance_exists(button) { continue; }
+	
+	
+	if panel_open {
+		var is_close = (instance_exists(Obj_MenuButton) and button == Obj_MenuButton.close_button)
+		            or (instance_exists(Obj_HistoryButton) and button == Obj_HistoryButton.close_button);
+		if not is_close { continue; }
+	}
+	
+	
 	if mousex >= (button.x-sprite_get_xoffset(button.sprite_index)) and mousey >= (button.y-sprite_get_yoffset(button.sprite_index)) and mousex <= (button.x-sprite_get_xoffset(button.sprite_index)+button.sprite_width*button.image_xscale) and mousey <= (button.y-sprite_get_yoffset(button.sprite_index)+button.sprite_height*button.image_yscale) {
 		alternateInput = true;
 		if variable_instance_get(button, "click") {

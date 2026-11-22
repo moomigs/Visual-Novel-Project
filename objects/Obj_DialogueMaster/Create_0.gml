@@ -47,6 +47,9 @@ characters = {};
 buttons = [];
 
 padding = 20;
+padding2 = 4;
+
+textbox_y = 0;
 
 function next_line() {
 	if string_length(display_scribble.get_text())>0 and typist.get_state() < 1 {

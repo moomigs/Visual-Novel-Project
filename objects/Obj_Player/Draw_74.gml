@@ -9,8 +9,8 @@ if variable_global_exists("link") and array_length(global.link) > 0 {
 		view_width = display_get_gui_width();
 		view_height = display_get_gui_height();
 		_x = view_width/2;
-		_y = view_height - sprite_get_height(spr_menubutton) - 3;
-		item_height = sprite_get_height(spr_menubutton)
+		_y = view_height - sprite_get_height(spr_mainmenubutton) - 3;
+		item_height = sprite_get_height(spr_mainmenubutton)
 		height = item_height * (1+call_menu_length) * 2;
 		width = view_width/8;
 		
