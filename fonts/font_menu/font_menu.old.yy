@@ -138,6 +138,6 @@
     "name":"Default",
     "path":"texturegroups/Default",
   },
-  "TTFName":"/Users/artensa/Documents/GitHub/Visual-Novel-Project/fonts/font_menu/EBGaramond-Bold.ttf",
+  "TTFName":"/Users/artensa/Documents/GitHub/Visual-Novel-Project/fonts/font_menu/Cinzel-Medium.ttf",
   "usesSDF":true,
 }
