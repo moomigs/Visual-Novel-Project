@@ -44,3 +44,7 @@ if tutorial_interact and not freeze {
 		}
 	}
 }
+
+if gem_cooldown > 0 {
+	gem_cooldown -= 1;
+}

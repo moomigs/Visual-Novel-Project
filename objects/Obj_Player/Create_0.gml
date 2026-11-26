@@ -12,6 +12,9 @@ can_defend = true;
 
 tutorial_interact = false;
 
+gem_rate = 50;
+gem_cooldown = 0;
+
 die = function() {
 	audio_stop_all();
 	audio_play_sound(snd_die, 1, false, 7, 0, .5);
