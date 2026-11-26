@@ -12,7 +12,7 @@ nar Door opens
 pause 1
 robo "Finally."
 
-loop_sound m_nano_nemesis
+loop_sound m_shooter_synthwave1
 
 trigger 1
 

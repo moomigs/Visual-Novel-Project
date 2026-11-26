@@ -6,6 +6,7 @@ name Man2 Man 2
 name Man3 Man 3
 name ? ???
 name n Navigator
+name ct  
 
 nar In his room
 
@@ -38,20 +39,29 @@ loop_sound m_no_more_magic
 nar Three men restrained and kneeling. A robed figure in front of them. Show his gun in hand. Show his smile with blue cat eyes.
 ? "Your world has hidden itself well."
 Man1 "We'd rather die."
-nar Gunshot
+
+play_sound snd_blaster_art
+pause 2
+
 ? "One of you will give me the coordinates."
 Man2 "One day..."
 Man2 "One day you will die."
 Man2 "And you will go to Hell."
 ? "I know."
-nar Gunshot
+
+play_sound snd_blaster_art
+pause 2
+
 ct I approach the last man.
 ? "What kind of man are you?"
 Man3 "I-I'll give you what you want."
 nar Show his smile fade
 ? "Good."
 Man3 "1.38-"
-nar Gunshot
+
+play_sound snd_blaster_art
+pause 2
+
 ? "Navigator."
 n "Yes, Captain Artensa?"
 nar Closeup of face, pupils are dilated
@@ -59,8 +69,8 @@ a "Set course for coordinates 1.385.6124.982."
 
 textbox false
 
-stop_sound m_no_more_magic 5
-pause 5
+#stop_sound m_no_more_magic 5
+pause 3
 
 new_title credit1 Writer and Director             Sam Capener
 new_title credit2 Programmer             Peter Capener
