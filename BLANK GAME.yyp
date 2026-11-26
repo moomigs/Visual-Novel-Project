@@ -443,6 +443,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room_RPG_1","path":"rooms/Room_RPG_1/Room_RPG_1.yy",},},
     {"roomId":{"name":"Room_StartMenu","path":"rooms/Room_StartMenu/Room_StartMenu.yy",},},
     {"roomId":{"name":"Room_RPG_3","path":"rooms/Room_RPG_3/Room_RPG_3.yy",},},
     {"roomId":{"name":"Room_RPG_6_1","path":"rooms/Room_RPG_6_1/Room_RPG_6_1.yy",},},
@@ -452,7 +453,6 @@
     {"roomId":{"name":"Room_VN_8","path":"rooms/Room_VN_8/Room_VN_8.yy",},},
     {"roomId":{"name":"Room_VN_3","path":"rooms/Room_VN_3/Room_VN_3.yy",},},
     {"roomId":{"name":"Room_RPG_4","path":"rooms/Room_RPG_4/Room_RPG_4.yy",},},
-    {"roomId":{"name":"Room_RPG_1","path":"rooms/Room_RPG_1/Room_RPG_1.yy",},},
     {"roomId":{"name":"Room_VN_2","path":"rooms/Room_VN_2/Room_VN_2.yy",},},
     {"roomId":{"name":"Room_VN_7","path":"rooms/Room_VN_7/Room_VN_7.yy",},},
     {"roomId":{"name":"Room_RPG_7_1","path":"rooms/Room_RPG_7_1/Room_RPG_7_1.yy",},},

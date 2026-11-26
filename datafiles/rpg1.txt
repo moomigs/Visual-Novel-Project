@@ -7,6 +7,8 @@ name g Gordon
 
 nar Back alley
 
+entity_unpause
+
 entity_speed collins 4
 entity_walk_to collins 160 352
 
