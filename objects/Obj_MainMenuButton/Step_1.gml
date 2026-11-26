@@ -1,0 +1,1 @@
+menuVisible = instance_exists(Obj_SettingsMenu);

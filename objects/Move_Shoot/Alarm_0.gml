@@ -54,12 +54,15 @@ if _nHits > 0 {
 			var _y = (inst.y - mover.y) / _d;
 			
 			//blocked = false;
-			with(Move_Slash) {
-				if mover != noone and not instance_exists(mover) { continue; }
-				if mover.id == other.inst and ((current_time/1000)-_time)<winddown {
-					other.blocked = true;
-					other.blocked_x = mover.x;
-					other.blocked_y = mover.y;
+			blocked = inst.defending;
+			if not blocked {
+				with(Move_Slash) {
+					if mover != noone and not instance_exists(mover) { continue; }
+					if mover.id == other.inst and ((current_time/1000)-_time)<winddown {
+						other.blocked = true;
+						other.blocked_x = mover.x;
+						other.blocked_y = mover.y;
+					}
 				}
 			}
 			if blocked == false and inst.object_index != Obj_Player and inst.battle_target != noone {

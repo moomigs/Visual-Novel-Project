@@ -10,6 +10,8 @@ can_heavy = true;
 can_shoot = true;
 can_defend = true;
 
+tutorial_interact = false;
+
 die = function() {
 	audio_stop_all();
 	audio_play_sound(snd_die, 1, false, 7, 0, .5);

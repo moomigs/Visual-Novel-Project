@@ -2,6 +2,8 @@ fade_to = 0;
 fade_per_tick = 0;
 fade_done = true;
 
+draw_begin = false;
+
 seconds = 1;
 
 auto_fadein = false;

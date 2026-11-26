@@ -1,3 +1,5 @@
+if not instance_exists(player) { return; }
+
 if not fight_robo1 {
 	if abs(enemy_robo1.y - player.y) <= 128 {
 		fight_robo1 = true;

@@ -1,1 +1,1 @@
-//menuVisible = !menuVisible
+click();

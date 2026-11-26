@@ -1,4 +1,4 @@
-if battle_target != noone {
+if instance_exists(battle_target) {
 	battle_state = "attack";
 	if abs(battle_target.x - x) <= 12 or abs(battle_target.y - y) <= 12 {
 		if random(1) > 0.6 {

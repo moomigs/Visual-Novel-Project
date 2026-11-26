@@ -24,11 +24,11 @@ for (var i = 0; i < array_length(buttons); i++) {
 	if button == noone or not instance_exists(button) { continue; }
 	
 	
-	if panel_open {
-		var is_close = (instance_exists(Obj_MenuButton) and button == Obj_MenuButton.close_button)
-		            or (instance_exists(Obj_HistoryButton) and button == Obj_HistoryButton.close_button);
-		if not is_close { continue; }
-	}
+	//if panel_open {
+	//	var is_close = (instance_exists(Obj_MenuButton) and button == Obj_MenuButton.close_button)
+	//	            or (instance_exists(Obj_HistoryButton) and button == Obj_HistoryButton.close_button);
+	//	if not is_close { continue; }
+	//}
 	
 	
 	if mousex >= (button.x-sprite_get_xoffset(button.sprite_index)) and mousey >= (button.y-sprite_get_yoffset(button.sprite_index)) and mousex <= (button.x-sprite_get_xoffset(button.sprite_index)+button.sprite_width*button.image_xscale) and mousey <= (button.y-sprite_get_yoffset(button.sprite_index)+button.sprite_height*button.image_yscale) {

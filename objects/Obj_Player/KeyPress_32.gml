@@ -1,5 +1,6 @@
-if call_menu_open != false and variable_global_exists("link") and is_array(global.link) {
+if call_menu_open != false and variable_global_exists("link") and is_array(global.link) and array_length(global.link) > 0 {
 	var _index = call_menu_open - 1;
+	if _index < 0 or _index > (array_length(global.link)-1) { return; }
 	var _dialogue = global.link[_index].dialogue;
 	call_menu_open = false;
 	

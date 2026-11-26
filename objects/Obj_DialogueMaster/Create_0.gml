@@ -5,6 +5,8 @@ scene = noone;
 entity_waitingfor = noone;
 entity_waitingfor_battle = noone;
 
+dont_freeze = false;
+
 variable_waitfor = noone;
 
 name_scribble = scribble("");
@@ -565,10 +567,6 @@ function set_scene(scene_instance) {
 
 function go() {
 	initial_viewport_subject = camera_get_view_target(view_camera[0]);
-	if instance_exists(Obj_Player) {
-		Obj_Player.freeze = true;
-	}
-	global.entity_pause = true;
 	alarm_set(1, 10);
 }
 

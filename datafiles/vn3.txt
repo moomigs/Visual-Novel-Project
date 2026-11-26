@@ -1,3 +1,12 @@
+name c Collins
+name g Gordon
+name p Phoebe
+name ct  
+name nar Narrator
+name both Both
+name ? ???
+
+
 stop_sound m_neural_net_nightmare 5
 
 pause 4

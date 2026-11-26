@@ -5,11 +5,13 @@ name bar Bartender
 
 g "You done out there?"
 
-iftrue town1task1 end
+iftrue town1task1 taskcomplete
 		
 g "Keep looking. I'll be here when you're finished."
 textbox false
 end
+
+node taskcomplete
 
 choice [Yes] [No]
 	case 0 yes

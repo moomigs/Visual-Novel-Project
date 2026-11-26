@@ -16,6 +16,8 @@ loop_sound m_nano_nemesis
 
 trigger 1
 
+entity_unpause
+
 ### large group of NPCs enter
 robo "Halt! In the name of the queen!"
 p "Perfect."

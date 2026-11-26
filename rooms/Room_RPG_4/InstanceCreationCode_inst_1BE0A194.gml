@@ -1,6 +1,7 @@
 function interact() {
 	dialoguemaster = instance_create_depth(x, y, -2, Obj_DialogueMaster);
 	dialoguemaster.dialogue_code = @"
+		name r Rey
 		r ^Crew member Collins spotted!^
 	"; 
 	dialoguemaster.dialogue_code = string_replace_all(dialoguemaster.dialogue_code, "^", chr(34));

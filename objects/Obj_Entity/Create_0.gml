@@ -170,6 +170,7 @@ on_die = function() {
 	if restart_room_on_die {
 		var fade = instance_create_depth(0, 0, 0, Effect_transition_fade);
 		fade.transition = function() {
+			audio_stop_all();
 			room_restart();
 		}
 		fade.start(1);

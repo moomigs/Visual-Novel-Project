@@ -20,5 +20,6 @@ dialoguemaster.file_name = "rpg6_1.txt";
 dialoguemaster.ended = function() {
 	
 };
+dialoguemaster.dont_freeze = true;
 dialoguemaster.go();
 dialoguemaster.unpause();

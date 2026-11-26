@@ -1,5 +1,6 @@
-if not menuVisible {
-	if not instance_exists(Obj_DialogueMaster) {
-		menuVisible = true;
-	}
+if menuVisible {
+	instance_destroy(Obj_SettingsMenu);
+} else {
+	menuVisible = true;
+	instance_create_depth(0, 0, 0, Obj_SettingsMenu);
 }
