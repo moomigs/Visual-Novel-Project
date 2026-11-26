@@ -9,7 +9,7 @@ name r Rey
 
 # Room_VN_4
 
-stop_sound m_nano_nemesis 3
+stop_sound m_shooter_synthwave1 3
 pause 2
 
 ct Phoebe and Gordon quietly sit down.

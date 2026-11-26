@@ -11,7 +11,9 @@ name villager Villager
 
 stop_sound m_chilling_whispers 3
 
-loop_sound m_perpetual_tension
+pause 3
+
+loop_sound m_shooter_synthwave5
 
 trigger 1
 textbox false
@@ -50,7 +52,7 @@ player_enable
 
 waitfor robots_defeated
 
-stop_sound m_perpetual_tension 3
+stop_sound m_shooter_synthwave5 3
 
 ### Robos defeated. Collins and Richard stand together.
 
