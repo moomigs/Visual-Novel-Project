@@ -84,7 +84,7 @@ function next_line() {
 			var arg = arguments[1];
 			var bg = asset_get_index(arg);
 		
-			var lay_id = layer_get_id("Background_Top");
+			var lay_id = layer_get_id("Background_Top") or layer_get_id("Background");
 			var back_top = layer_background_get_id(lay_id);
 			layer_background_alpha(back_top, 1);
 			layer_background_blend(back_top, c_white);
@@ -96,8 +96,13 @@ function next_line() {
 			var arg_time = real(arguments[2]);
 			var bg = asset_get_index(arg);
 			
-			var lay_top = layer_get_id("Background_Top");
+			var lay_top = layer_get_id("Background_Top") or layer_get_id("Background");
 			var lay_bottom = layer_get_id("Background_Bottom");
+			if not lay_bottom {
+				lay_bottom = layer_create(200, "Background_Bottom");
+				var _bg_element = layer_background_create(lay_bottom, noone);
+				layer_background_stretch(_bg_element, true);
+			}
 			
 			var back_top = layer_background_get_id(lay_top);
 			var back_bottom = layer_background_get_id(lay_bottom);
@@ -182,28 +187,30 @@ function next_line() {
 		} else if command == "play_sound" {
 			var arg = arguments[1];
 			var sound = asset_get_index(arg);
-			var fade = 0;
-			if array_length(arguments)>2 {
-				fade = real(arguments[2]);
+			if !audio_is_playing(sound) {
+				var fade = 0;
+				if array_length(arguments)>2 {
+					fade = real(arguments[2]);
+				}
+				var gain = audio_sound_get_gain(sound);
+				audio_sound_gain(sound, 0);
+				audio_play_sound(sound, 1, false);
+				audio_sound_gain(sound, gain, fade*1000);
 			}
-			var gain = audio_sound_get_gain(sound);
-			audio_sound_gain(sound, 0);
-			audio_play_sound(sound, 1, false);
-			audio_sound_gain(sound, gain, fade*1000);
-			
 			next_line();
 		} else if command == "loop_sound" {
 			var arg = arguments[1];
 			var sound = asset_get_index(arg);
-			var fade = 0;
-			if array_length(arguments)>2 {
-				fade = real(arguments[2]);
+			if !audio_is_playing(sound) {
+				var fade = 0;
+				if array_length(arguments)>2 {
+					fade = real(arguments[2]);
+				}
+				var gain = audio_sound_get_gain(sound);
+				audio_sound_gain(sound, 0);
+				audio_play_sound(sound, 1, true);
+				audio_sound_gain(sound, gain, fade*1000);
 			}
-			var gain = audio_sound_get_gain(sound);
-			audio_sound_gain(sound, 0);
-			audio_play_sound(sound, 1, true);
-			audio_sound_gain(sound, gain, fade*1000);
-			
 			next_line();
 		} else if command == "set_sound_loop" {
 			var arg = arguments[1];
