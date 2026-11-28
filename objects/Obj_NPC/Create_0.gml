@@ -4,6 +4,7 @@ attack_pending = noone;
 chargetime_min = 1;
 chargetime_max = 30;
 attack_postcooldown = 10;
+heavy_cooldown = 0;
 
 retreattime_min = 15;
 retreattime_max = 120;

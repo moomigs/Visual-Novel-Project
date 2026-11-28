@@ -46,6 +46,7 @@ charge = function(autocharge=0) {
 }
 
 function go(_direction, _delay=0) {
+	if not instance_exists(mover) or mover.hp <= 0 { return; }
 	if global.entity_pause == true {
 		mover.freeze = false;
 		return;

@@ -90,3 +90,5 @@ if battle_target == noone {
 	movespeed_alpha = 1;
 	defending = false;
 }
+
+heavy_cooldown = max(heavy_cooldown - 1, 0);

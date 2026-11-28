@@ -33,7 +33,7 @@ if tutorial_interact and not freeze {
 			dialoguemaster.dialogue_code = @"
 				entity_unpause
 				player_enable
-				new_title tutorial_interact Press Z to interact
+				new_title tutorial_interact Press F to interact
 				title_setpos tutorial_interact 0 0.3
 				title_fadein tutorial_interact 0.5
 				pause 3

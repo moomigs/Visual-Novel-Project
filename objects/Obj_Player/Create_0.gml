@@ -14,6 +14,7 @@ tutorial_interact = false;
 
 gem_rate = 50;
 gem_cooldown = 0;
+heavy_cooldown = 0;
 
 die = function() {
 	audio_stop_all();

@@ -6,5 +6,6 @@ collins.y = -64;
 
 new_player.can_die = false
 new_player.restart_room_on_die = true;
+new_player.can_shoot = false;
 
 child.start_battle(new_player);

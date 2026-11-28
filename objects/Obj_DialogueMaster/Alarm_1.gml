@@ -1,7 +1,6 @@
 if instance_exists(Obj_Player) and not dont_freeze {
 	Obj_Player.freeze = true;
 }
-global.entity_pause = true;
 
 if file_name != "" {
 	if (file_exists(file_name)) {

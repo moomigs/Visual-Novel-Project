@@ -4,6 +4,7 @@ gordon = instance_find(Obj_Entity_Gordon, 0);
 richard = instance_find(Obj_Entity_Richard, 0);
 
 new_player = noone;
+global.gem_power = false;
 
 fade_effect = instance_create_depth(0, 0, 0, Effect_transition_fade);
 

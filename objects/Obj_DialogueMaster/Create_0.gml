@@ -574,6 +574,7 @@ function set_scene(scene_instance) {
 
 function go() {
 	initial_viewport_subject = camera_get_view_target(view_camera[0]);
+	global.entity_pause = true;
 	alarm_set(1, 10);
 }
 
@@ -583,4 +584,5 @@ function pause() {
 
 function unpause() {
 	global.entity_pause = false;
+	dont_freeze = true;
 }
